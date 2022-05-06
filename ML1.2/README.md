@@ -33,7 +33,7 @@ from sklearn import linear_model
 ```py
 X = pd.read_csv('1_x.csv')
 Y = pd.read_csv('1_y.csv')
-```py 
+```
 
 Создаем пустую модель:
 
