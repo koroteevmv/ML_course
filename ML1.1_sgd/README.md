@@ -145,7 +145,7 @@ plt.scatter(x, y)
 plt.plot(X0, Y0, 'r')
 plt.show()
 ```
-```
+
 ![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-2.png)
 
 Как и ожидалось, мы видим горизонтальную линию - в нашей примитивной модели пока для любого входного значения, выходное всегда будет 0.
