@@ -214,6 +214,7 @@ metrics.confusion_matrix(y, y_pred)
 import seaborn as sns
 sns.heatmap(metrics.confusion_matrix(y, y_pred), annot=True)
 ```
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML3.1%20classification/ml31-1.png?raw=true)
 
 Кроме матрицы классификации весьма полезно использовать численные метрики эффективности классификации. Существует большое количество таких метрик, в данной работе мы сосредоточимся на трех основных.
 
