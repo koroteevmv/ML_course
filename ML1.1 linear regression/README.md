@@ -71,6 +71,7 @@ plt.figure()
 plt.scatter(x, y)
 plt.show()
 ```
+
 ![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-1.png)
 
 
