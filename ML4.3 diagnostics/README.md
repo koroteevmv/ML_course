@@ -270,100 +270,218 @@ plt.legend()
 
 Но главное - это сравнение между собой нескольких моделей одного типа, но с разным уровнем сложности (еще говорят про модели с разной склонностью к пере- или недообучению).
 
-##### Диагностика решающих деревьев
+##### Диагностика на реальных данных
+
+В реальных задачах диагностика моделей машинного обучения может быть не настолько очевидной. Зачастую используются модели, которые не используют регуляризацию в явном виде. В этом примере рассмотрим приемы диагностики моделей на реальных данных. Будем использовать известный датасет для классификации "Диабет"
 
 Загружаем данные:
 
 ```python
 import pandas as pd
-df = pd.read_csv('diabetes.csv',nrows=400)
+df = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML4.3%20diagnostics/diabetes.csv',nrows=200)
 df.head()
 ```
-Отделяем целевую переменную :
+
+Обратите внимание, что мы считали только первые 200 строк из файла. Этим мы имитируем обучение на части данных. Формируем обучающую и тестовую выборки:
 
 ```python
 target = "Outcome"
 y = df[target]
 X = df.drop(target, axis=1)
-```
-Разделим данные на обучающую и валидационную выборки:
-
-```python
-from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 ```
 
-Создадим объект дерево решений и обучим его на трейновых данных:
+Для моделирования выберем совершенно другой тип модели - решающие деревья. Создадим объект модели дерева решений и исследуем его эффективность:
 
 ```python
 from sklearn.tree import DecisionTreeClassifier
-model = DecisionTreeClassifier(random_state=1)
-model.fit(X_train, y_train)
-```
-Сделаем предсказание на тренировочных данных и на валидационных:
-
-```python
+model = DecisionTreeClassifier(random_state=1).fit(X_train, y_train)
 y_train_pred = model.predict(X_train)
 y_pred = model.predict(X_test)
+print("Train score = %.4f" % accuracy_score(y_train, y_train_pred))
+print("Test score = %.4f" % accuracy_score(y_test, y_pred))
 ```
-Выведем значение метрики f1_score на тренировочных данных и на валидационных:
+
+Получаем следующий очень показательный результат:
+
+```
+Train score = 1.0000
+Test score = 0.5500
+```
+
+Даже без построения кривых обучения здесь очевидно переобучение модели. Но все же для тренировки распознавания разных ситуаций на графике построим кривую обучения:
+
+![Кривая обучения недообученного дерева](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.3%20diagnostics/ml43-9.png)
+
+У деревьев решений один из параметров - максимальная глубина дерева как раз и влияет на склонность модели к переобучению. Аналогом регуляризации для деревьев будет искусственное ограничение максимальной глубины дерева. Давайте построим кривую обучения для такого регуляризованного дерева:
 
 ```python
-print("Train f1_score = %.4f" % f1_score(y_train, y_train_pred))
-print("Test f1_score = %.4f" % f1_score(y_test, y_pred))
+visualizer = LearningCurve(
+    DecisionTreeClassifier(max_depth=4), train_sizes=np.linspace(0.1, 1.0, 10)
+).fit(X, y) .show() 
 ```
-Сделаем кросс-валидацию и выведем среднее значение метрики:
-```python
-from sklearn.model_selection import cross_validate
-cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
-f1_train = cv_metrics['train_score'].mean()
-f1_valid = cv_metrics['test_score'].mean()
-print('Train f1-score = {:.4f}'.format(f1_train))
-print('Valid f1-score = {:.4f}'.format(f1_valid))
+
+Получается гораздо более качественная картина:
+
+![Кривая обучения регуляризованного дерева](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.3%20diagnostics/ml43-10.png)
+
+Выведя метрики эффективности получаем более высокое качество модели на тестовых данных:
+
 ```
-По данным кросс-валидации построим график и увидим по нему, что действительно имеет место переобучение:
+Train f1_score = 0.8500
+Test f1_score = 0.6250
+```
+
+Введение регуляризации, искусственное упрощение моделей - не единственный способ борьбы с переобучением. Самый лучший способ - это обучение на более полном датасете, то есть добавление большого количества данных. В этом примере мы специально не использовали весь имеющийся набор данных. На части модель сильно переобучается, но чем больше данных, тем меньше модели (даже одинаковые по сложности) становятся склонными к переобучению. 
+
+Для иллюстрации этого повторим обучение нерегуляризованного дерева решений на всем датасете:
 
 ```python
-from matplotlib import pyplot as plt
-plt.figure(figsize=(15, 5))
-plt.plot(cv_metrics['train_score'], label='train', marker='.')
-plt.plot(cv_metrics['test_score'], label='valid', marker='.')
-plt.ylim([0.5, 1.5]);
-plt.xlabel('CV iteration', fontsize=15)
-plt.ylabel('f1-score', fontsize=15)
-plt.legend(fontsize=15)
-```
-Для борьбы с переобучением уменьшим глубину дерева, указав параметр регуляризации `max_depth=3`.
-Создадим объект дерево решений и произведём заново кросс-валидацию, выведем средние значения метрик:
-
-```python
-model = DecisionTreeClassifier(random_state=1, max_depth=3)
-cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
-f1_train = cv_metrics['train_score'].mean()
-f1_valid = cv_metrics['test_score'].mean()
-print('Train f1-score = {:.4f}'.format(f1_train))
-print('Valid f1-score = {:.4f}'.format(f1_valid))
-```
-Далее заново построим график и убедимся, что переобучения теперь нет. Код для построения графика тот же.
-
-Рассмотрим проблему недообучения. Для борьбы с недообучением добавим данные.
-Для этого загрузим все строки датасета `diabetes.csv`.
-
-```python
-df = pd.read_csv('diabetes.csv')
-```
-Обучим модель на всех данных и убедимся в том, что значение метрики `f1-score` улучшилось:
-
-```python
+df = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML4.3%20diagnostics/diabetes.csv')
 target = "Outcome"
 y = df[target]
 X = df.drop(target, axis=1)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-model = DecisionTreeClassifier(random_state=1,max_depth=3)
-cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
-f1_valid = cv_metrics['test_score'].mean()
-print('Valid f1-score = {:.4f}'.format(f1_valid))
+model = DecisionTreeClassifier(random_state=1).fit(X_train, y_train)
+y_train_pred = model.predict(X_train)
+y_pred = model.predict(X_test)
+from sklearn.metrics import f1_score
+print("Train score = %.4f" % accuracy_score(y_train, y_train_pred))
+print("Test score = %.4f" % accuracy_score(y_test, y_pred))
 ```
+
+В итоге мы получаем такие метрики эффективности:
+
+```
+Train score = 1.0000
+Test score = 0.7273
+```
+
+Получившаяся модель значительно лучше, чем даже регуляризованное дерево. В общем случае, добавление данных работает лучше, чем регуляризация. 
+
+
+##### Диагностика недообучения
+
+До сих пор мы рассматривали примеры, в которых модели по умолчанию демонстрируют явное переобучение. Но на практике чаще сталкиваются с недообучением, так как начинают анализ с более простых моделей, которые как раз склонны именно к недообучению. Рассмотрим в качестве примера более сложный датасет.
+
+В sklearn есть встроенный механизм загрузки датасетов из онлайн репозитория OpenML. Возьмем оттуда датасет, посвященный проблеме управления истребителем F16:
+
+```python
+from sklearn.datasets import fetch_openml
+data = fetch_openml(name='delta_ailerons', parser="auto")
+data.data.shape
+```
+
+Он состоит из более 7 тысяч строк:
+
+```
+(7129, 5)
+```
+
+Сформируем обучающую и тестовую выборки:
+
+```python
+X = pd.get_dummies(data.data)
+y = data.target
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+```
+
+Создадим и оценим простую модель логистической регрессии:
+
+```python
+from sklearn.linear_model import LogisticRegression
+model = LogisticRegression()
+model.fit(X_train, y_train)
+y_train_pred = model.predict(X_train)
+y_pred = model.predict(X_test)
+print("Train score = %.4f" % accuracy_score(y_train, y_train_pred))
+print("Test score = %.4f" % accuracy_score(y_test, y_pred))
+```
+
+Получаем следующие метрики:
+
+```
+Train score = 0.6058
+Test score = 0.5940
+```
+
+Построим кривую обучения данной модели:
+
+```python
+visualizer = LearningCurve(
+    LogisticRegression(), scoring='accuracy', train_sizes=np.linspace(0.3, 1.0, 10)
+).fit(X, y) .show() 
+```
+
+![Кривая обучения недообученной логистической регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.3%20diagnostics/ml43-11.png)
+
+Здесь очевидны признаки недообучения: низкий уровень обучающей эффективности, малый разрыв между обучающей и тестовой эффективностью. При недообучении регуляризация не поможет, даже навредит, так как еще усилит его. Поэтому единственный путь в этом случае - использовать более сложные, вариативные модели. Можно, например, попробовать многослойный перцептрон:
+
+```python
+from sklearn.neural_network import MLPClassifier
+model = MLPClassifier().fit(X_train, y_train)
+y_train_pred = model.predict(X_train)
+y_pred = model.predict(X_test)
+print("Train score = %.4f" % accuracy_score(y_train, y_train_pred))
+print("Test score = %.4f" % accuracy_score(y_test, y_pred))
+```
+
+```
+Train score = 0.9388
+Test score = 0.9390
+```
+
+Самого главного мы добились - эффективность модели сильно выросла. Но давайте построим график обучения:
+
+```python
+visualizer = LearningCurve(
+    MLPClassifier(), scoring='accuracy', train_sizes=np.linspace(0.3, 1.0, 10)
+).fit(X, y) .show() 
+```
+
+![Кривая обучения перцептрона](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.3%20diagnostics/ml43-12.png)
+
+Кроме использования более вариативных моделей самих по себе можно ввести в модель полиномиальные признаки:
+
+```python
+from sklearn.linear_model import RidgeClassifier
+from sklearn.preprocessing import PolynomialFeatures
+model = RidgeClassifier(alpha=0.001).fit(PolynomialFeatures(2).fit_transform(X_train), y_train)
+y_train_pred = model.predict(PolynomialFeatures(2).fit_transform(X_train))
+y_pred = model.predict(PolynomialFeatures(2).fit_transform(X_test))
+print("Train score = %.4f" % accuracy_score(y_train, y_train_pred))
+print("Test score = %.4f" % accuracy_score(y_test, y_pred))
+```
+
+Полиномиальные модели являются естественным усложнением линейных и поэтому в случае недообучения исходной модели почти всегда обеспечивают увеличение эффективности модели:
+
+```
+Train score = 0.9392
+Test score = 0.9362
+```
+
+Для этой полиномиальной модели уже можно пробовать использовать регуляризацию и строить соответствующие кривые:
+
+```python
+from sklearn.linear_model import RidgeClassifier
+trains = []
+tests = []
+for i in np.logspace(-7, 0, 100):
+  ridge = RidgeClassifier(alpha=i).fit(PolynomialFeatures(2).fit_transform(X_train), y_train)
+  trains.append(ridge.score(PolynomialFeatures(2).fit_transform(X_train), y_train))
+  tests.append(ridge.score(PolynomialFeatures(2).fit_transform(X_test), y_test))
+
+plt.plot(trains, label="train")
+plt.plot(tests, label="test")
+plt.legend()
+```
+
+В этом примере (как и во многих других реальных случаях) кривая регуляризации уже не такая очевидная и легко читаемая. Но и на ней можно при желании разглядеть область недообучения справа. Область переобучения здесь просматривается не так четко, так как тестовая эффективность практически не падает с уменьшением параметра регуляризации:
+
+![Кривая регуляризации полиномиальной регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.3%20diagnostics/ml43-13.png)
+
+Также можно заметить, что этот график уже не такой гладкий и ровный, как в предыдущих примерах. На нем присутствуют скачки, неравномерности. Это все случайные отклонения, которые обусловлены и артефактами в самих данных, и стохастичностью процесса обучения сложных моделей и случайными ошибками выборки, возникшими при разделении датасета на тестовую и обучающую выборки.
 
 #### Задания для самостоятельного выполнения
 
@@ -374,7 +492,17 @@ print('Valid f1-score = {:.4f}'.format(f1_valid))
     1. метода решающих деревьев (гиперпараметры по вашему выбору)
 1. Дополните анализ датасета Бостон исследованием модели лассо - постройте кривые обучения для переобученной, недообученной и качественной модели, найдите оптимальное значение параметра регуляризации в модели лассо.
 1. В одном из двух первых примеров используйте модель ElasticNet и исследуйте влияние сразу двух параметров регуляризации на эффективность модели.
-1. Повторите анализ на других реальных датасетах из репозитория
+1. Дополните анализ дерева решений из третьего примера: постройте кривые регуляризации для полного датасета, найдите оптимальную глубину дерева и оцените качество такой модели на всем датасете. Повторите данный анализ используя в качестве метрики эффективности F1.
+1. Повторите анализ на других реальных датасетах из репозитория OpenML:
+    - phoneme
+    - banknote-authentication
+    - delta_ailerons
+    - mammography
+    - electricity
+    - mozilla4
+    - kropt
+    - nursery
+    - volcanoes-b3
 
 #### Контрольные вопросы
 
@@ -388,5 +516,5 @@ print('Valid f1-score = {:.4f}'.format(f1_valid))
 
 #### Дополнительные задания
 
-1. Добавьте шкалирование признаков в рассмотренную задачу.
-2. Изучите обобщающую способность модели для данных задачи регрессии.
+1. Повторите анализ последнего примера но с другими разделениями датасета на обучающую и тестовую выборки (изменяйте параметр random_state). Как меняется вид графиков?
+1. Напишите код построения кривых регуляризации, использующий кросс-валидацию.
