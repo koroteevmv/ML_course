@@ -1,0 +1,130 @@
+### Недообучение и переобучение
+
+#### Цель работы
+
+Познакомиться с основными проблемами обобщающей способности алгоритмов машинного обучения: overfitting (переобучение) и underfitting (недообучение).
+
+
+#### Задания для выполнения
+
+1. Загрузите первые 400 строк прилагающегося датасета `diabetes.csv`.
+2. Сделайте количественное описание датасета: число признаков, статистику по признакам.
+3. Отделите целевую переменную `Outcome`.
+4. Разделите данные на обучающую и валидационную выборки при помощи `train_test_split` из библиотеки `sklearn.model_selection` в соотношении 80-20 (для этого укажите параметр test_size=0.2) с перемешиванием, указав значение параметра `random_state=42`.
+5. Создайте объект `DecisionTreeClassifier(random_state=1)`. Обучите модель на обучающих (трейновых) данных. Сделайте предсказание на трейновом и валидационном наборе признаков. Выведите значения метрики `f1-score`для трейнового и валидационного наборов данных. По полученным значениям метрик сделайте предположение о переобученности модели.
+6. Произведите кросс-валидацию с использованием функции `cross_validate` из библиотеки  `sklearn.model_selection`. По полученным данным, постройте график зависимости значений `f1-score` от набора данных соответствующей итерации. По графику убедитесь в том, что имеет место переобученность модели.
+7. Для борьбы с переобучением регуляризуйте модель `DecisionTreeClassifier`, уменьшив глубину дерева, указав параметр регуляризации `max_depth=3`.
+8. Снова проделайте пункт 6 с учётом регуляризации и убелитесь по графику в том, что модель больше не является переобученной.
+9. Теперь рассмотрите проблему недообучения модели. Для борьбы с недообучением модели добавьте данные.
+Для этого загрузите все строки датасета `diabetes.csv`.
+10. Обучите модель `DecisionTreeClassifier(random_state=1, max_depth=3)` на всех данных и убедитесь в том, что значение метрики `f1-score` улучшилось.
+
+
+#### Методические указания
+
+Загружаем данные:
+
+```python
+import pandas as pd
+df = pd.read_csv('diabetes.csv',nrows=400)
+df.head()
+```
+Отделяем целевую переменную :
+
+```python
+target = "Outcome"
+y = df[target]
+X = df.drop(target, axis=1)
+```
+Разделим данные на обучающую и валидационную выборки:
+
+```python
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+
+Создадим объект дерево решений и обучим его на трейновых данных:
+
+```python
+from sklearn.tree import DecisionTreeClassifier
+model = DecisionTreeClassifier(random_state=1)
+model.fit(X_train, y_train)
+```
+Сделаем предсказание на тренировочных данных и на валидационных:
+
+```python
+y_train_pred = model.predict(X_train)
+y_pred = model.predict(X_test)
+```
+Выведем значение метрики f1_score на тренировочных данных и на валидационных:
+
+```python
+print("Train f1_score = %.4f" % f1_score(y_train, y_train_pred))
+print("Test f1_score = %.4f" % f1_score(y_test, y_pred))
+```
+Сделаем кросс-валидацию и выведем среднее значение метрики:
+```python
+from sklearn.model_selection import cross_validate
+cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
+f1_train = cv_metrics['train_score'].mean()
+f1_valid = cv_metrics['test_score'].mean()
+print('Train f1-score = {:.4f}'.format(f1_train))
+print('Valid f1-score = {:.4f}'.format(f1_valid))
+```
+По данным кросс-валидации построим график и увидим по нему, что действительно имеет место переобучение:
+
+```python
+from matplotlib import pyplot as plt
+plt.figure(figsize=(15, 5))
+plt.plot(cv_metrics['train_score'], label='train', marker='.')
+plt.plot(cv_metrics['test_score'], label='valid', marker='.')
+plt.ylim([0.5, 1.5]);
+plt.xlabel('CV iteration', fontsize=15)
+plt.ylabel('f1-score', fontsize=15)
+plt.legend(fontsize=15)
+```
+Для борьбы с переобучением уменьшим глубину дерева, указав параметр регуляризации `max_depth=3`.
+Создадим объект дерево решений и произведём заново кросс-валидацию, выведем средние значения метрик:
+
+```python
+model = DecisionTreeClassifier(random_state=1, max_depth=3)
+cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
+f1_train = cv_metrics['train_score'].mean()
+f1_valid = cv_metrics['test_score'].mean()
+print('Train f1-score = {:.4f}'.format(f1_train))
+print('Valid f1-score = {:.4f}'.format(f1_valid))
+```
+Далее заново построим график и убедимся, что переобучения теперь нет. Код для построения графика тот же.
+
+Рассмотрим проблему недообучения. Для борьбы с недообучением добавим данные.
+Для этого загрузим все строки датасета `diabetes.csv`.
+
+```python
+df = pd.read_csv('diabetes.csv')
+```
+Обучим модель на всех данных и убедимся в том, что значение метрики `f1-score` улучшилось:
+
+```python
+target = "Outcome"
+y = df[target]
+X = df.drop(target, axis=1)
+
+model = DecisionTreeClassifier(random_state=1,max_depth=3)
+cv_metrics = cross_validate(model, X, y, cv=5, scoring='f1_micro', return_train_score=True)
+f1_valid = cv_metrics['test_score'].mean()
+print('Valid f1-score = {:.4f}'.format(f1_valid))
+```
+
+#### Контрольные вопросы
+
+1. Что такое обобщающая способность модели?
+2. Что такое переобучение модели?
+3. Какие есть способы борьбы с переобучением?
+4. Что такое регуляризация модели?
+5. Что такое недообучение модели?
+6. Какие есть способы борьбы с недообучением?
+
+#### Дополнительные задания
+
+1. Добавьте шкалирование признаков в рассмотренную задачу.
+2. Изучите обобщающую способность модели для данных задачи регрессии.
