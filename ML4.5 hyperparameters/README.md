@@ -348,7 +348,7 @@ ax = sns.barplot(y="name", x="score", data=df)
 ```
 
 
-![png](ml45-1.png)
+![png](https://github.com/koroteevmv/ML_course/blob/2023_new/ML4.5%20hyperparameters/ml45-1.png)
 
 
 Рассмотрим как мы можем оптимизировать методы. Для этого выберем метод Grid Search. И раасмотрим пример на основе данных затрат на рекламу. 
