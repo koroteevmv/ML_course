@@ -70,7 +70,7 @@ plt.show()
 ```py
 class SGD():
     def __init__(self, alpha=0.5, n_iters=1000):
-        self.theta = None
+        self.b = None
         self._alpha = alpha
         self._n_iters = n_iters
 ```
@@ -78,18 +78,18 @@ class SGD():
 Теперь реализуем один шаг градиентного спуска. Аргументом этого метода сделаем градиент функции ошибки (так как он специфичен для модели):
 
 ```py
-    def gradient_step(self, theta, theta_grad):
-        return theta - self._alpha * theta_grad
+    def gradient_step(self, b, b_grad):
+        return b - self._alpha * b_grad
 ```
 
 Следующий шаг - реализация всего алгоритма оптимизации методом градиентного спуска:
 
 ```py
-    def optimize(self, X, y, start_theta, n_iters):
-        theta = start_theta.copy()
+    def optimize(self, X, y, start_b, n_iters):
+        theta = start_b.copy()
         for i in range(n_iters):
-            theta_grad = self.grad_func(X, y, theta)
-            theta = self.gradient_step(theta, theta_grad)
+            b_grad = self.grad_func(X, y, b)
+            b = self.gradient_step(b, b_grad)
         return theta
 ```
 
@@ -98,8 +98,8 @@ class SGD():
 ```py
     def fit(self, X, y):
         m = X.shape[1]
-        start_theta = np.ones(m)
-        self.theta = self.optimize(X, y, start_theta, self._n_iters)
+        start_b = np.ones(m)
+        self.b = self.optimize(X, y, start_b, self._n_iters)
 ```
 
 Обратите внимание, что в этом классе мы не реализовали использованный в одном месте метод grad_func(X, y, theta). Этот метод моделеспецифичный, поэтому определим его во втором классе. Такая архитектура, в частности, означает, что наш класс SGD не можут использоваться сам по себе - он абстрактный. В конкретной реализации этого класса должен быть определен этот метод.
@@ -108,16 +108,16 @@ class SGD():
 
 ```py
 class LogReg(SGD):
-    def sigmoid(self, X, theta):        
-        return 1. / (1. + np.exp(-X.dot(theta)))
+    def sigmoid(self, X, b):        
+        return 1. / (1. + np.exp(-X.dot(b)))
 ```
 
 Теперь нужно определить тот самый метод grad_func(X, y, theta), то есть метод вычисления градиента (частных производных функции ошибки):
 
 ```py
-    def grad_func(self, X, y, theta):
+    def grad_func(self, X, y, b):
         n = X.shape[0]
-        grad = 1. / n * X.transpose().dot(self.sigmoid(X, theta) - y)
+        grad = 1. / n * X.transpose().dot(self.sigmoid(X, b) - y)
         return grad
 ```
 
@@ -125,7 +125,7 @@ class LogReg(SGD):
 
 ```py
     def predict_proba(self, X):
-        return self.sigmoid(X, self.theta)
+        return self.sigmoid(X, self.b)
 ```
 
 А второй - это точное предсказание:
@@ -206,11 +206,6 @@ plt.scatter(X[:, 1][y==1], X[:, 2][y==1], marker="x", c='b', s=100)
 Сделайте вывод по данному графику. Насколько хорошая получилась модель для имеющихся данных?
 
 Теперь проделаем то же самое, используя библиотечные функции.
-Разделим данные на обучающую и валидационную части:
-
-```py
-X_train, X_test, y_train, y_test = train_test_split(X, y,random_state=42, test_size=0.2)
-```
 
 Создадим экземпляр класса:
 
@@ -220,8 +215,8 @@ model = LogisticRegression()
 Обучим модель и сделаем предсказание:
 
 ```py
-model.fit(X_train, y_train)
-y_pred_lr = model.predict(X_test)
+model.fit(X, y)
+y_pred_lr = model.predict(X)
 ```
 Далее необходимо вывести метрики качества аналогичным образом и сделать сравнение результатов.
 
