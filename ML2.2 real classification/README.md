@@ -18,7 +18,7 @@
 Сперва загрузим исходный набор данных. Это можно сделать, как скопировав файл csv в локальную папку, так и по общедоступному URL:
 
 ```py
-data = pd.read_csv("https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML2.1_classification/diabetes.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML2.2%20real%20classification/data/diabetes.csv")
 ```
 
 Обратите внимание, что в библиотеке _sklearn_ встроен очень похожий датасет pima-indian-diabetes. Имейте в виду, что в данной работе используется немного другой датасет.
@@ -202,7 +202,7 @@ metrics.confusion_matrix(y, y_pred)
 import seaborn as sns
 sns.heatmap(metrics.confusion_matrix(y, y_pred), annot=True)
 ```
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML3.1%20classification/ml31-1.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML2.2%20real%20classification/ml31-1.png?raw=true)
 
 Кроме матрицы классификации весьма полезно использовать численные метрики эффективности классификации. Самая простая и распространенная из них - метрика точности предсказания - показывает долю правильно распознанных объектов. Расчет этой метрики встроен в сам объект модели и доступен с помощью специального метода:
 
