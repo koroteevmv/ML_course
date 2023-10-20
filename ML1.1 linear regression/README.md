@@ -24,8 +24,8 @@ import matplotlib.pyplot as plt
 Для начала считаем данные о котировке двух инструментов из csv-файла:
 
 ```py
-x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/main/ML1.1_sgd/data/x.csv')
-y = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/main/ML1.1_sgd/data/y.csv')
+x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML1.1%20linear%20regression/data/x.csv')
+y = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML1.1%20linear%20regression/data/y.csv')
 ```
 
 Посмотрим формат файла с данными - состав и названия полей:
@@ -45,8 +45,8 @@ x.head()
 Аналогичная картина наблюдается и в переменной _y_. Здесь мы видим две проблемы. Во-первых, при считывании данных из файла _pandas_ добавил специальный стоблец с номером строки. Он нам не нужен. Во-вторых, мы получили объекты типа _DataFrame_, а для дальнейшей работы нам нужен объект типа _Series_. Эти проблемы можно решить разными способами, но прощевсего взять из получившихся датафреймов одну нужную колонку:
 
 ```py
-x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/main/ML1.1_sgd/data/x.csv', index_col=0)['0']
-y = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/main/ML1.1_sgd/data/y.csv', index_col=0)['0']
+x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML1.1%20linear%20regression/data/x.csv', index_col=0)['0']
+y = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML1.1%20linear%20regression/data/y.csv', index_col=0)['0']
 ```
 
 Затем выделим из получившегося объединенного датасета результативный и факторный признак. В нашем случае это будут цены закрытия двух этих инструментов:
@@ -72,7 +72,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-1.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-1.png)
 
 
 Мы видим, что линейная зависимость прослеживается в данных. Значит, мы можем продолжать и использовать парную линейную регрессию.
@@ -147,7 +147,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-2.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-2.png)
 
 Как и ожидалось, мы видим горизонтальную линию - в нашей примитивной модели пока для любого входного значения, выходное всегда будет 0.
 
@@ -172,7 +172,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-3.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-3.png)
 
 Как мы видим, численное значение ошибки значительно уменьшилось. Да и линия на графике существенно приблизилось к точкам. Конечно, наша модель еще далека от совершенства. Мы прошли всего лишь одну итерацию градиентного спуска. Модифицируем метод так, чтобы он запускался в цикле определенное количество раз:
 
@@ -229,7 +229,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-4.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-4.png)
 
 Уже значительно лучше. Линия регрессии довольно похожа на оптимальную. Так ли это на самом деле, глядя на график, сказать сложно, для этого нужно проанализировать, как ошибка регрессии менялась со временем:
 
@@ -239,7 +239,7 @@ plt.plot(steps, errors, 'g')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/main/ML1.1_sgd/ml11-5.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-5.png)
 
 На графике наглядно видно, что в начале обучения ошибка падала быстро, но в ходе градиентного спуска она вышла на плато. Учитывая, что мы используем гладкую функцию ошибки второго порядка, это свидетельствует о том, что мы достигли локального оптимума и дальнейшее повторение алгоритма не принесет улучшения модели.
 

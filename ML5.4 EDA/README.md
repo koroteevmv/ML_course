@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 
 
 ```python
-training_set = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/titanic.csv')
+training_set = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/titanic.csv')
 ```
 
 Метод .head() печатает первые 5 строк из обучающей выборки
@@ -360,7 +360,7 @@ def custom_hist(training_set, title,  xlabel, ylabel='Количество', bin
 custom_hist(training_set["Age"], 'Распределения пассажиров по возрасту', 'Возраст')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_23_0.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_23_0.png)
 
 
 ```python
@@ -368,7 +368,7 @@ custom_hist(training_set["SibSp"], 'Распределения пассажир�
   'Число братьев/сестер или супругов')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_24_0.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_24_0.png)
 
 
 ```python
@@ -376,7 +376,7 @@ custom_hist(training_set["Parch"], 'Распределения пассажир�
   'Число родителей или детей')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_25_0.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_25_0.png)
 
 
 ```python
@@ -384,7 +384,7 @@ custom_hist(training_set["Fare"], 'Распределения пассажиро
   'Стоимость билета', bins=20)
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_26_0.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_26_0.png)
 
 Далее проанализируем возраст людей, это мы сделаем с помощью графика распределения. На графике мы видим, что средний возраст пассажиров составляет 20-35 лет.
 
@@ -392,7 +392,7 @@ custom_hist(training_set["Fare"], 'Распределения пассажиро
 training_set['Age'].plot.hist(bins=30)
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_28_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_28_1.png)
 
 
 Проведем исследования столбца SibSp, означающий сестра,братья/супруги. Из графика мы видим, что большинство не имело братьев и сестер, а так же супругов, следующий столбец -1- учитывает супругов
@@ -402,7 +402,7 @@ training_set['Age'].plot.hist(bins=30)
 sns.countplot(x='SibSp', data=training_set)
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_30_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_30_1.png)
 
 
 Следующий столбец который будем исследовать - Fare, обозначает сколько люди платили за билет. 
@@ -433,7 +433,7 @@ Name: Fare, Length: 891, dtype: float64
 training_set['Fare'].hist()
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_33_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_33_1.png)
 
 
 Из этого графика мы видим, что наибольшее распределение от 0 до 150, рассмотрим этот диапазон более подробно. Из графика мы видим, что наибольшее количество билетов были по цене до 50. Это действительно так, так как мы видим из данных, что большинство пассажиров было из третьего класса.
@@ -442,7 +442,7 @@ training_set['Fare'].hist()
 training_set['Fare'].hist(bins=40, figsize=(10,4))
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_35_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_35_1.png)
 
 ##### Описание вида совместного распределения
 
@@ -452,7 +452,7 @@ training_set['Fare'].hist(bins=40, figsize=(10,4))
 sns.countplot(x='Survived', data=training_set)
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_38_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_38_1.png)
 
 Отобразим пол выживших и не выживших. На графике мы видим, что среди не выживших большинство было мужчин, в выживших наоборот больше было женщин
 
@@ -460,7 +460,7 @@ sns.countplot(x='Survived', data=training_set)
 sns.countplot(x='Survived', data=training_set, hue='Sex')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_40_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_40_1.png)
 
 В параметре hue мы можем использовать другой столбец, например класс пассажира  Pclass, и посмотреть как это соотносится с количеством выживших. Проанализировав полученный график, можно сказать, что из не выживших было больше людей третьего класса
 
@@ -476,7 +476,7 @@ sns.countplot(x='Survived', data=training_set, hue='Pclass')
 sns.boxplot(x='Pclass', y='Age', data=training_set)
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_44_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_44_1.png)
 
 В процессе анализа данных мы попробуем увидеть зависимости целевого признака от остальных признаков и остальных признаков между собой, чтобы избежать мультиколлинеарности и выбрать признаки, которые не имеют значения и которые стоит удалить.
 
@@ -502,19 +502,19 @@ for column in columns_to_look:
     plt.show()
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_46_0.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_46_0.png)
 
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_46_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_46_1.png)
 
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_46_2.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_46_2.png)
 
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_46_3.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_46_3.png)
 
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_46_4.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_46_4.png)
 
 Видим, что ни один из признаков не стоит убирать из таблицы, т.к. значения доли выживших сильно отличается. Разумеется, различия могуть быть вызваны случайностью, особенно на больших значениях признаков SibSp и Parch, т.к. объектов с такими значениями мало и доля выживших не очень информативна. Но удалить эти признаки мы всё-таки не можем, т.к. значения доли различны.
 
@@ -808,7 +808,7 @@ memory usage: 83.7+ KB
 sns.heatmap(training_set.isnull(), yticklabels=False, cbar=False, cmap='viridis')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_60_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_60_1.png)
 
 Проверим имеются ли значения null, запустив следующий код
 
@@ -816,7 +816,7 @@ sns.heatmap(training_set.isnull(), yticklabels=False, cbar=False, cmap='viridis'
 sns.heatmap(training_set.isnull(), yticklabels=False, cbar=False, cmap='viridis')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_63_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_63_1.png)
 
 Осталось большое количество отсутствующих данных в столбце Cabin (Каюты), если бы мы использовали этот столбец для анализа, то тогда можно было бы применить способ что бы предугадать пропущеные значения, но столбец нам не нужен, поэтому мы можем его просто отбросить, при помощи кода представленного ниже 
 
@@ -926,7 +926,7 @@ training_set.head()
 sns.heatmap(training_set.isnull(), yticklabels=False, cbar=False, cmap='viridis')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_69_1.png)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_69_1.png)
 
 Мы видим что осталось одно отсутствующее значение и мы можем легко от него избавиться, код ниже удаляет строки с отсутствующими значениями 
 

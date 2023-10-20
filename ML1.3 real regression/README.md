@@ -227,7 +227,7 @@ plt.scatter(y_pred, y)
 plt.plot(y, y, c='r')
 ```
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML3.3%20regression/ml33-1.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML1.3%20real%20regression/ml33-1.png?raw=true)
 
 На этом графике чем ближе точки к центральной линии, тем более точные прогнозы делает модель. В данном случае разброс довольно велик. Чтобы оценить эффективность модели численно, опять обратимся к встроенной метрике, реализованной методом _score_ - коэффициенту детерминации:
 
@@ -261,7 +261,7 @@ plt.scatter(y_pred_poly, y)
 plt.plot(y, y, c='r')
 ```
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023_new/ML3.3%20regression/ml33-2.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML1.3%20real%20regression/ml33-2.png?raw=true)
 
 По этому графику можно сделать вывод, что модель стала несколько более точной. Но более конкретно это улучшение можно увидеть при помощи выбранной метрики:
 
