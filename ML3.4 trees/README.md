@@ -35,7 +35,7 @@ plt.ylabel('X2')
 
 Видим набор данных из трех классов:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-1.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-1.png?raw=true)
 
 Также, как и перцептрон, деревья решений могут легко применяться к задачам разной размерности. Количество классов не играет роли для дерева. Содадим и обучим модель:
 
@@ -57,7 +57,7 @@ plt.show()
 
 В этом объекте есть еще один метод визуализации дерева - втекстовом виде. Самостоятельно найдите и примените его. А использованный нами метод выводит дерево в графическом виде:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-2.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-2.png?raw=true)
 
 Проинтерпретируйте изображенную на этом графике информацию.
 
@@ -81,7 +81,7 @@ plt.show()
 
 Мы видим очень характерную для деревьев форму границы:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-3.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-3.png?raw=true)
 
 Как всегда оценим качество работы модели и с помощью метрик:
 
@@ -117,7 +117,7 @@ clf_tree.predict(observation_new)
 
 Визуализируем на графике его вместе с границей принятия решений:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-4.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-4.png?raw=true)
 
 
 ##### Задача регрессии
@@ -132,7 +132,7 @@ y = np.exp(X ** 2)+np.random.normal(0.0, 0.1, X.shape[0])
 
 Мы получим примерно такой датасет для парной регрессии (линия здесь добавлена только для информации и наглядности, она не является частью данных):
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-5.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-5.png?raw=true)
 
 Создадим объект регрессора на основе деревьев решений и обучим его:
 
@@ -144,7 +144,7 @@ reg_tree.fit(X, y)
 
 Выведем полученное дерево:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-6.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-6.png?raw=true)
 
 Самостоятельно проинтерпретируйте информацию в этом графе. А мы построим линию регрессии на графике::
 
@@ -160,7 +160,7 @@ plt.ylabel('y');
 
 Опять видим характерную кусочно-линейную линию:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-7.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-7.png?raw=true)
 
 Тпереь как всегда оценим качество работы модели:
 
@@ -182,7 +182,7 @@ observation_new = [[0.7]]
 
 И изобразим его на графике:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-8.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.4%20trees/ml34-8.png?raw=true)
 
 Самостоятельно подвигайте данную точку. Обратите внимание, что есть участки, где небольшое изменение положения точки не изменяет результат предсказания.
 

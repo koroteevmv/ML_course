@@ -72,7 +72,7 @@ plt.scatter(x, y)
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-1.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-1.png?raw=true)
 
 
 Мы видим, что линейная зависимость прослеживается в данных. Значит, мы можем продолжать и использовать парную линейную регрессию.
@@ -147,7 +147,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-2.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-2.png?raw=true)
 
 Как и ожидалось, мы видим горизонтальную линию - в нашей примитивной модели пока для любого входного значения, выходное всегда будет 0.
 
@@ -172,7 +172,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-3.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-3.png?raw=true)
 
 Как мы видим, численное значение ошибки значительно уменьшилось. Да и линия на графике существенно приблизилось к точкам. Конечно, наша модель еще далека от совершенства. Мы прошли всего лишь одну итерацию градиентного спуска. Модифицируем метод так, чтобы он запускался в цикле определенное количество раз:
 
@@ -229,7 +229,7 @@ plt.plot(X0, Y0, 'r')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-4.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-4.png?raw=true)
 
 Уже значительно лучше. Линия регрессии довольно похожа на оптимальную. Так ли это на самом деле, глядя на график, сказать сложно, для этого нужно проанализировать, как ошибка регрессии менялась со временем:
 
@@ -239,7 +239,7 @@ plt.plot(steps, errors, 'g')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-5.png)
+![](https://github.com/koroteevmv/ML_course/raw/2023/ML1.1%20linear%20regression/ml11-5.png?raw=true)
 
 На графике наглядно видно, что в начале обучения ошибка падала быстро, но в ходе градиентного спуска она вышла на плато. Учитывая, что мы используем гладкую функцию ошибки второго порядка, это свидетельствует о том, что мы достигли локального оптимума и дальнейшее повторение алгоритма не принесет улучшения модели.
 

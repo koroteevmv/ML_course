@@ -42,7 +42,7 @@ plt.ylabel('petal length (cm)')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-1.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-1.png?raw=true)
 
 Мы имеем задачу множественной классификации с тремя классами - различными видами ирисов. 
 
@@ -56,7 +56,7 @@ X_scaled = scaler.fit_transform(X)
 
 При визуализации нормализованного датасета видим следующую картину:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-2.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-2.png?raw=true)
 
 Взаимное расположение точек не изменилось, но все значения по обеим осям масштабированы таким образом, чтобы занимать интервал от 0 до 1. Такие данные уже можно использовать для построения метода ближайших соседей.
 
@@ -83,7 +83,7 @@ plt.show()
 
 Получаем такую матрицу:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-3.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-3.png?raw=true)
 
 Мы видим, что в целом модель работает очень адекватно, из 150 точек неправильно распознает всего шесть. При этом, модель путает только второй и третий классы между собой. Первый класс модель всегда определяет безошибочно. Дополнительно мы можем вывести метрики качества множественной классификации в отчете о классификации:
 
@@ -139,7 +139,7 @@ plt.show()
 
 Мы должны получить примерно такую картину:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-4.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-4.png?raw=true)
 
 Теперь создадим новое наблюдение (новый объект), которое мы хотим классифицировать:
 
@@ -188,7 +188,7 @@ plt.ylabel('petal length (cm)')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-5.png)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.5%20knn/ml35-5.png?raw=true)
 
 #### Задания для самостоятельного выполнения
 
