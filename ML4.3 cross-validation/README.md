@@ -69,7 +69,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random
 Обучим модель логистической регрессии и выведем значения метрик:
 
 ```python
-from sklearn.metrics import metrics
+from sklearn.metrics import accuracy_score, f1_score
 from sklearn.linear_model import LogisticRegression
 
 model = LogisticRegression(solver='liblinear')
