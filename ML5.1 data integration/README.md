@@ -53,7 +53,6 @@ data2
 
 В этом файле описаны еще почти 45 тысяч обращений:
 
-```
 |index|Id|channel\_name|category|Sub-category|Order\_id|Reported at|Responded at|Survey responded at|Agent\_name|CSAT Score|
 |---|---|---|---|---|---|---|---|---|---|---|
 |0|abb64ea1-4512-488c-81f5-51dbb130eec1|Inbound|Returns|Fraudulent User|c9ec6182-a825-4d0f-af28-51be601588e7|08 08 2023, 10:22:00 PM|08 08 2023, 11:42:00 PM|08 08 2023|J\. Mcgee|5|
@@ -61,7 +60,6 @@ data2
 |2|e556d65f-885c-42db-b8d2-8d726301910e|Inbound|Order Related|Order status enquiry|76b5dac1-946e-4ef4-aefa-ca9ef12abeed|08 08 2023, 07:54:00 PM|08 08 2023, 07:56:00 PM|08 08 2023|H\. Glover|5|
 |3|f920ef14-be08-4c76-b446-7acacf6321d7|Outcall|Returns|Return request|591ca014-2903-4ac2-a075-8992ecc2abb8|17 08 2023, 02:39:00 PM|17 08 2023, 03:46:00 PM|17 08 2023|S\. Nelson|5|
 |4|c6d3d6a3-3ff3-451d-898c-4bdea1c54932|Inbound|Returns|Return request|5967afff-aa5b-445b-8b9b-d625b93a886c|25 08 2023, 11:56:00 AM|25 08 2023, 12:10:00 PM|25 08 2023|N\. Nguyen|5|
-```
 
 Из явно бросающихся в глаза отличий, мы видим отсутствие во втором файле информации о тексте комментария. Очень часто бывает, что в разных датасетах описаны разные характеристики объектов. Может быть, что второй файл поступил их другой системы, где текстовые комментарии просто не собираются или не учитываются. Либо наоборот, обращения без комментариев попали в системе распределения данных в другую таблицу. Спойлер - у нас именно второй случай. 
 
@@ -489,7 +487,6 @@ data_with_orders.head()
 
 При внимательном рассмотрении данной таблицы можно заметить, что для многих строк в новых столбцах стоят пропуски, то отсутствие значения:
 
-```
 |index|Id|Channel|category|Sub-category|Customer Remarks|Order\_id|Issue\_reported\_Date|Issue\_responded\_Date|Survey\_response\_Date|Agent\_name|CSAT Score|order\_date\_time|Customer\_City|Product\_category|Item\_price|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|03f3aaf6-85c5-4eb9-af30-7ab7cc7b627d|Inbound|Cancellation|Not Needed|Food|b0a0dece-5fda-4c0f-a69c-e6bcde3de8d4|2023-08-29 08:02:00|2023-08-29 08:04:00|2023-08-29 00:00:00|J\. Pruitt|5|NaN|NaN|NaN|NaN|
@@ -497,7 +494,6 @@ data_with_orders.head()
 |2|99b7f6fa-a7b1-41a6-86ad-711ca8658fca|Inbound|Returns|Reverse Pickup Enquiry|Good|96e2ed8b-88b8-4768-a7e4-9468275c8085|2023-08-28 11:00:00|2023-08-28 00:00:00|2023-08-28 00:00:00|J\. Park|4|NaN|NaN|NaN|NaN|
 |3|95dd50e0-bdbd-4e99-9278-e139a76a94d3|Inbound|Order Related|Delayed|Thank you for help |4340c8ed-d80f-4712-921a-4fea0d60dcc6|2023-05-08 23:42:00|2023-06-08 02:14:00|2023-08-06 00:00:00|R\. Elliott|5|31/07/2023 12:11|JALGAON|Home|599\.0|
 |4|2af35e04-d13b-43e9-9e69-358568f6174a|Inbound|Offers & Cashback|Affiliate Offers|Good |1549b443-c2c1-47b2-8608-cd4d5576d288|2023-01-08 11:13:00|2023-01-08 11:22:00|2023-08-01 00:00:00|M\. Brady|5|NaN|NaN|NaN|NaN|
-```
 
 Можно подумать, что соединение прошло не так, как мы предполагали. Можно вручную проверить некоторые значения. Для этого подставим идентификатор заказа, по которому нет данных в итоговой таблице в таблицу заказов:
 
@@ -645,7 +641,6 @@ data_with_agents = data_with_orders.join(agent_data, rsuffix='_1', how='left')
 data_with_agents.head()
 ```
 
-```
 |index|Id|Channel|category|Sub-category|Customer Remarks|Order\_id|Issue\_reported\_Date|Issue\_responded\_Date|Survey\_response\_Date|Agent\_name|CSAT Score|order\_date\_time|Customer\_City|Product\_category|Item\_price|Agent|Supervisor|Manager|Tenure Bucket|Shift|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|03f3aaf6-85c5-4eb9-af30-7ab7cc7b627d|Inbound|Cancellation|Not Needed|Food|b0a0dece-5fda-4c0f-a69c-e6bcde3de8d4|2023-08-29 08:02:00|2023-08-29 08:04:00|2023-08-29 00:00:00|J\. Pruitt|5|NaN|NaN|NaN|NaN|Aaron Edwards|Mia Patel|Emily Chen|61-90|Evening|
@@ -653,7 +648,6 @@ data_with_agents.head()
 |2|99b7f6fa-a7b1-41a6-86ad-711ca8658fca|Inbound|Returns|Reverse Pickup Enquiry|Good|96e2ed8b-88b8-4768-a7e4-9468275c8085|2023-08-28 11:00:00|2023-08-28 00:00:00|2023-08-28 00:00:00|J\. Park|4|NaN|NaN|NaN|NaN|Abigail Gonzalez|Jacob Sato|Jennifer Nguyen|On Job Training|Morning|
 |3|95dd50e0-bdbd-4e99-9278-e139a76a94d3|Inbound|Order Related|Delayed|Thank you for help |4340c8ed-d80f-4712-921a-4fea0d60dcc6|2023-05-08 23:42:00|2023-06-08 02:14:00|2023-08-06 00:00:00|R\. Elliott|5|31/07/2023 12:11|JALGAON|Home|599\.0|Adam Barnett|Abigail Suzuki|Jennifer Nguyen|On Job Training|Morning|
 |4|2af35e04-d13b-43e9-9e69-358568f6174a|Inbound|Offers & Cashback|Affiliate Offers|Good |1549b443-c2c1-47b2-8608-cd4d5576d288|2023-01-08 11:13:00|2023-01-08 11:22:00|2023-08-01 00:00:00|M\. Brady|5|NaN|NaN|NaN|NaN|Adam Hammond|Olivia Suzuki|John Smith|31-60|Morning|
-```
 
 При анализе первых строк датасета проблемы не видно, но давайте изобразим на графике пропущенные значения:
 
@@ -672,7 +666,6 @@ data_with_agents = data_with_orders.merge(agent_data, how='left', on='Agent_name
 data_with_agents.head()
 ```
 
-```
 |index|Id|Channel|category|Sub-category|Customer Remarks|Order\_id|Issue\_reported\_Date|Issue\_responded\_Date|Survey\_response\_Date|Agent\_name|CSAT Score|order\_date\_time|Customer\_City|Product\_category|Item\_price|Agent|Supervisor|Manager|Tenure Bucket|Shift|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |0|18f329f8-90af-4277-af78-acc1f41e8af2|Inbound|Returns|Reverse Pickup Enquiry|I AM satisfied for inconvenience |4cec934f-48c1-41da-9a54-7bea0248864d|2023-07-08 11:48:00|2023-07-08 11:57:00|2023-08-07 00:00:00|B\. Suarez|5|NaN|NaN|NaN|NaN|Brenda Suarez|Ethan Nakamura|Jennifer Nguyen|On Job Training|Morning|
@@ -680,7 +673,6 @@ data_with_agents.head()
 |2|97626f96-bd35-42ef-bf9e-07dfdde0400c|Inbound|Returns|Return request|Thank you sir for solving my return problem|c00bff95-5657-4acc-a8f2-2e242277b7d2|2023-09-08 19:19:00|2023-09-08 20:58:00|2023-08-09 00:00:00|S\. Warner|5|26/07/2023 23:10|AURANGABAD|Electronics|1409\.0|Samantha Warner|Emily Yamashita|John Smith|\>90|Morning|
 |3|515adae8-3483-4e6a-b857-968dafdd04c5|Inbound|Order Related|Order status enquiry|Impossible to reach customer support\.|21f4a92f-4a8e-4113-b9da-3af750f04f7c|2023-08-30 13:51:00|2023-08-30 15:41:00|2023-08-30 00:00:00|M\. Whitehead|1|NaN|NaN|NaN|NaN|Michelle Whitehead|Carter Park|Jennifer Nguyen|On Job Training|Evening|
 |4|f5a03787-5528-4bec-9fe1-9ed44bfcc2ec|Inbound|Feedback|UnProfessional Behaviour|  from Shopzilla is amazing \. THANKS A TON TO HIM FOR HELPING ME A PERSON WITH POLITE NATURE & BETTER ETIQUETTES LOTS OF HUGS & APPRECIATION TO HIM |9c8aa1c3-eb4d-4c65-8434-0af9fa8c75ff|2023-08-23 17:52:00|2023-08-23 18:16:00|2023-08-23 00:00:00|B\. Key|5|NaN|NaN|NaN|NaN|Brittney Key|Mia Yamamoto|Jennifer Nguyen|On Job Training|Morning|
-```
 
 Не доверяя глазам при анализе первых строк датасета, выведем диаграмму пропущенных значений:
 
