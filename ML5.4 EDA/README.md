@@ -468,7 +468,7 @@ sns.countplot(x='Survived', data=training_set, hue='Sex')
 sns.countplot(x='Survived', data=training_set, hue='Pclass')
 ```
 
-![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023_new/ML5.4%20EDA/img/output_42_1.png?raw=true)
+![png](https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/img/output_42_1.png?raw=true)
 
 Создадим boxplot, передадим три параметра, класс пассажира, возраст, датасет. Из полученного графика можно сделать вывод, что средний возраст пассажиров первого класса больше чем средний возраст пассажиров второго класса, и соответственно средний возраст пассажиров второго класса больше чем средний возраст пассажиров третьего класса. Мы можем использовать эти среднии значения для того что бы вставлять эти значения там где они отсутствуют, основываясь на классе. 
 
