@@ -105,7 +105,7 @@ plt.plot(xx, binary.predict(xx), c='r')
 
 Вот что получится в итоге:
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML1.2%20multivariate/ml12-1.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML1.2%20multivariate/img/ml12-1.png?raw=true)
 
 Для оценки качества построенной регрессии можно использовать целый ряд показателей. Одним из самых простых и универсальных является коэффициент детерминации (R2-score). Как использовать его читайте в [официальной документации sklearn](http://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html#sklearn.metrics.r2_score). Методом score можно узнать значение метрики эффективности полученной модели:
 
@@ -135,7 +135,7 @@ plt.plot(yy, yy, c='r')
 
 Дополнительно на этом графике мы добавили линию _y=y_. Это всегда будет прямая, даже если мы будем использовать нелинейные модели. Обратите внимание, что на данном графике по обоим осям _Y_ - то есть целевая переменная:
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML1.2%20multivariate/ml12-2.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML1.2%20multivariate/img/ml12-2.png?raw=true)
 
 Такой график наряду с диагностическими кривыми можно использовать для диагностики многомерных задач регресии.
 

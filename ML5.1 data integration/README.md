@@ -514,7 +514,7 @@ sns.heatmap(data_with_orders.isnull(), yticklabels=False, cbar=False)
 
 Да данном графике видны, в частности, пропущенные значения в столбцах с комментарием пользователя и идентификатором заказа, которые появились после вертикальной интеграции первых трех таблиц. А по данным заказа мы видим большое количество пропусков. Но там, где нет идентификатора заказа, нет и никакой информации про сам заказ, что логично.
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/ml51-1.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/img/ml51-1.png?raw=true)
 
 На последующих шагах анализа и очистки данных потребуется избавится от этих пропусков. Вполне возможно,что целесообразнее изначально не присоединять эту таблицу, так как она содержит информацию только о малой части заказов. Но эти решения мы будем обсуждать позже. Сейчас наша задача в том, чтобы объединить в одну таблицу максимальное количество данных.
 
@@ -657,7 +657,7 @@ sns.heatmap(data_with_agents.isnull(), yticklabels=False, cbar=False)
 
 Здесь мы видим явно аномальную картину:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/ml51-2.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/img/ml51-2.png?raw=true)
 
 Дело в том, что функция join по умолчанию проводит соединение по индексу двух датафреймов в качестве ключа. То есть в нашем случае, по номеру строки. Нам же нужно указать название определенного столбца. Для такого режима соединения больше подходит функция merge:
 
@@ -682,7 +682,7 @@ sns.heatmap(data_with_agents.isnull(), yticklabels=False, cbar=False)
 
 Картина сильно изменилась. Теперь отсутствующих значений совсем нет:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/ml51-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/img/ml51-3.png?raw=true)
 
 Однако, если отследить формы датасетов, можно заметить что в итоге получилось сильно больше строк, чем было в левой таблице. При проведении левого соединения такое может случиться только если в правой таблице есть несколько записей, соответствующих по ключу одной записи в левой таблице. Давайте проверим уникальность ключа в правой таблице:
 
@@ -807,7 +807,7 @@ sns.heatmap(data_with_agents.isnull(), yticklabels=False, cbar=False)
 
 На данном графике видно, насколько мало данных мы "потеряли" из-за множественного совпадения имен:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/ml51-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.1%20data%20integration/img/ml51-3.png?raw=true)
 
 В итоге мы получили датасет, содержащий максимум информации из исходных таблиц. Этот датасет пригоден к анализу и после очистки данных его можно использовать для машинного обучения.
 

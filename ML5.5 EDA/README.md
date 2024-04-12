@@ -40,7 +40,7 @@ import matplotlib.pyplot as plt
 
 
 ```python
-training_set = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.4%20EDA/titanic.csv')
+training_set = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML5.5%20EDA/data/titanic.csv')
 ```
 
 Метод .head() печатает первые 5 строк из обучающей выборки

@@ -68,7 +68,7 @@ plt.show()
 
 Здесь мы значала рисуем прямую между точками (0,0) и (1, 1) - это референсная линия, которая представляет условный тривиальный классификатор. Именно с ней мы будем сравнивать получившуюся кривую, А она должна распологаться примено так:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-1.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-1.png?raw=true)
 
 Из графика мы видим, что кривая находится выше прямой, что свидетельствует о том, что классификатор работает лучше, чем случайное предсказание. Но можно заметить, что при разных значениях порога (зеленые точки на графике) модель имеет значительно различающиеся характеристики. И только одна точка на этом графике характеризует поведение модели при "дефолтном" значении порога - то, что мы обычно не задумываясь получаем методом _predict_. 
 
@@ -100,7 +100,7 @@ plt.plot(recall, precision, marker='.')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-2.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-2.png?raw=true)
 
 Точно также, как и с ROC можно вычислить соответствующую численную метрику - площадь под графиком PR-кривой - PR-AUC:
 
@@ -142,7 +142,7 @@ plt.plot(fpr, tpr, marker='.')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-3.png?raw=true)
 
 График будет выглядеть чуть по-другому, но в целом похоже на ROC первой модели. Поэтому для точного сравнения более полезны численные метрики:
 
@@ -229,7 +229,7 @@ plt.plot(fpr, tpr, marker='.')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-4.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-4.png?raw=true)
 
 Мы видим. что вривая показывает не идеальное, но вполне примелемое поведение модели. Средняя точность будет, несомненно, ниже, чем в первом примере работы, но ничего катастрофического мы здесь не наблюдаем. Но давайте построим кривую PR:
 
@@ -241,7 +241,7 @@ plt.plot(recall, precision, marker='.')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-5.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-5.png?raw=true)
 
 И вот на этом графике уже открывается истинное поведение модели: она не очень-то отличается от тривиальной, просто чаще предсказывает самый распространенный класс. Так как метрики Precision и Recall специально были созданы для случая несбалансированных классов, именно PR-кривая дает более реалистические оценки эффективности работы моделей классификации на таких данных, где наблюдается большой дисбаланс классов.
 
@@ -269,7 +269,7 @@ plt.plot(r, p, marker='.')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-6.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-6.png?raw=true)
 
 По точкам на ней мы видим, что при разных значениях порога иногда метрика precision будет больше, иногда - recall. Именно поэтому мы будем оптимизировать по метрике F1. Для этого импортируем из бибилиотеки _numpy_ функцию _argmax_:
 
@@ -304,7 +304,7 @@ plt.scatter(r[ix], p[ix], marker='o', color='black')
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/ml42-7.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML4.2%20threshold/img/ml42-7.png?raw=true)
 
 Обратите внимание, что мы использовали метрику F1 - это среднее геометрическое между Precision и Recall. При этом эти две метрики имеют равный вклад в среднее. Бывают ситуации, когда нам более приоритетна одна из этих двух метрик. Тогда следует использоваться параметрическую метрику из F-семейства. Мы можем придать в среднем разный вес, то есть больше предпочесть recall или, наоборот, precision. 
 

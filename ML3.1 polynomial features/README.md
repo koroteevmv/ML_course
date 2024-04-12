@@ -30,7 +30,7 @@ import matplotlib.pyplot as plt
 Прочитаем первый датасет по ссылке:
 
 ```py
-data = pd.read_csv("https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML3.1%20polynomial%20features/gen_regression.csv")
+data = pd.read_csv("https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML3.1%20polynomial%20features/data/gen_regression.csv")
 ```
 
 Выведем его первые строчки на экран, чтобы убедиться, что он был прочитан правильно и познакомиться с его структурой:
@@ -55,7 +55,7 @@ plt.scatter(X, y)
 
 Мы должны увидеть график, подобный такому:
 
-![Датасет на графике](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-1.png?raw=true)
+![Датасет на графике](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-1.png?raw=true)
 
 Здесь мы видим наличие нелинейной зависимости между атрибутом и целевой переменной. Мы пока не знаем, какова именно эта зависимость и какая функция его приближает лучше всего. Мы будем пробовать строить полиномы разных степеней и смотреть, насколько точной получатся такие модели. Для эксперимента построим модель линейной регрессии. Для этого импортируем соответствующий класс из библиотеки и обучим модель:
 
@@ -82,7 +82,7 @@ plt.plot(xx, yy, c='r')
 
 Мы получаем такую картину:
 
-![Линейная регрессия](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-2.png?raw=true)
+![Линейная регрессия](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-2.png?raw=true)
 
 Как и ожидалось, линейная модель не очень хорошо аппроксимирует наши данные. Для более точной оценки эффективности моделей выведем значение коэффициента детерминации:
 
@@ -147,7 +147,7 @@ plt.plot(xx, yy_2d, c='r')
 
 Должна получиться такая картина:
 
-![Полиномиальная регрессия 2-го порядка](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-3.png?raw=true)
+![Полиномиальная регрессия 2-го порядка](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-3.png?raw=true)
 
 На графике мы видим, что линия регрессии уже стала кривой - это и есть наша кривая второго порядка. Она, как видно, гораздо ближе к точкам, чем линейна функция. Это численно подтверждает и значение коэффициента детерминации второй модели:
 
@@ -183,7 +183,7 @@ plt.scatter(X.iloc[:, 0][y==1], X.iloc[:, 1][y==1], marker="x", c='b', s=100)
 
 На графике ясно видно, что мы имеем дело с линейно неразделимым датасетом. Это может быть прямым показанием к использованию полиномиальной модели:
 
-![Датасет для классификации](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-8.png?raw=true)
+![Датасет для классификации](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-8.png?raw=true)
 
 Но для начала, как всегда построим самую простую - линейную - модель. Так как мы имеем дело с классификацией, нам понадобится модель логистической регрессии. Для этого импортируем соответствующий класс:
 
@@ -214,7 +214,7 @@ plt.scatter(X.iloc[:, 0][y==1], X.iloc[:, 1][y==1], marker="x", c='b', s=100)
 
 Мы увидим линейную границу принятия решений:
 
-![Линейная классификация](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-4.png?raw=true)
+![Линейная классификация](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-4.png?raw=true)
 
 Очевидно, такая модель часто ошибается и не очень точна. Чтобы подтвердить такой вывод мы выведем значение метрики точности для нашей модели:
 
@@ -259,7 +259,7 @@ plt.scatter(X.iloc[:, 0][y==1], X.iloc[:, 1][y==1], marker="x", c='b', s=100)
 
 Мы должны получить такой график:
 
-![Полиномиальная классификация](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-5.png?raw=true)
+![Полиномиальная классификация](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-5.png?raw=true)
 
 На нем четко видно, что граница принятия решения принимает более сложную форму и за счет этого больше точек классифицируются верно. Это подтверждает и значение метрики точности данной модели:
 
@@ -337,7 +337,7 @@ plt.scatter(y_pred_kc_prices, y_kc_prices)
 plt.plot(y_pred_kc_prices, y_pred_kc_prices, c='r')
 ```
 
-![Линейная модель](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-6.png?raw=true)
+![Линейная модель](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-6.png?raw=true)
 
 Помните, что это не график самих данных. Здесь изображается только целевая переменная. Напомним, что чем больше разброс точек относительно центральной прямой, тем менее точная модель. В данном случае, мы видим, что отклонения явно носят систематический характер. Это прямое указание на то, что в этом случае может помочь полиномиальная модель. Давайте введем в модель полиномиальные признаки второго порядка:
 
@@ -374,7 +374,7 @@ plt.plot(y_pred_kc_prices, y_pred_kc_prices, c='r')
 
 Мы должны получить такую картину:
 
-![Полиномиальная модель](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/ml31-7.png?raw=true)
+![Полиномиальная модель](https://github.com/koroteevmv/ML_course/blob/2023/ML3.1%20polynomial%20features/img/ml31-7.png?raw=true)
 
 Видно, что модель значительно улучшилась, так как точки сильно ближе к прямой. Таким образом, можно сделать вывод о том, что введение полиномиальных признаков второго порядка опять значительно улучшило модель.
 

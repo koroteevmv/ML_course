@@ -1,4 +1,4 @@
-### Интеграция данных
+### Инжиниринг численных признаков
 
 #### Цель работы
 
@@ -106,7 +106,7 @@ prsa_data.head()
 sns.histplot(prsa_data.SO2)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-1.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-1.png?raw=true)
 
 
 
@@ -114,17 +114,17 @@ sns.histplot(prsa_data.SO2)
 sns.kdeplot(prsa_data.NO2)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-2.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-2.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-3.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-4.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-4.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-5.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-5.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-6.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-6.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-7.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-7.png?raw=true)
 
 
 
@@ -176,11 +176,11 @@ prsa_data.describe()
 sns.kdeplot(data=prsa_data, x="SO2", hue="AQI Label")
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-8.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-8.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-9.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-9.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-10.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-10.png?raw=true)
 
 
 
@@ -188,13 +188,13 @@ sns.kdeplot(data=prsa_data, x="SO2", hue="AQI Label")
 sns.kdeplot(data=prsa_data, x="CO", hue="AQI Label")
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-11.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-11.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-12.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-12.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-13.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-13.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-14.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-14.png?raw=true)
 
 
 
@@ -210,7 +210,7 @@ plt.axvline(250, 0,0.17)
 plt.axvline(320, 0,0.17)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-15.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-15.png?raw=true)
 
 
 
@@ -240,14 +240,14 @@ prsa_data.head()
 
 ##### Удаление экстремальных значений
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-16.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-16.png?raw=true)
 
 ```py
 prsa_data.PRES[prsa_data.PRES <= 992] = 992
 prsa_data.PRES[prsa_data.PRES >= 1034] = 1034
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-17.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-17.png?raw=true)
 
 ##### Заполнение пропусков
 
@@ -255,7 +255,7 @@ prsa_data.PRES[prsa_data.PRES >= 1034] = 1034
 sns.heatmap(prsa_data.isnull(), yticklabels=False, cbar=False)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-18.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-18.png?raw=true)
 
 
 
@@ -285,7 +285,7 @@ Length: 884, dtype: int64
 prsa_data = prsa_data.drop(undef[undef >= 2].index, axis=0)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-19.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-19.png?raw=true)
 
 
 
@@ -308,7 +308,7 @@ CO_bin_custom_label       0
 dtype: int64
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-20.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-20.png?raw=true)
 
 
 
@@ -316,9 +316,9 @@ dtype: int64
 prsa_data.PRES = prsa_data.PRES.fillna(prsa_data.PRES.mean())
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-21.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-21.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-22.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-22.png?raw=true)
 
 
 
@@ -368,9 +368,9 @@ Name: O3, Length: 1300, dtype: float64
 prsa_data.O3 = prsa_data.O3.fillna(filler)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-23.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-23.png?raw=true)
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-24.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-24.png?raw=true)
 
 ##### Округление атрибутов
 
@@ -393,7 +393,7 @@ prsa_data.head()
 prsa_data.SO2 = np.log(prsa_data.SO2)
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/ml52-25.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.2%20numeric%20features/img/ml52-25.png?raw=true)
 
 #### Задания для самостоятельного выполнения
 

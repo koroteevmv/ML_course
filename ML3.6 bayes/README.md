@@ -44,7 +44,7 @@ Name: count, dtype: int64
 
 Теперь можно визуализировать получившееся распределение точек:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/ml36-1.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/img/ml36-1.png?raw=true)
 
 Мы видим, что данные являются линейно неразделимыми. Да и вообще, классы довольно сильно перемешаны. Посмотрим, что может сделать классификатор на основе формуля Байеса.
 
@@ -60,7 +60,7 @@ plt.suptitle('Гистограммы признаков',fontsize=14)
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/ml36-2.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/img/ml36-2.png?raw=true)
 
 Из графиков видно, что форма распределения обоих признаков напоминает нормальное. Можно принять гипотезу о нормальности распределения наших признаков и использовать модель наивного Байеса с гауссовой аппроксимацией. Для создания можели инстанцируем соответствующих класс:
 
@@ -76,7 +76,7 @@ gaussian_nb.fit(X, y)
 
 Теперь визуализируем границу принятия решения и соответствующие области классификации:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/ml36-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/img/ml36-3.png?raw=true)
 
 Для более точной оценки эффективности модели посчитаем метрики. Для этого рассчитаем теоретические значения целевой переменной для объектов обучающей выборки:
 
@@ -128,7 +128,7 @@ plt.suptitle('Гистограммы признаков',fontsize=14)
 plt.show()
 ```
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/ml36-4.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML3.6%20bayes/img/ml36-4.png?raw=true)
 
 Из данного графика видно, что у большинства признаков распределение и правда напоминает нормальное. Но некоторые распределения совсем на него не похожи. Давайте удалим из набора данных те признаки, которые по своему виду распределения сильно отличаются от нормального:
 
