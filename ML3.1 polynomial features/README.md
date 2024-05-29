@@ -332,7 +332,7 @@ reg_kc_multiple.score(X_kc_prices, y_kc_prices)
 Мы сразу и обучили модель и оценили ее точность. Получилось значение 70%. Мы можем построить график отклонения реальные значений от предсказанных:
 
 ```py
-y_pred_kc_prices = reg_kc_multiple.predict(X)
+y_pred_kc_prices = reg_kc_multiple.predict(X_kc_prices)
 plt.scatter(y_pred_kc_prices, y_kc_prices)
 plt.plot(y_pred_kc_prices, y_pred_kc_prices, c='r')
 ```
