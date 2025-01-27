@@ -69,7 +69,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.15, random
 Обучим модель логистической регрессии и выведем значения метрик:
 
 ```python
-from sklearn.metrics import metrics
+from sklearn.metrics import accuracy_score, f1_score
 from sklearn.linear_model import LogisticRegression
 
 model = LogisticRegression(solver='liblinear')
@@ -90,7 +90,7 @@ print(f1_score(y_test, y_pred, average='macro'))
 sns.heatmap(confusion_matrix(y_test, y_pred), annot=True)
 ```
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML4.4%20cross-validation/img/ml43-1.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML4.3%20cross-validation/img/ml43-1.png?raw=true)
 
 Но заметим, что эта оценка производилась именно при данном разбиении. Что будет, если мы сделаем другое разбиение датасета на две части? Давайте повторим разбиение с другим значением _random_state_, обучим другую модель и выведем те же метрики:
 
@@ -110,7 +110,7 @@ print(f1_score(y_test, y_pred, average='macro'))
 
 Теперь получается, что модель обучилась идеально. Это же подтверждает и матрица:
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML4.4%20cross-validation/img/ml43-2.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML4.3%20cross-validation/img/ml43-2.png?raw=true)
 
 Можно повторять эту процедуру несколько раз и каждый раз будут получаться разные значения метрик. Например при таком разбиении модель обучается гораздо хуже:
 
@@ -128,7 +128,7 @@ print(f1_score(y_test, y_pred, average='macro'))
 0.8745098039215686
 ```
 
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML4.4%20cross-validation/img/ml43-3.png?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML4.3%20cross-validation/img/ml43-3.png?raw=true)
 
 Для устранения этих случайных колебаний и нужна перекрестная проверка или кросс-валидация.
 
