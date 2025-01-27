@@ -202,7 +202,7 @@ metrics.confusion_matrix(y, y_pred)
 import seaborn as sns
 sns.heatmap(metrics.confusion_matrix(y, y_pred), annot=True)
 ```
-![График регрессии](https://github.com/koroteevmv/ML_course/blob/2023/ML2.2%20real%20classification/img/ml31-1.png?raw=true?raw=true)
+![График регрессии](https://github.com/koroteevmv/ML_course/blob/main/ML2.2%20real%20classification/img/ml31-1.png?raw=true?raw=true)
 
 Кроме матрицы классификации весьма полезно использовать численные метрики эффективности классификации. Самая простая и распространенная из них - метрика точности предсказания - показывает долю правильно распознанных объектов. Расчет этой метрики встроен в сам объект модели и доступен с помощью специального метода:
 
