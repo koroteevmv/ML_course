@@ -84,7 +84,7 @@ bl_score
 
 Еще будет полезно изобразить линию регрессии на графике, чтобы визуально убедиться в ее низком качестве:
 
-![](https://github.com/koroteevmv/ML_course/blob/main/ML5.4%20target/img/ml54-3.png?raw=true)
+![](https://github.com/koroteevmv/ML_course/blob/main/ML5.4%20target/img/ml54-2.png?raw=true)
 
 ##### Определение относительной важности признаков
 
