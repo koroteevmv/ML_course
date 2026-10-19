@@ -116,7 +116,7 @@ print(students.shape, groups.shape)
 Если преподаватель предоставил файлы, этот шаг можно пропустить и считать данные из csv-файла:
 
 ```py
-x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2023/ML0.1%20intro/data/groups.csv')
+x = pd.read_csv('https://raw.githubusercontent.com/koroteevmv/ML_course/2026/ML0.1%20intro/data/groups.csv')
 ```
 
 **Важно.** Все задания частей B–D выполняются с этими файлами. Если вы изменили данные при подготовке, ответы могут отличаться — это нормально, главное — корректность кода и логики.
