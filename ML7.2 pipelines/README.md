@@ -48,7 +48,7 @@ plt.tight_layout(); plt.show()
 
 Доход имеет тяжёлый правый хвост: обычный `StandardScaler` будет «раздавлен» выбросами, нужен либо логарифм, либо робастный скейлер. Это одна из причин, по которым удобно собирать конвейер: преобразование дохода можно «упаковать» в общий пайплайн вместе со всем остальным.
 
-![Исходные данные](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20pipelines/img/ml72-1.png?raw=true")
+![Исходные данные](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.2%20pipelines/img/ml72-1.png?raw=true")
 
 Разделяем на train/test один раз. **Все дальнейшие преобразования должны настраиваться только на train** — это ключевая идея, которую мы будем демонстрировать.
 
@@ -446,11 +446,11 @@ print('Вероятности:', proba.round(3))
 
 ```python
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.datasets import fetch_california_housing
+from sklearn.datasets import fetch_openml
 
-cal = fetch_california_housing(as_frame=True)
-X_cal = cal.data
-y_cal = cal.target
+cal = fetch_openml(name='california_housing', version=1, parser='auto').frame
+y_cal = cal.median_house_value
+X_cal = cal.drop(['median_house_value', 'ocean_proximity'], axis=1)
 
 # Тот же preprocess, но для регрессии
 preprocess_reg = ColumnTransformer([

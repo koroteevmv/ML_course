@@ -8,111 +8,13 @@
 
 Работаем с синтетическим, но реалистичным датасетом по оттоку клиентов телеком-компании. Задача — предсказать, уйдёт ли клиент, чтобы служба удержания могла заранее предложить ему персональную скидку или бонус.
 
-Скрипт ниже создаёт `churn.csv`. Датасет небольшой (3000 строк), обучение занимает секунды, но при этом в нём достаточно «сигнала» для содержательной интерпретации.
-
-```python
-import numpy as np
-import pandas as pd
-
-
-def generate_churn_data(n=3000, random_state=42, path='churn.csv'):
-    """
-    Генерирует синтетический набор данных об оттоке клиентов
-    телеком-компании с осмысленной бизнес-логикой.
-    """
-    rng = np.random.RandomState(random_state)
-
-    # --- Демография и услуги ---
-    age = rng.randint(18, 76, n)
-    tenure_months = rng.randint(1, 73, n)
-    monthly_charges = np.round(rng.uniform(20, 120, n), 2)
-
-    contract = rng.choice(
-        ['month-to-month', 'one-year', 'two-year'],
-        n, p=[0.55, 0.25, 0.20]
-    )
-    payment_method = rng.choice(
-        ['electronic_check', 'mailed_check',
-         'bank_transfer', 'credit_card'],
-        n, p=[0.35, 0.15, 0.25, 0.25]
-    )
-    internet_service = rng.choice(
-        ['DSL', 'Fiber optic', 'None'],
-        n, p=[0.35, 0.45, 0.20]
-    )
-    tech_support = rng.choice(
-        ['Yes', 'No', 'No internet service'],
-        n, p=[0.35, 0.45, 0.20]
-    )
-    support_calls = rng.poisson(0.6, n)
-    has_partner = rng.choice(['Yes', 'No'], n, p=[0.45, 0.55])
-
-    # --- Логика вероятности оттока ---
-    # (основана на типичных бизнес-паттернах телекома)
-    logit = (
-        -1.8
-        + 1.1 * (contract == 'month-to-month').astype(int)
-        - 0.6 * (contract == 'two-year').astype(int)
-        + 0.05 * (monthly_charges - 60) / 20.0
-        - 0.04 * (tenure_months - 30) / 12.0
-        + 0.4 * (internet_service == 'Fiber optic').astype(int)
-        - 0.55 * (tech_support == 'Yes').astype(int)
-        + 0.45 * (support_calls >= 2).astype(int)
-        + 0.35 * (payment_method == 'electronic_check').astype(int)
-        - 0.2 * (has_partner == 'Yes').astype(int)
-    )
-    p_churn = 1.0 / (1.0 + np.exp(-logit))
-    churn = rng.binomial(1, p_churn)
-
-    df = pd.DataFrame({
-        'age': age,
-        'tenure_months': tenure_months,
-        'monthly_charges': monthly_charges,
-        'contract': contract,
-        'payment_method': payment_method,
-        'internet_service': internet_service,
-        'tech_support': tech_support,
-        'support_calls': support_calls,
-        'has_partner': has_partner,
-        'churn': churn,
-    })
-    df.to_csv(path, index=False)
-    print(f'Сохранено {len(df)} записей в {path}')
-    print(f'Доля оттока: {df.churn.mean():.3f}')
-    return df
-
-
-if __name__ == '__main__':
-    generate_churn_data()
-```
-
-После запуска вы получите файл `churn.csv` с 3000 строк и 10 столбцами. Целевая переменная — `churn` (1 = клиент ушёл, 0 = остался). Доля оттока около 25–30%, что реалистично для телекома.
+Вы получите файл `churn.csv` с 3000 строк и 10 столбцами. Целевая переменная — `churn` (1 = клиент ушёл, 0 = остался). Доля оттока около 25–30%, что реалистично для телекома.
 
 **Бизнес-контекст.** Клиент, который ушёл, теряет для компании в среднем $500 (CLV, customer lifetime value). Предложение удержания (скидка, бонус) стоит компании $50 и делается только тем клиентам, кого модель считает «риском оттока».
 
 Загружаем и готовим данные:
 
 ```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.compose import ColumnTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.metrics import (confusion_matrix, classification_report,
-                              roc_curve, roc_auc_score,
-                              precision_recall_curve, average_precision_score,
-                              brier_score_loss, precision_score, recall_score,
-                              f1_score)
-from sklearn.calibration import calibration_curve
-
-sns.set_style('whitegrid')
-plt.rcParams['figure.figsize'] = (10, 5)
-
 churn = pd.read_csv('churn.csv')
 
 X = churn.drop(columns='churn')
@@ -214,8 +116,11 @@ sns.heatmap(
     ax=ax, annot_kws={'fontsize': 11},
 )
 ax.set_title('Матрица ошибок в терминах бизнеса')
-plt.tight_layout(); plt.show()
+plt.tight_layout()
+plt.show()
 ```
+
+![Матрица ошибок](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-1.png?raw=true")
 
 На такой матрице сразу видно, что каждый FN «стоит» в 10 раз дороже FP. Это и определяет, какой порог выбирать.
 
@@ -258,6 +163,8 @@ print(f'Порог {best_threshold:.2f}: стоимость = ${costs[best_idx]:
 ```
 
 Обычно оптимальный порог оказывается **ниже 0.5** — мы склонны «перестраховаться» и предложить удержание большему числу клиентов, потому что пропустить уходящего дороже.
+
+![Выбор порога](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-2.png?raw=true")
 
 Сравним метрики при двух порогах:
 
@@ -326,6 +233,8 @@ gain_lift_chart(y_te.values, y_proba)
 
 **Как читать график.** Если модель идеальна, кривая Gain сразу идёт в правый верхний угол (все уходящие пойманы на первых нескольких процентах списка). Если модель бесполезна, кривая Gain лежит на диагонали. Чем «выпуклее» кривая, тем лучше модель.
 
+![Маркетинговые кривые](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-3.png?raw=true")
+
 Lift в первых 10% списка обычно 3–5× — это означает, что при обзвоне 10% клиентов мы ловим в 3–5 раз больше уходящих, чем при случайном выборе тех же 10%.
 
 Полезно вывести и **децильный анализ** — таблицу с долей оттока по децилям предсказанной вероятности:
@@ -371,6 +280,8 @@ plt.show()
 
 print(f'Brier score: {brier_score_loss(y_te, y_proba):.4f}')
 ```
+
+![Калибровочная кривая](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-4.png?raw=true")
 
 Brier score — среднеквадратичная ошибка между предсказанной вероятностью и реальным исходом. Меньше — лучше. 0 — идеальная калибровка, 0.25 — эквивалент случайного угадывания при равных классах.
 
@@ -443,6 +354,8 @@ print(perm_df)
 
 Обратите внимание: permutation importance можно посчитать на **исходных** столбцах, даже если модель обучена на трансформированных данных. Это большое преимущество — бизнесу не нужно разбираться в one-hot-кодировании.
 
+![Перестановочная важность](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-5.png?raw=true")
+
 Сравните с встроенной важностью Random Forest:
 
 ```python
@@ -458,10 +371,13 @@ rf_df = pd.DataFrame({
 plt.figure(figsize=(8, 6))
 sns.barplot(data=rf_df, y='feature', x='importance')
 plt.title('Встроенная важность Random Forest (топ-15)')
-plt.tight_layout(); plt.show()
+plt.tight_layout()
+plt.show()
 ```
 
 Как правило, порядок признаков согласован (в нашем примере самое важное — `contract`, затем `tenure_months` и `monthly_charges`), но permutation importance даёт более честную картину.
+
+![Встроенная важность](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-6.png?raw=true")
 
 ##### Partial Dependence Plots (PDP)
 
@@ -481,9 +397,11 @@ plt.tight_layout(); plt.show()
 
 **Как читать график.** По оси X — значение признака, по оси Y — средняя предсказанная вероятность оттока. Например, для `tenure_months` мы обычно видим монотонно убывающую кривую: чем дольше клиент с нами, тем ниже вероятность оттока. Это совпадает с бизнес-интуицией и хорошо воспринимается заказчиком.
 
+![PDP](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-7.png?raw=true")
+
 PDP бывает обманчив, когда признаки сильно коррелированы (например, `tenure_months` и `monthly_charges × tenure = total_revenue`). В таких случаях лучше использовать SHAP.
 
-##### глобальная и локальная интерпретация
+##### Глобальная и локальная интерпретация
 
 **SHAP (SHapley Additive exPlanations)** — теоретико-игровой подход к интерпретации. Для каждого предсказания он раскладывает его на вклад каждого признака, причём сумма вкладов равна отклонению предсказания от среднего по выборке:
 
@@ -508,43 +426,32 @@ import shap
 X_te_transformed = model.named_steps['prep'].transform(X_te)
 feature_names = model.named_steps['prep'].get_feature_names_out()
 
-explainer = shap.TreeExplainer(model.named_steps['clf'])
-shap_values = explainer.shap_values(X_te_transformed)
+explainer = shap.TreeExplainer(model.named_steps['clf'], X_te_transformed)
+shap_values = explainer(X_te_transformed)
+shap_values.feature_names = np.array(feature_names).tolist() 
 ```
 
-`shap_values` — это массив вкладов. Для бинарной классификации `shap_values` обычно список из двух массивов (по одному на класс) или массив формы `(n_samples, n_features, 2)`. Нам нужен вклад в вероятность **оттока** (класс 1):
-
-```python
-# Зависит от версии shap; проверим тип
-if isinstance(shap_values, list):
-    sv = shap_values[1]  # вклад в класс «уйдёт»
-else:
-    sv = shap_values
-```
+`shap_values` — это массив вкладов. Для бинарной классификации `shap_values` обычно список из двух массивов (по одному на класс) или массив формы `(n_samples, n_features, 2)`. 
 
 **Глобальная интерпретация: `summary_plot(bar)`**
 
 Показывает средний абсолютный вклад каждого признака — по сути, глобальная важность:
 
 ```python
-plt.figure(figsize=(10, 6))
-shap.summary_plot(sv, X_te_transformed,
-                  feature_names=feature_names, plot_type='bar', show=False)
-plt.title('SHAP: глобальная важность признаков')
-plt.tight_layout(); plt.show()
+shap.plots.bar(shap_values[0, :, 0])
 ```
+
+![Shap bar](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-8.png?raw=true")
 
 **Глобальная интерпретация: `summary_plot(beeswarm)`**
 
 Показывает не только важность, но и **направление** влияния каждого признака:
 
 ```python
-plt.figure(figsize=(10, 8))
-shap.summary_plot(sv, X_te_transformed,
-                  feature_names=feature_names, show=False)
-plt.title('SHAP: вклад признаков и направление влияния')
-plt.tight_layout(); plt.show()
+shap.plots.beeswarm(shap_values[:, :, 0])
 ```
+
+![Shap beeswarm](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-9.png?raw=true")
 
 **Как читать beeswarm:**
 
@@ -554,78 +461,6 @@ plt.tight_layout(); plt.show()
 - Признаки отсортированы по убыванию важности.
 
 Например, для `contract_month-to-month`: если точка красная (клиент с помесячной оплатой), она смещена вправо — повышает риск оттока. Это идеальное объяснение для бизнеса.
-
-**Локальная интерпретация: `waterfall_plot`**
-
-Показывает, как модель пришла к предсказанию для **одного конкретного клиента**:
-
-```python
-# Найдём клиента с высоким риском оттока
-idx_high_risk = int(np.argmax(y_proba))
-
-shap.waterfall_plot(
-    shap.Explanation(
-        values=sv[idx_high_risk],
-        base_values=explainer.expected_value[1]
-                    if isinstance(explainer.expected_value, list)
-                    else explainer.expected_value,
-        data=X_te_transformed[idx_high_risk],
-        feature_names=feature_names,
-    ),
-    max_display=10, show=True
-)
-```
-
-На этом графике видно, как стартовое значение `E[f(X)]` (средняя вероятность оттока по выборке) под действием конкретных признаков конкретного клиента превращается в его индивидуальное предсказание. Это и есть ответ на вопрос «почему модель считает, что этот клиент уйдёт».
-
-**Зависимость от одного признака: `dependence_plot`**
-
-Показывает, как вклад признака меняется с его значением:
-
-```python
-plt.figure(figsize=(10, 5))
-shap.dependence_plot(
-    'num__tenure_months', sv, X_te_transformed,
-    feature_names=feature_names, show=False
-)
-plt.title('SHAP: зависимость вклада от стажа клиента')
-plt.tight_layout(); plt.show()
-```
-
-В отличие от PDP, `dependence_plot` показывает **индивидуальные вклады** всех клиентов, а не среднее — это позволяет увидеть гетерогенность и нелинейности.
-
-**Компактная визуализация для отчёта: `force_plot`**
-
-`force_plot` показывает вклады в виде «стрелок», толкающих предсказание вправо (к оттоку) или влево (к удержанию). Удобно для интерактивных отчётов, но статичный вариант плохо читается в презентации. Покажем, как его построить для одного клиента:
-
-```python
-shap.initjs()  # только для Jupyter
-
-shap.force_plot(
-    explainer.expected_value[1]
-        if isinstance(explainer.expected_value, list)
-        else explainer.expected_value,
-    sv[idx_high_risk],
-    X_te_transformed[idx_high_risk],
-    feature_names=feature_names,
-)
-```
-
-В обычном скрипте (не Jupyter) `force_plot` вернёт интерактивный объект, который можно сохранить в HTML и открыть в браузере:
-
-```python
-html = shap.force_plot(
-    explainer.expected_value[1]
-        if isinstance(explainer.expected_value, list)
-        else explainer.expected_value,
-    sv[idx_high_risk],
-    X_te_transformed[idx_high_risk],
-    feature_names=feature_names,
-    matplotlib=False,
-).html()
-with open('shap_force_example.html', 'w', encoding='utf-8') as f:
-    f.write(html)
-```
 
 ##### LIME: локальная интерпретация
 
@@ -774,6 +609,8 @@ business_dashboard(y_te.values, y_proba, best_threshold, y_te.mean())
 ```
 
 Такой дашборд можно защищать перед бизнесом: слева сверху — цифры, которые интересуют менеджера; справа сверху — кривая, показывающая, как модель помогает кампании; слева снизу — что стоит каждая ошибка; справа снизу — какие признаки влияют на модель в целом.
+
+![Дашборд](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-10.png?raw=true")
 
 #### Задания для самостоятельного выполнения
 
