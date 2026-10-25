@@ -1,0 +1,108 @@
+Unique id,channel_name,category,Sub-category,Issue_reported at,issue_responded,Survey_response_Date,Agent,CSAT Score
+iss-c-01-00000,Email,Returns,Order status enquiry,"May 04, 2023, 07:51:00 AM","May 06, 2023, 04:51:00 AM","May 04, 2023, 07:51:00 AM",Fiona Quinn,3
+iss-c-01-00001,Inbound,Feedback,Fraudulent User,"December 02, 2023, 07:30:00 PM","December 03, 2023, 10:30:00 AM","December 09, 2023, 07:30:00 PM",Emily Lopez,4
+iss-c-01-00002,Email,Product Queries,Return request,"May 07, 2023, 10:34:00 AM","May 08, 2023, 05:34:00 PM","May 10, 2023, 10:34:00 AM",Victor Jackson,1
+iss-c-01-00003,Outcall,Feedback,Delayed,"April 18, 2023, 03:36:00 AM","April 19, 2023, 07:36:00 AM","April 18, 2023, 03:36:00 AM",Daniel Evans,5
+iss-c-01-00004,Inbound,Feedback,Fraudulent User,"November 21, 2023, 11:58:00 AM","November 22, 2023, 12:58:00 PM","November 23, 2023, 11:58:00 AM",Fiona Quinn,4
+iss-c-01-00005,Inbound,Order Related,Fraudulent User,"January 14, 2023, 01:21:00 PM","January 16, 2023, 01:21:00 AM","January 18, 2023, 01:21:00 PM",Quentin Jackson,3
+iss-c-01-00006,Email,Returns,Reverse Pickup Enquiry,"May 08, 2023, 04:07:00 PM","May 08, 2023, 05:07:00 PM","May 09, 2023, 04:07:00 PM",Paula Patel,5
+iss-c-01-00007,Email,Order Related,Reverse Pickup Enquiry,"June 12, 2023, 08:04:00 AM","June 14, 2023, 05:04:00 AM","June 16, 2023, 08:04:00 AM",Alexa Adams,3
+iss-c-01-00008,Inbound,Payments related,Order status enquiry,"June 11, 2023, 10:05:00 AM","June 12, 2023, 08:05:00 AM","June 17, 2023, 10:05:00 AM",Daniel Smith,2
+iss-c-01-00009,Outcall,Order Related,Other,"August 09, 2023, 11:26:00 PM","August 10, 2023, 02:26:00 AM","August 11, 2023, 11:26:00 PM",Rachel Chen,3
+iss-c-01-00010,Outcall,Payments related,Other,"December 30, 2023, 04:15:00 AM","December 31, 2023, 02:15:00 AM","December 30, 2023, 04:15:00 AM",Alexa Adams,4
+iss-c-01-00011,Email,Product Queries,Other,"August 06, 2023, 05:02:00 PM","August 07, 2023, 11:02:00 AM","August 08, 2023, 05:02:00 PM",Daniel Evans,2
+iss-c-01-00012,Outcall,Returns,Other,"December 29, 2023, 11:43:00 PM","December 30, 2023, 01:43:00 PM","January 02, 2024, 11:43:00 PM",Aaron Adams,5
+iss-c-01-00013,Outcall,Product Queries,Order status enquiry,"June 18, 2023, 12:54:00 PM","June 19, 2023, 09:54:00 AM","June 24, 2023, 12:54:00 PM",Adrian Adams,1
+iss-c-01-00014,Email,Product Queries,Product Specific Information,"June 07, 2023, 05:55:00 PM","June 07, 2023, 11:55:00 PM","June 12, 2023, 05:55:00 PM",Adrian Adams,5
+iss-c-01-00015,Inbound,Payments related,Order status enquiry,"September 10, 2023, 03:50:00 PM","September 11, 2023, 12:50:00 AM","September 17, 2023, 03:50:00 PM",Adrian Adams,1
+iss-c-01-00016,Outcall,Order Related,Return request,"October 08, 2023, 09:50:00 AM","October 09, 2023, 02:50:00 AM","October 10, 2023, 09:50:00 AM",Carl Campbell,5
+iss-c-01-00017,Inbound,Product Queries,Fraudulent User,"October 25, 2023, 10:37:00 AM","October 27, 2023, 08:37:00 AM","October 25, 2023, 10:37:00 AM",Carl Campbell,4
+iss-c-01-00018,Email,Feedback,Delayed,"October 24, 2023, 05:53:00 AM","October 26, 2023, 03:53:00 AM","October 31, 2023, 05:53:00 AM",Paula Patel,2
+iss-c-01-00019,Email,Returns,Reverse Pickup Enquiry,"September 04, 2023, 09:36:00 AM","September 04, 2023, 07:36:00 PM","September 05, 2023, 09:36:00 AM",Victor Jackson,2
+iss-c-01-00020,Outcall,Returns,Product Specific Information,"May 01, 2023, 07:07:00 AM","May 03, 2023, 06:07:00 AM","May 01, 2023, 07:07:00 AM",Emily Lopez,4
+iss-c-01-00021,Email,Order Related,Return request,"February 04, 2023, 02:40:00 PM","February 06, 2023, 02:40:00 PM","February 11, 2023, 02:40:00 PM",Caroline Campbell,5
+iss-c-01-00022,Email,Product Queries,Delayed,"June 29, 2023, 06:13:00 PM","July 01, 2023, 01:13:00 PM","July 02, 2023, 06:13:00 PM",Caroline Campbell,5
+iss-c-01-00023,Email,Order Related,Product Specific Information,"September 12, 2023, 07:45:00 AM","September 13, 2023, 10:45:00 PM","September 14, 2023, 07:45:00 AM",Oliver Garcia,5
+iss-c-01-00024,Email,Product Queries,Other,"October 22, 2023, 10:01:00 AM","October 22, 2023, 11:01:00 PM","October 29, 2023, 10:01:00 AM",Quentin Patel,2
+iss-c-01-00025,Outcall,Product Queries,Other,"December 30, 2023, 12:54:00 AM","December 31, 2023, 10:54:00 PM","January 01, 2024, 12:54:00 AM",Carl Campbell,4
+iss-c-01-00026,Inbound,Payments related,Return request,"September 20, 2023, 05:08:00 PM","September 22, 2023, 10:08:00 AM","September 20, 2023, 05:08:00 PM",Aaron Adams,1
+iss-c-01-00027,Outcall,Product Queries,Reverse Pickup Enquiry,"January 26, 2023, 05:39:00 AM","January 27, 2023, 02:39:00 PM","January 28, 2023, 05:39:00 AM",Simon Quinn,1
+iss-c-01-00028,Inbound,Payments related,Return request,"February 24, 2023, 12:18:00 AM","February 25, 2023, 11:18:00 AM","February 27, 2023, 12:18:00 AM",Frank Davis,1
+iss-c-01-00029,Inbound,Order Related,Order status enquiry,"January 03, 2023, 11:37:00 AM","January 03, 2023, 06:37:00 PM","January 09, 2023, 11:37:00 AM",Brian Barrett,3
+iss-c-01-00030,Inbound,Payments related,Return request,"September 03, 2023, 05:17:00 AM","September 03, 2023, 11:17:00 PM","September 06, 2023, 05:17:00 AM",Oliver Garcia,2
+iss-c-01-00031,Outcall,Product Queries,Product Specific Information,"November 05, 2023, 10:54:00 PM","November 07, 2023, 05:54:00 AM","November 06, 2023, 10:54:00 PM",Carl Campbell,4
+iss-c-01-00032,Inbound,Returns,Product Specific Information,"February 03, 2023, 11:08:00 PM","February 04, 2023, 12:08:00 PM","February 06, 2023, 11:08:00 PM",Quentin Jackson,1
+iss-c-01-00033,Email,Returns,Order status enquiry,"December 10, 2023, 07:42:00 AM","December 11, 2023, 04:42:00 PM","December 16, 2023, 07:42:00 AM",Fiona Quinn,2
+iss-c-01-00034,Email,Order Related,Delayed,"June 03, 2023, 07:39:00 AM","June 04, 2023, 09:39:00 AM","June 05, 2023, 07:39:00 AM",Daniel Evans,2
+iss-c-01-00035,Email,Order Related,Fraudulent User,"February 18, 2023, 06:07:00 PM","February 19, 2023, 04:07:00 PM","February 24, 2023, 06:07:00 PM",Victor Jackson,1
+iss-c-01-00036,Outcall,Feedback,Other,"October 22, 2023, 10:00:00 PM","October 23, 2023, 09:00:00 PM","October 28, 2023, 10:00:00 PM",Alexa Adams,5
+iss-c-01-00037,Email,Feedback,Delayed,"December 20, 2023, 12:58:00 AM","December 20, 2023, 04:58:00 AM","December 21, 2023, 12:58:00 AM",Alexa Adams,4
+iss-c-01-00038,Outcall,Feedback,Product Specific Information,"December 04, 2023, 02:07:00 AM","December 04, 2023, 04:07:00 PM","December 07, 2023, 02:07:00 AM",Adrian Adams,5
+iss-c-01-00039,Email,Returns,Other,"February 07, 2023, 07:33:00 AM","February 09, 2023, 12:33:00 AM","February 10, 2023, 07:33:00 AM",Quentin Patel,2
+iss-c-01-00040,Email,Returns,Order status enquiry,"July 03, 2023, 03:55:00 PM","July 04, 2023, 12:55:00 AM","July 04, 2023, 03:55:00 PM",Frank Davis,1
+iss-c-01-00041,Inbound,Product Queries,Product Specific Information,"March 26, 2023, 03:00:00 PM","March 28, 2023, 01:00:00 AM","April 01, 2023, 03:00:00 PM",Quentin Jackson,4
+iss-c-01-00042,Inbound,Returns,Delayed,"November 28, 2023, 11:13:00 AM","November 29, 2023, 09:13:00 PM","November 30, 2023, 11:13:00 AM",Aaron Adams,1
+iss-c-01-00043,Outcall,Product Queries,Order status enquiry,"December 14, 2023, 06:43:00 AM","December 15, 2023, 10:43:00 AM","December 18, 2023, 06:43:00 AM",Oliver Garcia,4
+iss-c-01-00044,Inbound,Product Queries,Return request,"January 14, 2023, 05:03:00 PM","January 16, 2023, 04:03:00 AM","January 17, 2023, 05:03:00 PM",Caroline Campbell,1
+iss-c-01-00045,Inbound,Feedback,Fraudulent User,"June 28, 2023, 02:53:00 AM","June 29, 2023, 09:53:00 PM","July 03, 2023, 02:53:00 AM",Frank Davis,2
+iss-c-01-00046,Inbound,Returns,Delayed,"October 07, 2023, 03:28:00 PM","October 08, 2023, 10:28:00 AM","October 09, 2023, 03:28:00 PM",Alexa Adams,5
+iss-c-01-00047,Outcall,Payments related,Reverse Pickup Enquiry,"November 28, 2023, 04:24:00 AM","November 29, 2023, 06:24:00 PM","November 28, 2023, 04:24:00 AM",Simon Quinn,1
+iss-c-01-00048,Inbound,Order Related,Other,"June 20, 2023, 04:24:00 AM","June 22, 2023, 02:24:00 AM","June 26, 2023, 04:24:00 AM",Brianna Barrett,5
+iss-c-01-00049,Outcall,Payments related,Product Specific Information,"April 24, 2023, 09:03:00 AM","April 25, 2023, 05:03:00 AM","April 25, 2023, 09:03:00 AM",Brianna Barrett,5
+iss-c-01-00050,Inbound,Feedback,Return request,"October 20, 2023, 02:13:00 AM","October 20, 2023, 05:13:00 AM","October 22, 2023, 02:13:00 AM",Frank Davis,1
+iss-c-01-00051,Email,Product Queries,Fraudulent User,"March 06, 2023, 05:40:00 AM","March 07, 2023, 03:40:00 PM","March 12, 2023, 05:40:00 AM",Wendy Owens,2
+iss-c-01-00052,Email,Order Related,Reverse Pickup Enquiry,"November 11, 2023, 10:10:00 PM","November 13, 2023, 08:10:00 PM","November 12, 2023, 10:10:00 PM",Emily Lopez,3
+iss-c-01-00053,Inbound,Order Related,Fraudulent User,"May 03, 2023, 03:21:00 AM","May 03, 2023, 08:21:00 AM","May 09, 2023, 03:21:00 AM",Adrian Adams,1
+iss-c-01-00054,Inbound,Returns,Product Specific Information,"December 28, 2023, 05:54:00 AM","December 29, 2023, 08:54:00 AM","January 04, 2024, 05:54:00 AM",Victor Jackson,1
+iss-c-01-00055,Outcall,Returns,Other,"June 30, 2023, 12:35:00 PM","June 30, 2023, 10:35:00 PM","July 04, 2023, 12:35:00 PM",Paula Patel,1
+iss-c-01-00056,Inbound,Returns,Product Specific Information,"November 16, 2023, 04:57:00 AM","November 17, 2023, 10:57:00 PM","November 22, 2023, 04:57:00 AM",Daniel Evans,4
+iss-c-01-00057,Outcall,Order Related,Return request,"February 21, 2023, 12:38:00 AM","February 22, 2023, 02:38:00 AM","February 26, 2023, 12:38:00 AM",Chris Campbell,5
+iss-c-01-00058,Email,Order Related,Order status enquiry,"January 18, 2023, 03:16:00 AM","January 19, 2023, 03:16:00 AM","January 22, 2023, 03:16:00 AM",Oliver Garcia,4
+iss-c-01-00059,Email,Payments related,Delayed,"October 01, 2023, 12:29:00 AM","October 02, 2023, 06:29:00 AM","October 03, 2023, 12:29:00 AM",Oliver Garcia,2
+iss-c-01-00060,Email,Payments related,Fraudulent User,"June 06, 2023, 02:38:00 AM","June 08, 2023, 12:38:00 AM","June 07, 2023, 02:38:00 AM",Daniel Smith,3
+iss-c-01-00061,Outcall,Product Queries,Other,"October 24, 2023, 06:42:00 AM","October 24, 2023, 06:42:00 PM","October 31, 2023, 06:42:00 AM",Simon Quinn,5
+iss-c-01-00062,Outcall,Feedback,Reverse Pickup Enquiry,"June 24, 2023, 03:08:00 PM","June 24, 2023, 04:08:00 PM","June 30, 2023, 03:08:00 PM",Victor Jackson,2
+iss-c-01-00063,Outcall,Product Queries,Return request,"January 05, 2023, 04:30:00 PM","January 05, 2023, 11:30:00 PM","January 05, 2023, 04:30:00 PM",Alexa Adams,2
+iss-c-01-00064,Outcall,Payments related,Order status enquiry,"October 03, 2023, 08:34:00 PM","October 04, 2023, 09:34:00 PM","October 04, 2023, 08:34:00 PM",Quentin Patel,5
+iss-c-01-00065,Email,Order Related,Reverse Pickup Enquiry,"August 29, 2023, 06:17:00 PM","August 30, 2023, 02:17:00 PM","August 31, 2023, 06:17:00 PM",Rachel Chen,5
+iss-c-01-00066,Email,Returns,Return request,"February 10, 2023, 03:36:00 AM","February 11, 2023, 11:36:00 AM","February 15, 2023, 03:36:00 AM",Wendy Owens,4
+iss-c-01-00067,Outcall,Order Related,Return request,"December 09, 2023, 04:58:00 AM","December 09, 2023, 11:58:00 AM","December 16, 2023, 04:58:00 AM",Brian Barrett,3
+iss-c-01-00068,Email,Returns,Fraudulent User,"August 22, 2023, 06:20:00 PM","August 23, 2023, 12:20:00 AM","August 24, 2023, 06:20:00 PM",Brian Barrett,4
+iss-c-01-00069,Email,Payments related,Other,"September 02, 2023, 11:12:00 PM","September 03, 2023, 05:12:00 PM","September 04, 2023, 11:12:00 PM",Emily Lopez,2
+iss-c-01-00070,Inbound,Order Related,Product Specific Information,"April 15, 2023, 10:36:00 PM","April 16, 2023, 02:36:00 PM","April 22, 2023, 10:36:00 PM",Quentin Jackson,1
+iss-c-01-00071,Email,Feedback,Reverse Pickup Enquiry,"April 24, 2023, 01:55:00 AM","April 24, 2023, 11:55:00 PM","May 01, 2023, 01:55:00 AM",Alexa Adams,3
+iss-c-01-00072,Outcall,Feedback,Reverse Pickup Enquiry,"November 15, 2023, 04:55:00 AM","November 15, 2023, 08:55:00 AM","November 19, 2023, 04:55:00 AM",Teresa Garcia,5
+iss-c-01-00073,Email,Order Related,Other,"April 18, 2023, 06:14:00 PM","April 19, 2023, 12:14:00 PM","April 23, 2023, 06:14:00 PM",Simon Quinn,1
+iss-c-01-00074,Email,Product Queries,Order status enquiry,"July 23, 2023, 03:42:00 AM","July 23, 2023, 06:42:00 PM","July 23, 2023, 03:42:00 AM",Victor Jackson,4
+iss-c-01-00075,Outcall,Product Queries,Delayed,"August 29, 2023, 01:02:00 PM","August 31, 2023, 02:02:00 AM","September 05, 2023, 01:02:00 PM",Adrian Adams,3
+iss-c-01-00076,Outcall,Feedback,Delayed,"December 23, 2023, 11:02:00 PM","December 25, 2023, 01:02:00 PM","December 28, 2023, 11:02:00 PM",Emily Lopez,4
+iss-c-01-00077,Inbound,Order Related,Fraudulent User,"November 18, 2023, 10:29:00 PM","November 20, 2023, 10:29:00 PM","November 21, 2023, 10:29:00 PM",Chris Campbell,2
+iss-c-01-00078,Outcall,Returns,Product Specific Information,"July 13, 2023, 05:00:00 PM","July 14, 2023, 09:00:00 PM","July 13, 2023, 05:00:00 PM",Chris Campbell,3
+iss-c-01-00079,Email,Payments related,Fraudulent User,"May 30, 2023, 09:52:00 AM","May 31, 2023, 06:52:00 AM","June 05, 2023, 09:52:00 AM",Alexa Adams,3
+iss-c-01-00080,Outcall,Payments related,Product Specific Information,"August 23, 2023, 05:43:00 AM","August 24, 2023, 10:43:00 AM","August 28, 2023, 05:43:00 AM",Paula Patel,3
+iss-c-01-00081,Outcall,Product Queries,Return request,"December 13, 2023, 05:46:00 PM","December 13, 2023, 06:46:00 PM","December 15, 2023, 05:46:00 PM",Victor Jackson,5
+iss-c-01-00082,Inbound,Product Queries,Product Specific Information,"July 13, 2023, 05:35:00 PM","July 15, 2023, 06:35:00 AM","July 15, 2023, 05:35:00 PM",Wendy Owens,3
+iss-c-01-00083,Inbound,Feedback,Delayed,"September 30, 2023, 09:56:00 AM","October 01, 2023, 07:56:00 AM","October 04, 2023, 09:56:00 AM",Daniel Evans,1
+iss-c-01-00084,Outcall,Order Related,Return request,"April 06, 2023, 01:08:00 PM","April 07, 2023, 06:08:00 PM","April 11, 2023, 01:08:00 PM",Fiona Quinn,1
+iss-c-01-00085,Email,Feedback,Delayed,"December 25, 2023, 04:49:00 AM","December 26, 2023, 01:49:00 AM","December 29, 2023, 04:49:00 AM",Alexa Adams,5
+iss-c-01-00086,Outcall,Feedback,Order status enquiry,"October 10, 2023, 06:33:00 AM","October 10, 2023, 09:33:00 AM","October 13, 2023, 06:33:00 AM",Chris Campbell,1
+iss-c-01-00087,Email,Product Queries,Other,"January 05, 2023, 08:55:00 AM","January 06, 2023, 07:55:00 AM","January 09, 2023, 08:55:00 AM",Victor Jackson,5
+iss-c-01-00088,Inbound,Product Queries,Order status enquiry,"April 18, 2023, 03:52:00 AM","April 18, 2023, 02:52:00 PM","April 24, 2023, 03:52:00 AM",Daniel Evans,4
+iss-c-01-00089,Inbound,Feedback,Product Specific Information,"August 15, 2023, 09:43:00 PM","August 17, 2023, 12:43:00 AM","August 15, 2023, 09:43:00 PM",Adrian Adams,2
+iss-c-01-00090,Email,Returns,Delayed,"September 27, 2023, 04:34:00 AM","September 27, 2023, 01:34:00 PM","October 03, 2023, 04:34:00 AM",Chris Campbell,3
+iss-c-01-00091,Email,Product Queries,Order status enquiry,"October 15, 2023, 10:54:00 PM","October 17, 2023, 02:54:00 AM","October 21, 2023, 10:54:00 PM",Quentin Jackson,3
+iss-c-01-00092,Inbound,Returns,Order status enquiry,"August 29, 2023, 05:44:00 AM","August 29, 2023, 10:44:00 PM","September 03, 2023, 05:44:00 AM",Fiona Quinn,5
+iss-c-01-00093,Inbound,Feedback,Order status enquiry,"February 22, 2023, 01:33:00 AM","February 23, 2023, 01:33:00 AM","February 28, 2023, 01:33:00 AM",Emily Lopez,3
+iss-c-01-00094,Inbound,Returns,Fraudulent User,"September 18, 2023, 07:12:00 PM","September 20, 2023, 05:12:00 AM","September 23, 2023, 07:12:00 PM",Brian Barrett,3
+iss-c-01-00095,Email,Order Related,Reverse Pickup Enquiry,"May 16, 2023, 09:38:00 PM","May 18, 2023, 11:38:00 AM","May 20, 2023, 09:38:00 PM",Paula Patel,1
+iss-c-01-00096,Inbound,Payments related,Other,"September 10, 2023, 08:01:00 AM","September 11, 2023, 07:01:00 AM","September 16, 2023, 08:01:00 AM",Brianna Barrett,3
+iss-c-01-00097,Inbound,Returns,Reverse Pickup Enquiry,"October 12, 2023, 08:00:00 PM","October 13, 2023, 02:00:00 PM","October 12, 2023, 08:00:00 PM",Daniel Smith,2
+iss-c-01-00098,Outcall,Payments related,Other,"April 25, 2023, 05:06:00 PM","April 27, 2023, 06:06:00 AM","May 02, 2023, 05:06:00 PM",Quentin Jackson,1
+iss-c-01-00099,Email,Product Queries,Return request,"March 15, 2023, 09:58:00 AM","March 16, 2023, 10:58:00 PM","March 15, 2023, 09:58:00 AM",Teresa Garcia,5
+iss-c-01-00100,Outcall,Order Related,Return request,"August 19, 2023, 07:41:00 AM","August 20, 2023, 12:41:00 PM","August 25, 2023, 07:41:00 AM",Teresa Garcia,3
+iss-c-01-00101,Outcall,Payments related,Order status enquiry,"February 20, 2023, 09:07:00 PM","February 22, 2023, 11:07:00 AM","February 25, 2023, 09:07:00 PM",Brianna Barrett,1
+iss-c-01-00102,Outcall,Order Related,Delayed,"November 06, 2023, 08:41:00 AM","November 08, 2023, 04:41:00 AM","November 13, 2023, 08:41:00 AM",Wendy Owens,2
+iss-c-01-00103,Inbound,Payments related,Fraudulent User,"December 17, 2023, 04:05:00 AM","December 17, 2023, 04:05:00 PM","December 21, 2023, 04:05:00 AM",Brianna Barrett,3
+iss-c-01-00104,Outcall,Feedback,Order status enquiry,"January 21, 2023, 09:26:00 AM","January 23, 2023, 04:26:00 AM","January 21, 2023, 09:26:00 AM",Fiona Quinn,3
+iss-c-01-00105,Inbound,Returns,Reverse Pickup Enquiry,"March 05, 2023, 12:52:00 PM","March 06, 2023, 03:52:00 PM","March 10, 2023, 12:52:00 PM",Rachel Chen,3
+iss-c-01-00106,Email,Feedback,Return request,"May 23, 2023, 06:27:00 PM","May 24, 2023, 12:27:00 PM","May 24, 2023, 06:27:00 PM",Fiona Quinn,2

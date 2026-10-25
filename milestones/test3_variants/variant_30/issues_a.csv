@@ -1,0 +1,250 @@
+Id,Channel,category,Sub-category,Customer Remarks,Order_id,Issue_reported_Date,Issue_responded_Date,Survey_response_Date,Agent_name,CSAT Score
+iss-a-30-00000,Inbound,Payments related,Delayed,Bad,ord-30-00057,19-Oct-23,20-Oct-23,20-Oct-23,B. Barrett,1
+iss-a-30-00001,Outcall,Returns,Fraudulent User,Good,ord-30-00176,03-Jun-23,03-Jun-23,04-Jun-23,L. Harris,3
+iss-a-30-00002,Outcall,Feedback,Delayed,Ok,,28-Apr-23,29-Apr-23,03-May-23,A. Adams,2
+iss-a-30-00003,Email,Order Related,Reverse Pickup Enquiry,,ord-30-00057,18-May-23,18-May-23,24-May-23,L. Chen,1
+iss-a-30-00004,Outcall,Payments related,Delayed,,ord-30-00211,01-Aug-23,03-Aug-23,07-Aug-23,A. Adams,3
+iss-a-30-00005,Inbound,Returns,Reverse Pickup Enquiry,Very good,ord-30-00284,24-Nov-23,24-Nov-23,28-Nov-23,K. Kim,5
+iss-a-30-00006,Outcall,Payments related,Order status enquiry,Nice,ord-30-00210,22-Jun-23,24-Jun-23,26-Jun-23,C. Campbell,3
+iss-a-30-00007,Outcall,Order Related,Delayed,Very good,ord-30-00471,27-Jun-23,28-Jun-23,03-Jul-23,S. Owens,2
+iss-a-30-00008,Outcall,Feedback,Return request,,ord-30-00445,04-Jul-23,04-Jul-23,11-Jul-23,K. Kim,5
+iss-a-30-00009,Email,Feedback,Order status enquiry,Nice,ord-30-00437,14-Feb-23,15-Feb-23,21-Feb-23,Q. Garcia,3
+iss-a-30-00010,Email,Feedback,Order status enquiry,Terrible,ord-30-00593,18-Feb-23,18-Feb-23,23-Feb-23,A. Adams,4
+iss-a-30-00011,Outcall,Payments related,Fraudulent User,Excellent,ord-30-00506,13-Aug-23,14-Aug-23,15-Aug-23,C. Campbell,1
+iss-a-30-00012,Email,Payments related,Other,Terrible,,20-Oct-23,21-Oct-23,21-Oct-23,B. Barrett,3
+iss-a-30-00013,Inbound,Order Related,Return request,Very good,,20-Mar-23,22-Mar-23,20-Mar-23,F. Brown,2
+iss-a-30-00014,Outcall,Product Queries,Product Specific Information,Nice,ord-30-00182,10-Jun-23,11-Jun-23,10-Jun-23,D. Garcia,2
+iss-a-30-00015,Outcall,Payments related,Order status enquiry,,ord-30-00106,18-Feb-23,18-Feb-23,20-Feb-23,S. Jackson,1
+iss-a-30-00016,Inbound,Product Queries,Reverse Pickup Enquiry,Poor service,,06-Apr-23,06-Apr-23,06-Apr-23,H. Owens,1
+iss-a-30-00017,Outcall,Returns,Reverse Pickup Enquiry,Good,ord-30-00005,15-Nov-23,17-Nov-23,22-Nov-23,C. Campbell,3
+iss-a-30-00018,Outcall,Returns,Fraudulent User,Very good,ord-30-00288,28-Nov-23,28-Nov-23,01-Dec-23,S. Jackson,4
+iss-a-30-00019,Inbound,Returns,Fraudulent User,,ord-30-00396,30-Dec-23,01-Jan-24,06-Jan-24,K. Davis,1
+iss-a-30-00020,Inbound,Feedback,Fraudulent User,Good,,16-Feb-23,16-Feb-23,23-Feb-23,D. Garcia,2
+iss-a-30-00021,Email,Order Related,Delayed,Ok,ord-30-00084,20-Nov-23,20-Nov-23,24-Nov-23,S. Jackson,3
+iss-a-30-00022,Inbound,Feedback,Return request,Ok,ord-30-00333,18-Apr-23,20-Apr-23,20-Apr-23,L. Chen,5
+iss-a-30-00023,Inbound,Payments related,Reverse Pickup Enquiry,Poor service,ord-30-00351,08-Aug-23,09-Aug-23,14-Aug-23,L. Chen,3
+iss-a-30-00024,Inbound,Payments related,Fraudulent User,Excellent,ord-30-00317,06-Dec-23,06-Dec-23,07-Dec-23,F. Brown,4
+iss-a-30-00025,Email,Feedback,Delayed,Bad,ord-30-00159,09-Jul-23,10-Jul-23,14-Jul-23,H. Owens,4
+iss-a-30-00026,Email,Product Queries,Other,Good,ord-30-00145,10-Jun-23,12-Jun-23,10-Jun-23,C. Campbell,2
+iss-a-30-00027,Inbound,Product Queries,Other,Bad,,09-Aug-23,11-Aug-23,14-Aug-23,S. Jackson,2
+iss-a-30-00028,Outcall,Feedback,Product Specific Information,Nice,ord-30-00377,26-Jan-23,27-Jan-23,30-Jan-23,L. Chen,5
+iss-a-30-00029,Inbound,Payments related,Return request,,ord-30-00152,06-Sep-23,08-Sep-23,12-Sep-23,F. Brown,2
+iss-a-30-00030,Email,Order Related,Reverse Pickup Enquiry,,ord-30-00289,03-Sep-23,05-Sep-23,07-Sep-23,D. Garcia,2
+iss-a-30-00031,Outcall,Order Related,Delayed,Good,ord-30-00059,17-Oct-23,17-Oct-23,20-Oct-23,Q. Garcia,5
+iss-a-30-00032,Inbound,Payments related,Return request,,,06-Apr-23,08-Apr-23,09-Apr-23,A. Adams,3
+iss-a-30-00033,Email,Product Queries,Reverse Pickup Enquiry,,,23-Jan-23,25-Jan-23,30-Jan-23,F. Brown,3
+iss-a-30-00034,Email,Order Related,Product Specific Information,Bad,,14-Sep-23,16-Sep-23,20-Sep-23,C. Campbell,3
+iss-a-30-00035,Email,Returns,Return request,Terrible,ord-30-00461,12-Oct-23,12-Oct-23,13-Oct-23,B. Barrett,2
+iss-a-30-00036,Inbound,Payments related,Return request,Bad,ord-30-00571,17-Aug-23,17-Aug-23,17-Aug-23,D. Garcia,5
+iss-a-30-00037,Email,Product Queries,Fraudulent User,Nice,ord-30-00286,22-Aug-23,22-Aug-23,26-Aug-23,C. Campbell,5
+iss-a-30-00038,Inbound,Product Queries,Fraudulent User,Bad,ord-30-00109,04-Jan-23,06-Jan-23,07-Jan-23,B. Barrett,5
+iss-a-30-00039,Inbound,Order Related,Product Specific Information,Very good,ord-30-00543,18-Jan-23,18-Jan-23,23-Jan-23,K. Davis,3
+iss-a-30-00040,Email,Order Related,Return request,Very good,ord-30-00018,13-Jan-23,15-Jan-23,17-Jan-23,C. Campbell,4
+iss-a-30-00041,Outcall,Product Queries,Fraudulent User,Bad,ord-30-00028,10-Sep-23,11-Sep-23,13-Sep-23,C. Campbell,3
+iss-a-30-00042,Outcall,Payments related,Other,Poor service,ord-30-00097,03-Mar-23,03-Mar-23,05-Mar-23,C. Campbell,2
+iss-a-30-00043,Inbound,Product Queries,Fraudulent User,Poor service,ord-30-00549,16-Jul-23,18-Jul-23,19-Jul-23,L. Harris,4
+iss-a-30-00044,Inbound,Payments related,Product Specific Information,Nice,,13-Jul-23,15-Jul-23,16-Jul-23,Q. Garcia,3
+iss-a-30-00045,Email,Payments related,Delayed,Good,ord-30-00445,21-Apr-23,21-Apr-23,24-Apr-23,F. Brown,2
+iss-a-30-00046,Email,Payments related,Order status enquiry,Good,,18-Jun-23,20-Jun-23,25-Jun-23,L. Harris,4
+iss-a-30-00047,Outcall,Payments related,Fraudulent User,Excellent,ord-30-00085,15-May-23,16-May-23,19-May-23,K. Davis,2
+iss-a-30-00048,Outcall,Returns,Reverse Pickup Enquiry,,ord-30-00160,22-Dec-23,24-Dec-23,25-Dec-23,A. Adams,4
+iss-a-30-00049,Email,Returns,Reverse Pickup Enquiry,,ord-30-00548,18-May-23,18-May-23,18-May-23,S. Jackson,5
+iss-a-30-00050,Inbound,Payments related,Delayed,Good,,31-Mar-23,02-Apr-23,03-Apr-23,S. Owens,5
+iss-a-30-00051,Inbound,Order Related,Other,,,27-Sep-23,29-Sep-23,04-Oct-23,S. Owens,2
+iss-a-30-00052,Inbound,Order Related,Fraudulent User,,ord-30-00264,05-Jun-23,06-Jun-23,10-Jun-23,M. Taylor,1
+iss-a-30-00053,Email,Payments related,Order status enquiry,Ok,,29-Aug-23,29-Aug-23,04-Sep-23,H. Owens,2
+iss-a-30-00054,Outcall,Order Related,Reverse Pickup Enquiry,Poor service,ord-30-00227,22-Mar-23,23-Mar-23,27-Mar-23,F. Brown,1
+iss-a-30-00055,Outcall,Order Related,Return request,Good,ord-30-00155,17-Dec-23,18-Dec-23,20-Dec-23,D. Garcia,1
+iss-a-30-00056,Outcall,Returns,Fraudulent User,,ord-30-00452,17-Oct-23,17-Oct-23,24-Oct-23,M. Garcia,5
+iss-a-30-00057,Inbound,Feedback,Delayed,Nice,ord-30-00359,25-Oct-23,26-Oct-23,28-Oct-23,C. Campbell,4
+iss-a-30-00058,Inbound,Order Related,Order status enquiry,,ord-30-00557,09-Jul-23,09-Jul-23,12-Jul-23,A. Adams,1
+iss-a-30-00059,Inbound,Order Related,Product Specific Information,Excellent,ord-30-00020,15-Nov-23,15-Nov-23,16-Nov-23,L. Chen,4
+iss-a-30-00060,Email,Returns,Reverse Pickup Enquiry,,ord-30-00471,14-Dec-23,15-Dec-23,20-Dec-23,C. Campbell,2
+iss-a-30-00061,Email,Product Queries,Return request,Terrible,ord-30-00176,19-May-23,20-May-23,21-May-23,K. Davis,1
+iss-a-30-00062,Email,Payments related,Other,Nice,ord-30-00331,16-Feb-23,17-Feb-23,18-Feb-23,B. Barrett,1
+iss-a-30-00063,Inbound,Payments related,Return request,,ord-30-00098,19-Apr-23,20-Apr-23,24-Apr-23,B. Barrett,1
+iss-a-30-00064,Inbound,Payments related,Delayed,Ok,ord-30-00191,22-Feb-23,23-Feb-23,27-Feb-23,Q. Garcia,4
+iss-a-30-00065,Email,Returns,Reverse Pickup Enquiry,,ord-30-00461,03-Jan-23,05-Jan-23,06-Jan-23,B. Barrett,2
+iss-a-30-00066,Outcall,Product Queries,Product Specific Information,Nice,ord-30-00450,25-Jan-23,27-Jan-23,31-Jan-23,S. Owens,3
+iss-a-30-00067,Outcall,Payments related,Delayed,Good,ord-30-00218,13-May-23,15-May-23,13-May-23,F. Brown,1
+iss-a-30-00068,Outcall,Order Related,Product Specific Information,,ord-30-00107,16-Jul-23,17-Jul-23,18-Jul-23,M. Garcia,3
+iss-a-30-00069,Inbound,Product Queries,Product Specific Information,Excellent,ord-30-00184,24-Dec-23,26-Dec-23,24-Dec-23,C. Campbell,1
+iss-a-30-00070,Email,Product Queries,Return request,Nice,,05-Sep-23,07-Sep-23,12-Sep-23,L. Martin,2
+iss-a-30-00071,Inbound,Payments related,Order status enquiry,,ord-30-00398,06-Jul-23,06-Jul-23,11-Jul-23,F. Brown,3
+iss-a-30-00072,Outcall,Product Queries,Reverse Pickup Enquiry,Nice,,21-May-23,21-May-23,22-May-23,M. Taylor,4
+iss-a-30-00073,Email,Returns,Delayed,Ok,,02-Apr-23,04-Apr-23,09-Apr-23,S. Jackson,2
+iss-a-30-00074,Inbound,Returns,Product Specific Information,Excellent,ord-30-00568,04-Sep-23,05-Sep-23,06-Sep-23,C. Campbell,2
+iss-a-30-00075,Outcall,Product Queries,Order status enquiry,Ok,ord-30-00580,04-Oct-23,05-Oct-23,08-Oct-23,A. Adams,5
+iss-a-30-00076,Email,Feedback,Order status enquiry,Poor service,ord-30-00419,10-Apr-23,10-Apr-23,10-Apr-23,A. Adams,3
+iss-a-30-00077,Outcall,Order Related,Product Specific Information,Excellent,ord-30-00219,17-Jun-23,18-Jun-23,18-Jun-23,M. Garcia,3
+iss-a-30-00078,Inbound,Feedback,Return request,Excellent,ord-30-00288,20-Mar-23,21-Mar-23,25-Mar-23,C. Campbell,3
+iss-a-30-00079,Outcall,Returns,Other,Terrible,ord-30-00167,21-Jan-23,23-Jan-23,25-Jan-23,F. Brown,2
+iss-a-30-00080,Email,Payments related,Return request,Good,ord-30-00070,28-Nov-23,28-Nov-23,03-Dec-23,C. Campbell,1
+iss-a-30-00081,Outcall,Feedback,Reverse Pickup Enquiry,,ord-30-00132,30-Apr-23,30-Apr-23,07-May-23,M. Garcia,5
+iss-a-30-00082,Email,Returns,Reverse Pickup Enquiry,,,20-Jan-23,20-Jan-23,23-Jan-23,C. Campbell,2
+iss-a-30-00083,Email,Returns,Fraudulent User,Very good,ord-30-00297,15-Apr-23,17-Apr-23,19-Apr-23,S. Jackson,3
+iss-a-30-00084,Outcall,Order Related,Other,Nice,ord-30-00469,01-Apr-23,03-Apr-23,02-Apr-23,M. Taylor,5
+iss-a-30-00085,Outcall,Product Queries,Order status enquiry,Nice,,26-Jul-23,28-Jul-23,27-Jul-23,A. Adams,2
+iss-a-30-00086,Outcall,Order Related,Fraudulent User,Good,ord-30-00532,09-May-23,09-May-23,16-May-23,L. Chen,5
+iss-a-30-00087,Inbound,Order Related,Delayed,,ord-30-00149,12-Mar-23,12-Mar-23,13-Mar-23,A. Adams,4
+iss-a-30-00088,Email,Payments related,Order status enquiry,Ok,ord-30-00394,30-Aug-23,30-Aug-23,05-Sep-23,L. Chen,3
+iss-a-30-00089,Outcall,Payments related,Delayed,,ord-30-00511,27-Jun-23,28-Jun-23,03-Jul-23,C. Campbell,4
+iss-a-30-00090,Outcall,Feedback,Fraudulent User,Good,ord-30-00337,19-May-23,19-May-23,23-May-23,L. Harris,2
+iss-a-30-00091,Outcall,Order Related,Return request,Nice,ord-30-00094,02-Sep-23,02-Sep-23,05-Sep-23,B. Barrett,1
+iss-a-30-00092,Outcall,Returns,Reverse Pickup Enquiry,Bad,ord-30-00173,02-Sep-23,02-Sep-23,09-Sep-23,A. Adams,5
+iss-a-30-00093,Outcall,Payments related,Other,,ord-30-00018,01-Apr-23,02-Apr-23,04-Apr-23,L. Harris,5
+iss-a-30-00094,Email,Product Queries,Reverse Pickup Enquiry,Excellent,ord-30-00245,07-Aug-23,07-Aug-23,07-Aug-23,K. Davis,4
+iss-a-30-00095,Email,Order Related,Return request,Terrible,ord-30-00054,21-Jul-23,22-Jul-23,25-Jul-23,L. Harris,4
+iss-a-30-00096,Inbound,Returns,Product Specific Information,Excellent,ord-30-00481,10-Mar-23,11-Mar-23,17-Mar-23,A. Adams,3
+iss-a-30-00097,Email,Payments related,Product Specific Information,Poor service,ord-30-00275,06-Sep-23,08-Sep-23,09-Sep-23,F. Brown,5
+iss-a-30-00098,Inbound,Feedback,Delayed,Good,ord-30-00119,31-Mar-23,01-Apr-23,03-Apr-23,L. Chen,1
+iss-a-30-00099,Inbound,Product Queries,Delayed,Good,ord-30-00471,20-Jan-23,22-Jan-23,22-Jan-23,C. Campbell,2
+iss-a-30-00100,Email,Returns,Reverse Pickup Enquiry,,,08-Dec-23,10-Dec-23,13-Dec-23,L. Harris,5
+iss-a-30-00101,Outcall,Order Related,Product Specific Information,Good,,14-Sep-23,15-Sep-23,18-Sep-23,A. Adams,3
+iss-a-30-00102,Outcall,Feedback,Other,Nice,ord-30-00080,25-Dec-23,26-Dec-23,01-Jan-24,K. Davis,5
+iss-a-30-00103,Inbound,Order Related,Other,Poor service,ord-30-00221,20-Jun-23,20-Jun-23,20-Jun-23,K. Davis,5
+iss-a-30-00104,Email,Feedback,Other,Excellent,ord-30-00010,30-Oct-23,01-Nov-23,04-Nov-23,C. Campbell,5
+iss-a-30-00105,Outcall,Order Related,Delayed,Bad,ord-30-00465,05-Jun-23,05-Jun-23,06-Jun-23,K. Davis,1
+iss-a-30-00106,Email,Order Related,Order status enquiry,Bad,ord-30-00244,22-Aug-23,23-Aug-23,27-Aug-23,F. Brown,2
+iss-a-30-00107,Inbound,Returns,Fraudulent User,,ord-30-00447,06-Jan-23,08-Jan-23,08-Jan-23,B. Barrett,1
+iss-a-30-00108,Inbound,Returns,Order status enquiry,Bad,ord-30-00537,19-Oct-23,19-Oct-23,19-Oct-23,H. Owens,4
+iss-a-30-00109,Outcall,Returns,Return request,Bad,ord-30-00221,05-Dec-23,05-Dec-23,11-Dec-23,C. Campbell,4
+iss-a-30-00110,Email,Returns,Delayed,,ord-30-00002,01-Jan-23,03-Jan-23,05-Jan-23,B. Barrett,4
+iss-a-30-00111,Email,Feedback,Product Specific Information,Bad,,29-Jan-23,31-Jan-23,01-Feb-23,K. Kim,5
+iss-a-30-00112,Inbound,Feedback,Delayed,Good,ord-30-00349,26-May-23,27-May-23,31-May-23,A. Adams,5
+iss-a-30-00113,Email,Order Related,Order status enquiry,,ord-30-00318,20-Sep-23,22-Sep-23,21-Sep-23,M. Taylor,2
+iss-a-30-00114,Outcall,Product Queries,Product Specific Information,,ord-30-00586,25-Oct-23,25-Oct-23,28-Oct-23,L. Martin,4
+iss-a-30-00115,Inbound,Product Queries,Fraudulent User,,ord-30-00444,23-May-23,25-May-23,26-May-23,S. Jackson,4
+iss-a-30-00116,Email,Order Related,Order status enquiry,Good,ord-30-00533,17-Mar-23,19-Mar-23,19-Mar-23,F. Brown,2
+iss-a-30-00117,Outcall,Payments related,Fraudulent User,,ord-30-00441,28-Nov-23,28-Nov-23,03-Dec-23,C. Campbell,5
+iss-a-30-00118,Email,Feedback,Delayed,,ord-30-00601,20-Sep-23,21-Sep-23,27-Sep-23,H. Owens,1
+iss-a-30-00119,Inbound,Product Queries,Fraudulent User,Terrible,ord-30-00200,07-May-23,09-May-23,07-May-23,B. Barrett,5
+iss-a-30-00120,Outcall,Product Queries,Order status enquiry,Nice,ord-30-00515,25-Aug-23,25-Aug-23,30-Aug-23,S. Jackson,4
+iss-a-30-00121,Email,Product Queries,Other,Very good,ord-30-00284,18-Dec-23,18-Dec-23,25-Dec-23,B. Barrett,3
+iss-a-30-00122,Email,Payments related,Order status enquiry,Poor service,,04-Apr-23,04-Apr-23,06-Apr-23,A. Adams,2
+iss-a-30-00123,Email,Returns,Reverse Pickup Enquiry,Poor service,ord-30-00242,27-Sep-23,29-Sep-23,04-Oct-23,A. Adams,1
+iss-a-30-00124,Email,Order Related,Reverse Pickup Enquiry,Very good,,17-Jul-23,17-Jul-23,21-Jul-23,F. Brown,1
+iss-a-30-00125,Outcall,Product Queries,Order status enquiry,Excellent,ord-30-00237,09-Mar-23,09-Mar-23,16-Mar-23,S. Jackson,4
+iss-a-30-00126,Inbound,Product Queries,Return request,,ord-30-00019,03-Mar-23,04-Mar-23,05-Mar-23,L. Chen,3
+iss-a-30-00127,Outcall,Product Queries,Other,Excellent,ord-30-00530,30-Apr-23,01-May-23,05-May-23,L. Harris,4
+iss-a-30-00128,Outcall,Payments related,Reverse Pickup Enquiry,Ok,ord-30-00579,09-Nov-23,11-Nov-23,15-Nov-23,D. Garcia,3
+iss-a-30-00129,Email,Order Related,Product Specific Information,Bad,ord-30-00518,26-Jan-23,28-Jan-23,01-Feb-23,A. Adams,2
+iss-a-30-00130,Inbound,Feedback,Fraudulent User,Very good,ord-30-00239,09-Dec-23,09-Dec-23,12-Dec-23,S. Owens,2
+iss-a-30-00131,Outcall,Payments related,Delayed,Terrible,ord-30-00174,03-May-23,03-May-23,09-May-23,K. Davis,2
+iss-a-30-00132,Email,Payments related,Other,Good,ord-30-00162,13-Aug-23,13-Aug-23,19-Aug-23,Q. Garcia,5
+iss-a-30-00133,Inbound,Product Queries,Reverse Pickup Enquiry,,ord-30-00234,07-Aug-23,07-Aug-23,10-Aug-23,D. Garcia,3
+iss-a-30-00134,Outcall,Order Related,Other,,ord-30-00523,14-Feb-23,14-Feb-23,21-Feb-23,B. Barrett,4
+iss-a-30-00135,Email,Feedback,Other,,ord-30-00290,02-Sep-23,02-Sep-23,09-Sep-23,Q. Garcia,3
+iss-a-30-00136,Inbound,Returns,Other,Excellent,ord-30-00325,13-Dec-23,15-Dec-23,15-Dec-23,A. Adams,2
+iss-a-30-00137,Email,Feedback,Order status enquiry,,ord-30-00561,04-Oct-23,05-Oct-23,05-Oct-23,B. Barrett,1
+iss-a-30-00138,Outcall,Payments related,Return request,Excellent,ord-30-00598,17-Dec-23,19-Dec-23,22-Dec-23,D. Garcia,5
+iss-a-30-00139,Outcall,Feedback,Delayed,,ord-30-00091,20-Dec-23,22-Dec-23,21-Dec-23,B. Barrett,2
+iss-a-30-00140,Outcall,Product Queries,Fraudulent User,Bad,ord-30-00561,20-Oct-23,20-Oct-23,25-Oct-23,A. Adams,1
+iss-a-30-00141,Outcall,Order Related,Fraudulent User,Good,ord-30-00446,08-Aug-23,10-Aug-23,15-Aug-23,B. Barrett,4
+iss-a-30-00142,Inbound,Payments related,Other,Ok,ord-30-00605,25-Sep-23,27-Sep-23,01-Oct-23,S. Owens,3
+iss-a-30-00143,Email,Order Related,Order status enquiry,Bad,ord-30-00585,13-Sep-23,13-Sep-23,20-Sep-23,L. Martin,5
+iss-a-30-00144,Inbound,Feedback,Other,Very good,,27-Jun-23,29-Jun-23,27-Jun-23,L. Chen,5
+iss-a-30-00145,Inbound,Product Queries,Delayed,Poor service,ord-30-00167,08-Jan-23,08-Jan-23,14-Jan-23,K. Davis,3
+iss-a-30-00146,Email,Feedback,Return request,Excellent,ord-30-00040,27-Aug-23,27-Aug-23,02-Sep-23,B. Barrett,5
+iss-a-30-00147,Email,Product Queries,Delayed,Bad,,12-Jul-23,13-Jul-23,19-Jul-23,A. Adams,4
+iss-a-30-00148,Inbound,Payments related,Fraudulent User,Poor service,ord-30-00541,24-Dec-23,25-Dec-23,31-Dec-23,Q. Garcia,1
+iss-a-30-00149,Inbound,Payments related,Return request,Poor service,ord-30-00021,01-Jun-23,03-Jun-23,07-Jun-23,Q. Garcia,2
+iss-a-30-00150,Outcall,Feedback,Product Specific Information,Bad,ord-30-00354,12-Jun-23,14-Jun-23,17-Jun-23,K. Davis,5
+iss-a-30-00151,Email,Payments related,Reverse Pickup Enquiry,Terrible,ord-30-00134,16-May-23,16-May-23,20-May-23,H. Owens,2
+iss-a-30-00152,Outcall,Order Related,Reverse Pickup Enquiry,Excellent,ord-30-00433,08-Aug-23,09-Aug-23,14-Aug-23,M. Taylor,4
+iss-a-30-00153,Email,Returns,Reverse Pickup Enquiry,,ord-30-00180,14-Oct-23,15-Oct-23,17-Oct-23,K. Kim,5
+iss-a-30-00154,Outcall,Order Related,Fraudulent User,Good,ord-30-00039,27-Jul-23,28-Jul-23,30-Jul-23,S. Jackson,2
+iss-a-30-00155,Email,Feedback,Return request,Good,ord-30-00520,19-Apr-23,20-Apr-23,19-Apr-23,D. Garcia,5
+iss-a-30-00156,Outcall,Payments related,Delayed,,ord-30-00575,21-May-23,23-May-23,25-May-23,A. Adams,4
+iss-a-30-00157,Inbound,Product Queries,Product Specific Information,Poor service,,25-Mar-23,25-Mar-23,25-Mar-23,F. Brown,2
+iss-a-30-00158,Email,Feedback,Fraudulent User,Good,ord-30-00378,27-Apr-23,29-Apr-23,04-May-23,L. Harris,5
+iss-a-30-00159,Outcall,Payments related,Order status enquiry,Terrible,ord-30-00186,02-Feb-23,02-Feb-23,07-Feb-23,B. Barrett,3
+iss-a-30-00160,Inbound,Order Related,Return request,,ord-30-00540,01-Jan-23,03-Jan-23,03-Jan-23,L. Chen,1
+iss-a-30-00161,Inbound,Feedback,Fraudulent User,,ord-30-00229,05-Mar-23,05-Mar-23,10-Mar-23,C. Campbell,4
+iss-a-30-00162,Outcall,Order Related,Order status enquiry,Terrible,ord-30-00184,03-Dec-23,04-Dec-23,07-Dec-23,M. Garcia,4
+iss-a-30-00163,Outcall,Payments related,Other,,ord-30-00189,02-Oct-23,03-Oct-23,08-Oct-23,M. Garcia,5
+iss-a-30-00164,Inbound,Returns,Return request,Very good,ord-30-00589,20-Jun-23,22-Jun-23,26-Jun-23,B. Barrett,4
+iss-a-30-00165,Inbound,Returns,Return request,Very good,ord-30-00405,29-Jan-23,30-Jan-23,01-Feb-23,B. Barrett,3
+iss-a-30-00166,Outcall,Payments related,Other,,ord-30-00116,14-Jan-23,14-Jan-23,21-Jan-23,S. Jackson,5
+iss-a-30-00167,Inbound,Payments related,Fraudulent User,Good,ord-30-00208,29-Aug-23,31-Aug-23,01-Sep-23,M. Taylor,4
+iss-a-30-00168,Email,Feedback,Return request,Terrible,ord-30-00084,01-Apr-23,01-Apr-23,04-Apr-23,M. Taylor,5
+iss-a-30-00169,Inbound,Product Queries,Return request,,ord-30-00126,17-Dec-23,17-Dec-23,20-Dec-23,Q. Garcia,5
+iss-a-30-00170,Outcall,Product Queries,Return request,Terrible,ord-30-00236,01-Apr-23,01-Apr-23,04-Apr-23,L. Martin,5
+iss-a-30-00171,Inbound,Order Related,Delayed,,ord-30-00392,30-Jan-23,31-Jan-23,03-Feb-23,C. Campbell,3
+iss-a-30-00172,Inbound,Feedback,Reverse Pickup Enquiry,,ord-30-00389,08-Aug-23,09-Aug-23,13-Aug-23,A. Adams,3
+iss-a-30-00173,Inbound,Payments related,Fraudulent User,,ord-30-00569,23-Feb-23,24-Feb-23,28-Feb-23,M. Taylor,1
+iss-a-30-00174,Email,Payments related,Product Specific Information,Excellent,ord-30-00371,22-Aug-23,24-Aug-23,25-Aug-23,F. Brown,4
+iss-a-30-00175,Inbound,Product Queries,Delayed,Poor service,ord-30-00112,10-May-23,11-May-23,12-May-23,H. Owens,5
+iss-a-30-00176,Email,Returns,Return request,Poor service,ord-30-00357,20-May-23,22-May-23,21-May-23,H. Owens,4
+iss-a-30-00177,Email,Returns,Return request,Bad,ord-30-00082,06-Feb-23,08-Feb-23,08-Feb-23,L. Martin,2
+iss-a-30-00178,Outcall,Product Queries,Fraudulent User,,ord-30-00514,26-Dec-23,27-Dec-23,01-Jan-24,A. Adams,2
+iss-a-30-00179,Inbound,Payments related,Product Specific Information,Poor service,ord-30-00293,14-Nov-23,14-Nov-23,21-Nov-23,F. Brown,4
+iss-a-30-00180,Email,Payments related,Delayed,,ord-30-00008,24-Apr-23,26-Apr-23,28-Apr-23,K. Kim,4
+iss-a-30-00181,Inbound,Feedback,Other,Ok,ord-30-00365,27-Oct-23,27-Oct-23,28-Oct-23,A. Adams,3
+iss-a-30-00182,Inbound,Feedback,Order status enquiry,,,11-Mar-23,12-Mar-23,13-Mar-23,C. Campbell,5
+iss-a-30-00183,Inbound,Payments related,Return request,Poor service,ord-30-00538,14-Jun-23,14-Jun-23,16-Jun-23,A. Adams,5
+iss-a-30-00184,Email,Payments related,Reverse Pickup Enquiry,Nice,ord-30-00491,15-Dec-23,15-Dec-23,19-Dec-23,C. Campbell,5
+iss-a-30-00185,Email,Feedback,Product Specific Information,Ok,,06-Aug-23,08-Aug-23,11-Aug-23,L. Chen,4
+iss-a-30-00186,Outcall,Payments related,Delayed,Excellent,ord-30-00574,29-Apr-23,01-May-23,06-May-23,C. Campbell,5
+iss-a-30-00187,Email,Returns,Other,Terrible,ord-30-00295,22-Jun-23,24-Jun-23,28-Jun-23,M. Taylor,3
+iss-a-30-00188,Inbound,Product Queries,Reverse Pickup Enquiry,Terrible,ord-30-00293,20-Feb-23,22-Feb-23,22-Feb-23,B. Barrett,5
+iss-a-30-00189,Email,Order Related,Delayed,Terrible,ord-30-00057,13-Mar-23,13-Mar-23,16-Mar-23,K. Kim,3
+iss-a-30-00190,Email,Payments related,Return request,Ok,ord-30-00605,05-Dec-23,06-Dec-23,05-Dec-23,A. Adams,2
+iss-a-30-00191,Email,Returns,Product Specific Information,,ord-30-00491,27-May-23,28-May-23,29-May-23,A. Adams,3
+iss-a-30-00192,Email,Returns,Delayed,Very good,ord-30-00025,20-Jan-23,20-Jan-23,27-Jan-23,B. Barrett,1
+iss-a-30-00193,Inbound,Order Related,Other,Poor service,ord-30-00559,03-May-23,05-May-23,05-May-23,F. Brown,5
+iss-a-30-00194,Email,Product Queries,Product Specific Information,Nice,ord-30-00350,28-Apr-23,29-Apr-23,30-Apr-23,A. Adams,4
+iss-a-30-00195,Email,Order Related,Order status enquiry,Poor service,ord-30-00349,25-Jan-23,26-Jan-23,30-Jan-23,L. Harris,4
+iss-a-30-00196,Outcall,Returns,Product Specific Information,Ok,ord-30-00229,08-Jan-23,09-Jan-23,13-Jan-23,A. Adams,1
+iss-a-30-00197,Outcall,Order Related,Delayed,,ord-30-00114,01-Nov-23,02-Nov-23,04-Nov-23,F. Brown,3
+iss-a-30-00198,Email,Order Related,Return request,Ok,ord-30-00132,05-Dec-23,07-Dec-23,12-Dec-23,A. Adams,3
+iss-a-30-00199,Inbound,Order Related,Fraudulent User,Poor service,ord-30-00465,29-Oct-23,31-Oct-23,02-Nov-23,D. Garcia,4
+iss-a-30-00200,Email,Feedback,Reverse Pickup Enquiry,Very good,ord-30-00092,20-Jul-23,22-Jul-23,27-Jul-23,H. Owens,2
+iss-a-30-00201,Email,Payments related,Order status enquiry,Bad,ord-30-00432,19-Nov-23,21-Nov-23,19-Nov-23,F. Brown,3
+iss-a-30-00202,Email,Order Related,Reverse Pickup Enquiry,Very good,ord-30-00385,20-Oct-23,22-Oct-23,21-Oct-23,A. Adams,2
+iss-a-30-00203,Email,Product Queries,Delayed,,ord-30-00285,12-Feb-23,12-Feb-23,12-Feb-23,B. Barrett,2
+iss-a-30-00204,Outcall,Order Related,Order status enquiry,Poor service,ord-30-00354,12-Jul-23,13-Jul-23,15-Jul-23,L. Harris,4
+iss-a-30-00205,Inbound,Order Related,Reverse Pickup Enquiry,,,18-Jan-23,20-Jan-23,24-Jan-23,M. Garcia,2
+iss-a-30-00206,Email,Payments related,Fraudulent User,Excellent,ord-30-00239,15-Aug-23,15-Aug-23,18-Aug-23,C. Campbell,5
+iss-a-30-00207,Outcall,Returns,Order status enquiry,Very good,,04-May-23,05-May-23,11-May-23,C. Campbell,5
+iss-a-30-00208,Email,Returns,Delayed,Good,ord-30-00324,08-Nov-23,08-Nov-23,11-Nov-23,L. Martin,2
+iss-a-30-00209,Outcall,Payments related,Fraudulent User,Terrible,ord-30-00381,09-Oct-23,11-Oct-23,14-Oct-23,C. Campbell,1
+iss-a-30-00210,Inbound,Feedback,Order status enquiry,,ord-30-00491,02-Jul-23,02-Jul-23,06-Jul-23,C. Campbell,2
+iss-a-30-00211,Email,Product Queries,Return request,Good,ord-30-00205,05-May-23,05-May-23,11-May-23,F. Brown,4
+iss-a-30-00212,Outcall,Product Queries,Order status enquiry,Excellent,ord-30-00573,01-Aug-23,01-Aug-23,05-Aug-23,Q. Garcia,2
+iss-a-30-00213,Inbound,Returns,Fraudulent User,Good,ord-30-00328,21-Jul-23,21-Jul-23,23-Jul-23,F. Brown,1
+iss-a-30-00214,Email,Returns,Return request,Very good,ord-30-00250,28-May-23,28-May-23,04-Jun-23,L. Harris,5
+iss-a-30-00215,Outcall,Product Queries,Fraudulent User,,ord-30-00200,21-Nov-23,21-Nov-23,26-Nov-23,K. Davis,1
+iss-a-30-00216,Outcall,Returns,Other,Ok,ord-30-00016,18-Sep-23,20-Sep-23,19-Sep-23,F. Brown,4
+iss-a-30-00217,Outcall,Returns,Product Specific Information,Poor service,ord-30-00188,26-Feb-23,28-Feb-23,02-Mar-23,B. Barrett,3
+iss-a-30-00218,Outcall,Feedback,Return request,Bad,ord-30-00342,18-May-23,20-May-23,19-May-23,M. Taylor,5
+iss-a-30-00219,Email,Returns,Other,Bad,,29-Apr-23,29-Apr-23,29-Apr-23,L. Harris,3
+iss-a-30-00220,Inbound,Feedback,Return request,Good,ord-30-00440,11-Apr-23,12-Apr-23,17-Apr-23,L. Harris,5
+iss-a-30-00221,Outcall,Payments related,Return request,Nice,,19-Sep-23,20-Sep-23,24-Sep-23,Q. Garcia,5
+iss-a-30-00222,Outcall,Returns,Fraudulent User,Bad,,10-Apr-23,11-Apr-23,15-Apr-23,S. Jackson,4
+iss-a-30-00223,Inbound,Returns,Reverse Pickup Enquiry,Good,ord-30-00358,19-Feb-23,19-Feb-23,20-Feb-23,K. Davis,3
+iss-a-30-00224,Inbound,Order Related,Reverse Pickup Enquiry,,ord-30-00565,09-Dec-23,10-Dec-23,11-Dec-23,C. Campbell,2
+iss-a-30-00225,Email,Feedback,Delayed,Terrible,ord-30-00581,30-Apr-23,01-May-23,06-May-23,L. Harris,1
+iss-a-30-00226,Outcall,Product Queries,Other,Nice,ord-30-00136,22-Aug-23,23-Aug-23,23-Aug-23,S. Jackson,5
+iss-a-30-00227,Email,Order Related,Reverse Pickup Enquiry,Poor service,ord-30-00330,02-Jan-23,03-Jan-23,03-Jan-23,M. Taylor,4
+iss-a-30-00228,Inbound,Returns,Other,Good,ord-30-00535,03-Jul-23,03-Jul-23,07-Jul-23,C. Campbell,1
+iss-a-30-00229,Outcall,Feedback,Order status enquiry,Ok,ord-30-00467,03-Jan-23,04-Jan-23,04-Jan-23,M. Garcia,5
+iss-a-30-00230,Outcall,Order Related,Delayed,Bad,,21-Feb-23,22-Feb-23,22-Feb-23,A. Adams,2
+iss-a-30-00231,Inbound,Product Queries,Other,Ok,ord-30-00545,19-Jun-23,20-Jun-23,19-Jun-23,S. Jackson,4
+iss-a-30-00232,Email,Feedback,Delayed,Nice,ord-30-00172,14-Jul-23,14-Jul-23,21-Jul-23,S. Jackson,2
+iss-a-30-00233,Inbound,Order Related,Return request,Excellent,ord-30-00038,19-Oct-23,21-Oct-23,20-Oct-23,L. Martin,3
+iss-a-30-00234,Email,Feedback,Fraudulent User,Poor service,,08-Feb-23,09-Feb-23,10-Feb-23,S. Jackson,5
+iss-a-30-00235,Outcall,Payments related,Product Specific Information,Bad,ord-30-00011,03-Jan-23,05-Jan-23,06-Jan-23,A. Adams,3
+iss-a-30-00236,Inbound,Feedback,Delayed,,ord-30-00077,08-Mar-23,09-Mar-23,14-Mar-23,S. Jackson,2
+iss-a-30-00237,Email,Payments related,Reverse Pickup Enquiry,Good,ord-30-00486,15-Dec-23,15-Dec-23,21-Dec-23,M. Taylor,1
+iss-a-30-00238,Inbound,Payments related,Reverse Pickup Enquiry,Excellent,ord-30-00266,24-Jan-23,24-Jan-23,26-Jan-23,K. Davis,1
+iss-a-30-00239,Email,Order Related,Order status enquiry,Bad,ord-30-00301,28-Mar-23,28-Mar-23,30-Mar-23,A. Adams,3
+iss-a-30-00240,Outcall,Product Queries,Other,Poor service,ord-30-00384,21-Dec-23,22-Dec-23,24-Dec-23,C. Campbell,4
+iss-a-30-00241,Outcall,Returns,Product Specific Information,Ok,ord-30-00295,03-Sep-23,04-Sep-23,06-Sep-23,K. Davis,4
+iss-a-30-00242,Email,Payments related,Product Specific Information,Excellent,ord-30-00473,05-Dec-23,07-Dec-23,12-Dec-23,H. Owens,1
+iss-a-30-00243,Email,Order Related,Order status enquiry,,ord-30-00358,15-Aug-23,17-Aug-23,21-Aug-23,A. Adams,1
+iss-a-30-00244,Outcall,Payments related,Order status enquiry,Good,ord-30-00200,20-Oct-23,22-Oct-23,20-Oct-23,C. Campbell,3
+iss-a-30-00245,Email,Order Related,Other,Excellent,ord-30-00594,30-Aug-23,30-Aug-23,31-Aug-23,B. Barrett,5
+iss-a-30-00246,Outcall,Product Queries,Fraudulent User,Good,ord-30-00404,22-Jul-23,22-Jul-23,23-Jul-23,A. Adams,1
+iss-a-30-00247,Inbound,Feedback,Order status enquiry,,ord-30-00358,12-Jul-23,14-Jul-23,14-Jul-23,F. Brown,3
+iss-a-30-00248,Email,Returns,Return request,Terrible,ord-30-00433,04-Jun-23,05-Jun-23,08-Jun-23,A. Adams,2

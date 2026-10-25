@@ -1,0 +1,377 @@
+Id,channel_name,category,Sub-category,Order_id,Reported at,Responded at,Survey responded at,Agent_name,CSAT Score
+iss-b-63-00000,Email,Product Queries,Product Specific Information,,"05 06 2023, 18:47:00","05 06 2023, 23:47:00","05 06 2023, 18:47:00",L. Kim,1
+iss-b-63-00001,Outcall,Product Queries,Delayed,,"06 11 2023, 19:43:00","07 11 2023, 09:43:00","10 11 2023, 19:43:00",B. Barrett,4
+iss-b-63-00002,Outcall,Feedback,Reverse Pickup Enquiry,ord-63-00129,"17 04 2023, 17:37:00","18 04 2023, 13:37:00","20 04 2023, 17:37:00",C. Campbell,1
+iss-b-63-00003,Email,Feedback,Reverse Pickup Enquiry,ord-63-00832,"06 02 2023, 07:18:00","07 02 2023, 16:18:00","09 02 2023, 07:18:00",F. Evans,2
+iss-b-63-00004,Email,Returns,Order status enquiry,,"13 02 2023, 18:04:00","15 02 2023, 14:04:00","13 02 2023, 18:04:00",C. Campbell,2
+iss-b-63-00005,Outcall,Product Queries,Fraudulent User,ord-63-00051,"04 05 2023, 04:31:00","06 05 2023, 02:31:00","11 05 2023, 04:31:00",I. Roberts,3
+iss-b-63-00006,Inbound,Product Queries,Order status enquiry,ord-63-00933,"29 06 2023, 07:40:00","30 06 2023, 02:40:00","29 06 2023, 07:40:00",A. Adams,2
+iss-b-63-00007,Outcall,Order Related,Product Specific Information,ord-63-00109,"04 10 2023, 05:25:00","05 10 2023, 17:25:00","05 10 2023, 05:25:00",A. Adams,4
+iss-b-63-00008,Email,Payments related,Product Specific Information,ord-63-00086,"25 07 2023, 04:41:00","27 07 2023, 03:41:00","28 07 2023, 04:41:00",R. Kim,4
+iss-b-63-00009,Inbound,Order Related,Return request,,"08 07 2023, 20:00:00","09 07 2023, 01:00:00","14 07 2023, 20:00:00",D. Jackson,4
+iss-b-63-00010,Outcall,Payments related,Other,ord-63-00707,"15 02 2023, 07:45:00","16 02 2023, 02:45:00","17 02 2023, 07:45:00",E. Lopez,2
+iss-b-63-00011,Inbound,Product Queries,Product Specific Information,ord-63-00434,"18 11 2023, 01:57:00","18 11 2023, 21:57:00","22 11 2023, 01:57:00",A. Adams,4
+iss-b-63-00012,Email,Returns,Reverse Pickup Enquiry,ord-63-00849,"19 12 2023, 05:12:00","20 12 2023, 17:12:00","23 12 2023, 05:12:00",A. Adams,4
+iss-b-63-00013,Inbound,Returns,Delayed,ord-63-00571,"08 08 2023, 12:00:00","10 08 2023, 11:00:00","10 08 2023, 12:00:00",P. Quinn,3
+iss-b-63-00014,Inbound,Product Queries,Return request,ord-63-00941,"12 04 2023, 23:02:00","13 04 2023, 07:02:00","15 04 2023, 23:02:00",L. Kim,3
+iss-b-63-00015,Inbound,Payments related,Fraudulent User,ord-63-00519,"17 12 2023, 11:05:00","18 12 2023, 20:05:00","20 12 2023, 11:05:00",P. Quinn,1
+iss-b-63-00016,Email,Returns,Order status enquiry,,"07 12 2023, 22:25:00","08 12 2023, 01:25:00","10 12 2023, 22:25:00",P. Chen,3
+iss-b-63-00017,Email,Order Related,Return request,,"14 09 2023, 11:03:00","16 09 2023, 10:03:00","15 09 2023, 11:03:00",B. Barrett,5
+iss-b-63-00018,Email,Payments related,Fraudulent User,ord-63-00402,"22 01 2023, 09:05:00","22 01 2023, 15:05:00","22 01 2023, 09:05:00",S. Patel,4
+iss-b-63-00019,Inbound,Returns,Delayed,ord-63-00676,"10 05 2023, 05:44:00","10 05 2023, 13:44:00","15 05 2023, 05:44:00",B. Barrett,4
+iss-b-63-00020,Inbound,Order Related,Fraudulent User,ord-63-00584,"10 12 2023, 18:12:00","10 12 2023, 20:12:00","11 12 2023, 18:12:00",N. Smith,5
+iss-b-63-00021,Inbound,Returns,Order status enquiry,ord-63-00908,"22 02 2023, 14:40:00","23 02 2023, 23:40:00","26 02 2023, 14:40:00",A. Adams,3
+iss-b-63-00022,Outcall,Payments related,Return request,ord-63-00656,"09 11 2023, 14:20:00","09 11 2023, 20:20:00","13 11 2023, 14:20:00",E. Lopez,2
+iss-b-63-00023,Inbound,Feedback,Order status enquiry,ord-63-00325,"12 02 2023, 16:16:00","14 02 2023, 12:16:00","14 02 2023, 16:16:00",L. Kim,5
+iss-b-63-00024,Inbound,Payments related,Order status enquiry,ord-63-00337,"07 09 2023, 08:10:00","09 09 2023, 07:10:00","08 09 2023, 08:10:00",E. Lopez,2
+iss-b-63-00025,Outcall,Feedback,Product Specific Information,ord-63-00840,"20 09 2023, 11:29:00","20 09 2023, 12:29:00","21 09 2023, 11:29:00",F. Evans,2
+iss-b-63-00026,Email,Order Related,Delayed,,"16 04 2023, 07:27:00","17 04 2023, 01:27:00","21 04 2023, 07:27:00",C. Campbell,4
+iss-b-63-00027,Outcall,Returns,Other,ord-63-00759,"19 04 2023, 23:03:00","21 04 2023, 22:03:00","23 04 2023, 23:03:00",C. Campbell,2
+iss-b-63-00028,Email,Payments related,Delayed,,"15 08 2023, 17:34:00","16 08 2023, 23:34:00","20 08 2023, 17:34:00",R. Owens,2
+iss-b-63-00029,Email,Returns,Order status enquiry,ord-63-00794,"02 12 2023, 03:12:00","03 12 2023, 19:12:00","09 12 2023, 03:12:00",F. Chen,5
+iss-b-63-00030,Outcall,Returns,Other,ord-63-00151,"11 10 2023, 06:39:00","12 10 2023, 07:39:00","12 10 2023, 06:39:00",P. Quinn,3
+iss-b-63-00031,Inbound,Product Queries,Reverse Pickup Enquiry,ord-63-00805,"19 04 2023, 18:07:00","21 04 2023, 01:07:00","21 04 2023, 18:07:00",B. Barrett,3
+iss-b-63-00032,Outcall,Order Related,Fraudulent User,ord-63-00199,"26 03 2023, 04:32:00","26 03 2023, 18:32:00","31 03 2023, 04:32:00",P. Quinn,2
+iss-b-63-00033,Email,Returns,Reverse Pickup Enquiry,ord-63-00144,"16 06 2023, 03:10:00","17 06 2023, 22:10:00","21 06 2023, 03:10:00",L. Kim,2
+iss-b-63-00034,Email,Payments related,Fraudulent User,ord-63-00357,"01 08 2023, 03:45:00","01 08 2023, 16:45:00","02 08 2023, 03:45:00",C. Campbell,3
+iss-b-63-00035,Inbound,Order Related,Return request,,"25 04 2023, 14:53:00","27 04 2023, 07:53:00","29 04 2023, 14:53:00",A. Adams,3
+iss-b-63-00036,Outcall,Order Related,Fraudulent User,,"09 12 2023, 19:42:00","09 12 2023, 23:42:00","11 12 2023, 19:42:00",F. Evans,2
+iss-b-63-00037,Inbound,Feedback,Delayed,,"07 04 2023, 05:17:00","08 04 2023, 10:17:00","14 04 2023, 05:17:00",R. Owens,3
+iss-b-63-00038,Inbound,Feedback,Fraudulent User,ord-63-00442,"21 10 2023, 20:34:00","22 10 2023, 22:34:00","24 10 2023, 20:34:00",E. Lopez,1
+iss-b-63-00039,Email,Order Related,Fraudulent User,ord-63-00054,"14 08 2023, 13:58:00","16 08 2023, 01:58:00","17 08 2023, 13:58:00",P. Quinn,4
+iss-b-63-00040,Inbound,Returns,Other,ord-63-00108,"06 06 2023, 17:07:00","07 06 2023, 16:07:00","07 06 2023, 17:07:00",L. Kim,2
+iss-b-63-00041,Inbound,Feedback,Order status enquiry,ord-63-00535,"08 06 2023, 03:21:00","08 06 2023, 17:21:00","09 06 2023, 03:21:00",C. Campbell,4
+iss-b-63-00042,Outcall,Payments related,Reverse Pickup Enquiry,ord-63-00675,"05 10 2023, 14:30:00","06 10 2023, 03:30:00","11 10 2023, 14:30:00",F. Evans,3
+iss-b-63-00043,Email,Feedback,Fraudulent User,,"27 11 2023, 20:23:00","28 11 2023, 05:23:00","30 11 2023, 20:23:00",J. Evans,3
+iss-b-63-00044,Outcall,Returns,Order status enquiry,,"24 07 2023, 02:35:00","25 07 2023, 21:35:00","27 07 2023, 02:35:00",E. Wilson,5
+iss-b-63-00045,Email,Feedback,Return request,ord-63-00365,"12 01 2023, 21:49:00","13 01 2023, 07:49:00","12 01 2023, 21:49:00",E. Lopez,2
+iss-b-63-00046,Email,Feedback,Return request,ord-63-00047,"30 08 2023, 21:25:00","01 09 2023, 16:25:00","04 09 2023, 21:25:00",C. Campbell,1
+iss-b-63-00047,Outcall,Feedback,Delayed,ord-63-00862,"25 05 2023, 16:27:00","26 05 2023, 18:27:00","28 05 2023, 16:27:00",R. Owens,3
+iss-b-63-00048,Outcall,Product Queries,Return request,ord-63-00373,"02 08 2023, 04:12:00","02 08 2023, 10:12:00","06 08 2023, 04:12:00",A. Adams,5
+iss-b-63-00049,Outcall,Feedback,Fraudulent User,,"09 05 2023, 04:13:00","09 05 2023, 16:13:00","13 05 2023, 04:13:00",N. Smith,1
+iss-b-63-00050,Email,Product Queries,Fraudulent User,,"13 03 2023, 11:37:00","14 03 2023, 13:37:00","15 03 2023, 11:37:00",F. Evans,1
+iss-b-63-00051,Outcall,Feedback,Product Specific Information,,"06 12 2023, 15:02:00","06 12 2023, 21:02:00","08 12 2023, 15:02:00",H. Owens,1
+iss-b-63-00052,Email,Payments related,Order status enquiry,ord-63-00182,"12 01 2023, 10:35:00","12 01 2023, 16:35:00","14 01 2023, 10:35:00",K. Wilson,3
+iss-b-63-00053,Outcall,Feedback,Product Specific Information,ord-63-00836,"09 11 2023, 09:46:00","11 11 2023, 01:46:00","11 11 2023, 09:46:00",I. Roberts,3
+iss-b-63-00054,Inbound,Product Queries,Order status enquiry,ord-63-00323,"12 09 2023, 13:48:00","13 09 2023, 03:48:00","18 09 2023, 13:48:00",R. Kim,1
+iss-b-63-00055,Outcall,Payments related,Fraudulent User,ord-63-00365,"14 12 2023, 15:57:00","15 12 2023, 02:57:00","15 12 2023, 15:57:00",R. Kim,5
+iss-b-63-00056,Outcall,Returns,Product Specific Information,,"13 05 2023, 13:09:00","14 05 2023, 06:09:00","19 05 2023, 13:09:00",A. Adams,3
+iss-b-63-00057,Outcall,Order Related,Product Specific Information,,"05 10 2023, 14:39:00","06 10 2023, 16:39:00","08 10 2023, 14:39:00",F. Evans,2
+iss-b-63-00058,Inbound,Product Queries,Reverse Pickup Enquiry,ord-63-00316,"08 12 2023, 05:45:00","08 12 2023, 22:45:00","14 12 2023, 05:45:00",A. Adams,4
+iss-b-63-00059,Email,Order Related,Other,,"05 09 2023, 11:27:00","05 09 2023, 21:27:00","07 09 2023, 11:27:00",P. Chen,2
+iss-b-63-00060,Email,Product Queries,Delayed,ord-63-00518,"31 08 2023, 17:14:00","01 09 2023, 09:14:00","01 09 2023, 17:14:00",A. Adams,2
+iss-b-63-00061,Inbound,Payments related,Product Specific Information,,"20 03 2023, 08:05:00","20 03 2023, 12:05:00","25 03 2023, 08:05:00",S. Patel,1
+iss-b-63-00062,Inbound,Payments related,Return request,ord-63-00905,"15 03 2023, 19:27:00","17 03 2023, 05:27:00","16 03 2023, 19:27:00",C. Campbell,2
+iss-b-63-00063,Outcall,Product Queries,Return request,ord-63-00118,"17 03 2023, 11:15:00","17 03 2023, 21:15:00","22 03 2023, 11:15:00",P. Chen,4
+iss-b-63-00064,Inbound,Order Related,Product Specific Information,ord-63-00307,"18 06 2023, 15:17:00","19 06 2023, 16:17:00","24 06 2023, 15:17:00",J. Evans,3
+iss-b-63-00065,Outcall,Product Queries,Order status enquiry,ord-63-00286,"09 09 2023, 02:38:00","09 09 2023, 11:38:00","16 09 2023, 02:38:00",S. Patel,4
+iss-b-63-00066,Outcall,Feedback,Reverse Pickup Enquiry,ord-63-00691,"27 08 2023, 12:50:00","28 08 2023, 09:50:00","03 09 2023, 12:50:00",E. Wilson,5
+iss-b-63-00067,Outcall,Returns,Delayed,ord-63-00529,"14 01 2023, 18:25:00","16 01 2023, 09:25:00","17 01 2023, 18:25:00",H. Owens,2
+iss-b-63-00068,Outcall,Feedback,Return request,ord-63-00343,"05 10 2023, 20:46:00","06 10 2023, 01:46:00","12 10 2023, 20:46:00",A. Adams,4
+iss-b-63-00069,Outcall,Product Queries,Order status enquiry,ord-63-00353,"20 05 2023, 16:10:00","22 05 2023, 13:10:00","25 05 2023, 16:10:00",B. Barrett,4
+iss-b-63-00070,Inbound,Product Queries,Product Specific Information,ord-63-00503,"20 04 2023, 00:11:00","20 04 2023, 04:11:00","21 04 2023, 00:11:00",C. Campbell,5
+iss-b-63-00071,Inbound,Returns,Order status enquiry,ord-63-00592,"07 05 2023, 17:16:00","09 05 2023, 09:16:00","12 05 2023, 17:16:00",D. Jackson,2
+iss-b-63-00072,Email,Product Queries,Other,,"05 10 2023, 07:09:00","06 10 2023, 09:09:00","11 10 2023, 07:09:00",A. Adams,2
+iss-b-63-00073,Email,Order Related,Order status enquiry,ord-63-00320,"21 09 2023, 06:34:00","21 09 2023, 10:34:00","25 09 2023, 06:34:00",A. Adams,5
+iss-b-63-00074,Inbound,Payments related,Product Specific Information,ord-63-00835,"06 01 2023, 01:50:00","07 01 2023, 12:50:00","07 01 2023, 01:50:00",C. Campbell,1
+iss-b-63-00075,Inbound,Feedback,Delayed,ord-63-00538,"26 09 2023, 20:27:00","27 09 2023, 07:27:00","28 09 2023, 20:27:00",E. Wilson,3
+iss-b-63-00076,Inbound,Product Queries,Other,ord-63-00351,"28 10 2023, 12:03:00","29 10 2023, 08:03:00","31 10 2023, 12:03:00",A. Adams,5
+iss-b-63-00077,Email,Product Queries,Delayed,,"08 11 2023, 15:26:00","10 11 2023, 09:26:00","13 11 2023, 15:26:00",H. Owens,3
+iss-b-63-00078,Outcall,Feedback,Product Specific Information,,"13 07 2023, 09:52:00","14 07 2023, 15:52:00","13 07 2023, 09:52:00",S. Patel,1
+iss-b-63-00079,Outcall,Order Related,Order status enquiry,,"09 05 2023, 19:55:00","10 05 2023, 09:55:00","16 05 2023, 19:55:00",P. Chen,1
+iss-b-63-00080,Inbound,Order Related,Product Specific Information,ord-63-00149,"29 12 2023, 15:44:00","31 12 2023, 12:44:00","30 12 2023, 15:44:00",P. Quinn,2
+iss-b-63-00081,Outcall,Product Queries,Fraudulent User,ord-63-00388,"27 12 2023, 10:55:00","28 12 2023, 07:55:00","27 12 2023, 10:55:00",C. Campbell,3
+iss-b-63-00082,Email,Product Queries,Delayed,ord-63-00794,"23 01 2023, 09:20:00","23 01 2023, 18:20:00","27 01 2023, 09:20:00",N. Smith,3
+iss-b-63-00083,Outcall,Product Queries,Return request,ord-63-00060,"22 09 2023, 05:38:00","22 09 2023, 07:38:00","22 09 2023, 05:38:00",E. Lopez,5
+iss-b-63-00084,Outcall,Returns,Product Specific Information,ord-63-00364,"06 03 2023, 18:09:00","08 03 2023, 05:09:00","08 03 2023, 18:09:00",K. Nelson,4
+iss-b-63-00085,Inbound,Product Queries,Delayed,,"20 03 2023, 23:04:00","22 03 2023, 20:04:00","22 03 2023, 23:04:00",P. Chen,2
+iss-b-63-00086,Outcall,Product Queries,Delayed,,"30 11 2023, 19:51:00","01 12 2023, 12:51:00","01 12 2023, 19:51:00",N. Smith,2
+iss-b-63-00087,Email,Product Queries,Delayed,ord-63-00705,"20 02 2023, 14:07:00","22 02 2023, 09:07:00","25 02 2023, 14:07:00",C. Campbell,4
+iss-b-63-00088,Email,Returns,Fraudulent User,,"18 12 2023, 02:08:00","18 12 2023, 21:08:00","19 12 2023, 02:08:00",P. Chen,3
+iss-b-63-00089,Outcall,Order Related,Other,,"01 03 2023, 08:52:00","02 03 2023, 06:52:00","03 03 2023, 08:52:00",F. Evans,1
+iss-b-63-00090,Outcall,Returns,Order status enquiry,ord-63-00538,"23 01 2023, 08:06:00","23 01 2023, 23:06:00","29 01 2023, 08:06:00",C. Campbell,5
+iss-b-63-00091,Email,Product Queries,Fraudulent User,ord-63-00638,"01 02 2023, 19:30:00","01 02 2023, 20:30:00","03 02 2023, 19:30:00",R. Kim,4
+iss-b-63-00092,Email,Feedback,Fraudulent User,ord-63-00350,"24 04 2023, 18:45:00","25 04 2023, 05:45:00","26 04 2023, 18:45:00",P. Quinn,3
+iss-b-63-00093,Inbound,Order Related,Product Specific Information,,"20 07 2023, 01:15:00","20 07 2023, 19:15:00","24 07 2023, 01:15:00",C. Campbell,5
+iss-b-63-00094,Inbound,Order Related,Fraudulent User,,"19 02 2023, 18:17:00","20 02 2023, 02:17:00","26 02 2023, 18:17:00",E. Wilson,1
+iss-b-63-00095,Inbound,Product Queries,Order status enquiry,ord-63-00426,"29 01 2023, 08:00:00","29 01 2023, 17:00:00","01 02 2023, 08:00:00",B. Barrett,3
+iss-b-63-00096,Inbound,Product Queries,Product Specific Information,ord-63-00381,"12 03 2023, 05:30:00","12 03 2023, 16:30:00","15 03 2023, 05:30:00",B. Barrett,4
+iss-b-63-00097,Inbound,Returns,Other,ord-63-00608,"17 01 2023, 03:27:00","18 01 2023, 13:27:00","17 01 2023, 03:27:00",F. Chen,4
+iss-b-63-00098,Inbound,Product Queries,Return request,ord-63-00019,"19 07 2023, 22:59:00","20 07 2023, 07:59:00","24 07 2023, 22:59:00",A. Adams,2
+iss-b-63-00099,Inbound,Order Related,Product Specific Information,ord-63-00550,"31 07 2023, 20:57:00","02 08 2023, 05:57:00","31 07 2023, 20:57:00",S. Patel,5
+iss-b-63-00100,Email,Returns,Fraudulent User,ord-63-00906,"22 07 2023, 18:20:00","24 07 2023, 18:20:00","29 07 2023, 18:20:00",A. Adams,3
+iss-b-63-00101,Outcall,Payments related,Return request,ord-63-00630,"10 11 2023, 18:31:00","11 11 2023, 07:31:00","13 11 2023, 18:31:00",F. Chen,5
+iss-b-63-00102,Email,Order Related,Product Specific Information,ord-63-00227,"01 10 2023, 16:08:00","02 10 2023, 23:08:00","02 10 2023, 16:08:00",E. Lopez,5
+iss-b-63-00103,Email,Feedback,Reverse Pickup Enquiry,ord-63-00794,"20 01 2023, 08:12:00","22 01 2023, 04:12:00","24 01 2023, 08:12:00",R. Kim,3
+iss-b-63-00104,Outcall,Product Queries,Order status enquiry,ord-63-00952,"11 10 2023, 16:02:00","12 10 2023, 16:02:00","12 10 2023, 16:02:00",P. Chen,5
+iss-b-63-00105,Outcall,Order Related,Fraudulent User,ord-63-00728,"12 05 2023, 08:06:00","12 05 2023, 16:06:00","14 05 2023, 08:06:00",E. Lopez,5
+iss-b-63-00106,Email,Order Related,Other,ord-63-00331,"11 11 2023, 06:34:00","12 11 2023, 02:34:00","14 11 2023, 06:34:00",B. Barrett,2
+iss-b-63-00107,Outcall,Order Related,Return request,ord-63-00237,"10 05 2023, 10:04:00","11 05 2023, 10:04:00","17 05 2023, 10:04:00",F. Evans,5
+iss-b-63-00108,Inbound,Order Related,Delayed,,"21 12 2023, 10:07:00","22 12 2023, 05:07:00","28 12 2023, 10:07:00",J. Evans,4
+iss-b-63-00109,Email,Feedback,Fraudulent User,ord-63-00493,"06 04 2023, 02:25:00","06 04 2023, 14:25:00","07 04 2023, 02:25:00",B. Barrett,4
+iss-b-63-00110,Outcall,Payments related,Product Specific Information,ord-63-00307,"14 12 2023, 06:19:00","15 12 2023, 01:19:00","17 12 2023, 06:19:00",C. Campbell,5
+iss-b-63-00111,Email,Order Related,Product Specific Information,ord-63-00223,"07 09 2023, 13:33:00","07 09 2023, 16:33:00","11 09 2023, 13:33:00",B. Barrett,2
+iss-b-63-00112,Outcall,Feedback,Product Specific Information,ord-63-00264,"12 01 2023, 13:59:00","13 01 2023, 02:59:00","19 01 2023, 13:59:00",R. Kim,3
+iss-b-63-00113,Inbound,Feedback,Fraudulent User,,"19 06 2023, 15:25:00","21 06 2023, 14:25:00","22 06 2023, 15:25:00",E. Wilson,3
+iss-b-63-00114,Outcall,Returns,Return request,ord-63-00501,"09 11 2023, 06:50:00","09 11 2023, 21:50:00","12 11 2023, 06:50:00",H. Owens,4
+iss-b-63-00115,Inbound,Order Related,Delayed,ord-63-00245,"24 07 2023, 01:45:00","24 07 2023, 13:45:00","29 07 2023, 01:45:00",H. Owens,2
+iss-b-63-00116,Inbound,Order Related,Fraudulent User,ord-63-00827,"21 02 2023, 08:24:00","22 02 2023, 23:24:00","27 02 2023, 08:24:00",F. Evans,1
+iss-b-63-00117,Outcall,Payments related,Delayed,,"03 12 2023, 23:59:00","05 12 2023, 22:59:00","03 12 2023, 23:59:00",J. Evans,5
+iss-b-63-00118,Inbound,Returns,Reverse Pickup Enquiry,,"02 04 2023, 09:59:00","04 04 2023, 03:59:00","04 04 2023, 09:59:00",A. Adams,3
+iss-b-63-00119,Email,Payments related,Fraudulent User,ord-63-00134,"12 09 2023, 12:02:00","13 09 2023, 11:02:00","15 09 2023, 12:02:00",B. Barrett,1
+iss-b-63-00120,Inbound,Returns,Fraudulent User,,"05 06 2023, 18:38:00","07 06 2023, 16:38:00","12 06 2023, 18:38:00",K. Nelson,1
+iss-b-63-00121,Outcall,Feedback,Fraudulent User,ord-63-00297,"25 11 2023, 23:26:00","27 11 2023, 22:26:00","28 11 2023, 23:26:00",K. Wilson,1
+iss-b-63-00122,Inbound,Order Related,Fraudulent User,ord-63-00128,"01 10 2023, 14:28:00","01 10 2023, 23:28:00","08 10 2023, 14:28:00",E. Wilson,4
+iss-b-63-00123,Inbound,Returns,Other,,"16 04 2023, 09:33:00","17 04 2023, 13:33:00","19 04 2023, 09:33:00",E. Lopez,4
+iss-b-63-00124,Inbound,Order Related,Reverse Pickup Enquiry,,"29 05 2023, 17:56:00","31 05 2023, 17:56:00","03 06 2023, 17:56:00",R. Owens,2
+iss-b-63-00125,Inbound,Payments related,Delayed,,"04 07 2023, 07:11:00","06 07 2023, 01:11:00","08 07 2023, 07:11:00",B. Barrett,1
+iss-b-63-00126,Email,Order Related,Other,ord-63-00029,"31 05 2023, 15:06:00","31 05 2023, 21:06:00","05 06 2023, 15:06:00",B. Barrett,5
+iss-b-63-00127,Inbound,Returns,Reverse Pickup Enquiry,,"25 09 2023, 17:46:00","27 09 2023, 05:46:00","27 09 2023, 17:46:00",R. Owens,4
+iss-b-63-00128,Email,Returns,Order status enquiry,ord-63-00327,"14 11 2023, 07:12:00","14 11 2023, 20:12:00","21 11 2023, 07:12:00",F. Chen,4
+iss-b-63-00129,Email,Payments related,Return request,ord-63-00250,"03 04 2023, 14:54:00","04 04 2023, 09:54:00","03 04 2023, 14:54:00",C. Campbell,1
+iss-b-63-00130,Inbound,Returns,Reverse Pickup Enquiry,ord-63-00248,"25 08 2023, 23:48:00","27 08 2023, 03:48:00","26 08 2023, 23:48:00",R. Owens,3
+iss-b-63-00131,Outcall,Order Related,Return request,ord-63-00255,"02 10 2023, 14:01:00","04 10 2023, 00:01:00","03 10 2023, 14:01:00",R. Owens,3
+iss-b-63-00132,Outcall,Order Related,Fraudulent User,ord-63-00350,"27 02 2023, 22:11:00","01 03 2023, 10:11:00","05 03 2023, 22:11:00",J. Evans,3
+iss-b-63-00133,Email,Order Related,Fraudulent User,,"05 02 2023, 16:50:00","07 02 2023, 15:50:00","12 02 2023, 16:50:00",E. Lopez,3
+iss-b-63-00134,Inbound,Order Related,Order status enquiry,ord-63-00395,"13 03 2023, 02:25:00","13 03 2023, 06:25:00","13 03 2023, 02:25:00",C. Campbell,1
+iss-b-63-00135,Inbound,Order Related,Fraudulent User,ord-63-00084,"27 06 2023, 12:16:00","29 06 2023, 10:16:00","01 07 2023, 12:16:00",J. Evans,3
+iss-b-63-00136,Outcall,Product Queries,Fraudulent User,,"31 01 2023, 14:10:00","31 01 2023, 16:10:00","02 02 2023, 14:10:00",F. Evans,1
+iss-b-63-00137,Email,Product Queries,Fraudulent User,ord-63-00384,"18 03 2023, 04:13:00","18 03 2023, 17:13:00","19 03 2023, 04:13:00",I. Roberts,1
+iss-b-63-00138,Outcall,Payments related,Reverse Pickup Enquiry,ord-63-00596,"17 04 2023, 11:14:00","17 04 2023, 16:14:00","20 04 2023, 11:14:00",A. Adams,3
+iss-b-63-00139,Email,Returns,Return request,ord-63-00797,"02 11 2023, 01:34:00","02 11 2023, 18:34:00","04 11 2023, 01:34:00",J. Evans,5
+iss-b-63-00140,Inbound,Feedback,Order status enquiry,,"15 12 2023, 10:52:00","16 12 2023, 16:52:00","16 12 2023, 10:52:00",C. Campbell,5
+iss-b-63-00141,Email,Order Related,Order status enquiry,ord-63-00261,"11 12 2023, 15:52:00","12 12 2023, 09:52:00","13 12 2023, 15:52:00",A. Adams,5
+iss-b-63-00142,Outcall,Feedback,Fraudulent User,ord-63-00689,"05 08 2023, 04:34:00","06 08 2023, 11:34:00","11 08 2023, 04:34:00",C. Campbell,1
+iss-b-63-00143,Email,Payments related,Order status enquiry,ord-63-00741,"15 10 2023, 04:44:00","16 10 2023, 22:44:00","20 10 2023, 04:44:00",P. Quinn,1
+iss-b-63-00144,Outcall,Product Queries,Return request,ord-63-00805,"26 07 2023, 08:56:00","28 07 2023, 02:56:00","26 07 2023, 08:56:00",E. Lopez,5
+iss-b-63-00145,Outcall,Payments related,Order status enquiry,ord-63-00158,"18 02 2023, 23:37:00","19 02 2023, 05:37:00","20 02 2023, 23:37:00",C. Campbell,3
+iss-b-63-00146,Inbound,Payments related,Other,ord-63-00060,"19 03 2023, 16:35:00","21 03 2023, 04:35:00","21 03 2023, 16:35:00",A. Adams,3
+iss-b-63-00147,Email,Order Related,Fraudulent User,ord-63-00830,"10 03 2023, 16:48:00","12 03 2023, 15:48:00","14 03 2023, 16:48:00",P. Chen,4
+iss-b-63-00148,Inbound,Returns,Other,ord-63-00622,"30 05 2023, 10:13:00","01 06 2023, 05:13:00","05 06 2023, 10:13:00",A. Adams,3
+iss-b-63-00149,Email,Order Related,Product Specific Information,,"14 04 2023, 05:00:00","14 04 2023, 18:00:00","15 04 2023, 05:00:00",B. Barrett,5
+iss-b-63-00150,Outcall,Returns,Order status enquiry,ord-63-00184,"26 01 2023, 06:39:00","27 01 2023, 22:39:00","01 02 2023, 06:39:00",R. Owens,2
+iss-b-63-00151,Email,Order Related,Order status enquiry,ord-63-00378,"17 07 2023, 05:25:00","18 07 2023, 10:25:00","22 07 2023, 05:25:00",C. Campbell,2
+iss-b-63-00152,Outcall,Product Queries,Product Specific Information,ord-63-00347,"11 04 2023, 08:23:00","12 04 2023, 16:23:00","13 04 2023, 08:23:00",A. Adams,5
+iss-b-63-00153,Email,Product Queries,Order status enquiry,ord-63-00229,"04 02 2023, 04:25:00","05 02 2023, 14:25:00","06 02 2023, 04:25:00",P. Quinn,3
+iss-b-63-00154,Outcall,Feedback,Reverse Pickup Enquiry,ord-63-00429,"22 08 2023, 10:46:00","23 08 2023, 03:46:00","27 08 2023, 10:46:00",A. Adams,2
+iss-b-63-00155,Inbound,Returns,Delayed,,"04 10 2023, 23:29:00","05 10 2023, 09:29:00","10 10 2023, 23:29:00",P. Quinn,4
+iss-b-63-00156,Inbound,Payments related,Product Specific Information,ord-63-00634,"05 03 2023, 17:00:00","06 03 2023, 20:00:00","09 03 2023, 17:00:00",N. Smith,1
+iss-b-63-00157,Outcall,Feedback,Delayed,ord-63-00638,"08 02 2023, 21:12:00","10 02 2023, 07:12:00","09 02 2023, 21:12:00",F. Chen,1
+iss-b-63-00158,Outcall,Payments related,Fraudulent User,ord-63-00143,"16 02 2023, 18:52:00","16 02 2023, 23:52:00","19 02 2023, 18:52:00",L. Kim,1
+iss-b-63-00159,Email,Product Queries,Other,ord-63-00479,"28 02 2023, 20:42:00","01 03 2023, 11:42:00","03 03 2023, 20:42:00",C. Campbell,2
+iss-b-63-00160,Inbound,Returns,Return request,ord-63-00267,"15 11 2023, 13:12:00","16 11 2023, 01:12:00","15 11 2023, 13:12:00",C. Campbell,5
+iss-b-63-00161,Inbound,Payments related,Order status enquiry,ord-63-00490,"09 01 2023, 07:11:00","10 01 2023, 17:11:00","09 01 2023, 07:11:00",B. Barrett,2
+iss-b-63-00162,Outcall,Order Related,Product Specific Information,ord-63-00677,"29 08 2023, 07:03:00","31 08 2023, 02:03:00","31 08 2023, 07:03:00",C. Campbell,4
+iss-b-63-00163,Inbound,Payments related,Delayed,,"21 07 2023, 09:18:00","21 07 2023, 16:18:00","22 07 2023, 09:18:00",K. Nelson,3
+iss-b-63-00164,Outcall,Payments related,Product Specific Information,,"21 12 2023, 15:32:00","21 12 2023, 22:32:00","23 12 2023, 15:32:00",A. Adams,2
+iss-b-63-00165,Inbound,Order Related,Order status enquiry,ord-63-00289,"28 08 2023, 00:20:00","28 08 2023, 11:20:00","03 09 2023, 00:20:00",R. Owens,5
+iss-b-63-00166,Inbound,Payments related,Order status enquiry,ord-63-00126,"11 03 2023, 21:29:00","12 03 2023, 13:29:00","18 03 2023, 21:29:00",E. Wilson,2
+iss-b-63-00167,Inbound,Order Related,Return request,ord-63-00204,"14 09 2023, 16:31:00","16 09 2023, 00:31:00","20 09 2023, 16:31:00",P. Quinn,1
+iss-b-63-00168,Outcall,Payments related,Return request,ord-63-00532,"01 04 2023, 20:48:00","03 04 2023, 10:48:00","02 04 2023, 20:48:00",R. Kim,1
+iss-b-63-00169,Inbound,Product Queries,Delayed,ord-63-00848,"10 05 2023, 09:02:00","12 05 2023, 08:02:00","10 05 2023, 09:02:00",R. Kim,3
+iss-b-63-00170,Inbound,Order Related,Fraudulent User,ord-63-00084,"25 06 2023, 14:34:00","26 06 2023, 00:34:00","02 07 2023, 14:34:00",R. Kim,4
+iss-b-63-00171,Email,Payments related,Return request,ord-63-00229,"06 10 2023, 14:02:00","08 10 2023, 07:02:00","08 10 2023, 14:02:00",A. Adams,4
+iss-b-63-00172,Outcall,Feedback,Other,ord-63-00554,"18 06 2023, 03:00:00","19 06 2023, 04:00:00","20 06 2023, 03:00:00",B. Barrett,2
+iss-b-63-00173,Outcall,Product Queries,Product Specific Information,,"06 10 2023, 13:12:00","07 10 2023, 18:12:00","11 10 2023, 13:12:00",A. Adams,4
+iss-b-63-00174,Outcall,Product Queries,Reverse Pickup Enquiry,,"10 04 2023, 18:35:00","11 04 2023, 07:35:00","12 04 2023, 18:35:00",K. Nelson,5
+iss-b-63-00175,Outcall,Feedback,Return request,,"02 08 2023, 16:43:00","04 08 2023, 05:43:00","09 08 2023, 16:43:00",A. Adams,4
+iss-b-63-00176,Email,Returns,Order status enquiry,ord-63-00353,"17 06 2023, 22:04:00","19 06 2023, 00:04:00","20 06 2023, 22:04:00",P. Quinn,5
+iss-b-63-00177,Inbound,Product Queries,Product Specific Information,ord-63-00573,"03 12 2023, 18:25:00","04 12 2023, 05:25:00","04 12 2023, 18:25:00",L. Kim,5
+iss-b-63-00178,Inbound,Returns,Delayed,ord-63-00277,"18 04 2023, 16:15:00","20 04 2023, 12:15:00","20 04 2023, 16:15:00",B. Barrett,3
+iss-b-63-00179,Email,Product Queries,Product Specific Information,ord-63-00644,"14 11 2023, 16:01:00","15 11 2023, 06:01:00","20 11 2023, 16:01:00",K. Wilson,5
+iss-b-63-00180,Inbound,Product Queries,Order status enquiry,ord-63-00337,"27 08 2023, 18:50:00","28 08 2023, 17:50:00","02 09 2023, 18:50:00",B. Barrett,2
+iss-b-63-00181,Outcall,Feedback,Delayed,ord-63-00021,"17 06 2023, 12:34:00","19 06 2023, 12:34:00","19 06 2023, 12:34:00",P. Quinn,1
+iss-b-63-00182,Outcall,Order Related,Fraudulent User,ord-63-00928,"14 12 2023, 13:31:00","15 12 2023, 20:31:00","17 12 2023, 13:31:00",H. Owens,2
+iss-b-63-00183,Inbound,Feedback,Product Specific Information,ord-63-00213,"23 09 2023, 06:01:00","24 09 2023, 01:01:00","29 09 2023, 06:01:00",J. Evans,3
+iss-b-63-00184,Email,Order Related,Delayed,ord-63-00366,"14 10 2023, 11:04:00","15 10 2023, 10:04:00","20 10 2023, 11:04:00",C. Campbell,3
+iss-b-63-00185,Email,Returns,Product Specific Information,ord-63-00728,"02 07 2023, 20:49:00","03 07 2023, 17:49:00","05 07 2023, 20:49:00",K. Nelson,2
+iss-b-63-00186,Email,Order Related,Fraudulent User,ord-63-00788,"05 03 2023, 13:58:00","06 03 2023, 16:58:00","08 03 2023, 13:58:00",B. Barrett,1
+iss-b-63-00187,Outcall,Payments related,Return request,ord-63-00787,"27 12 2023, 03:39:00","27 12 2023, 11:39:00","30 12 2023, 03:39:00",P. Quinn,4
+iss-b-63-00188,Email,Product Queries,Return request,,"16 09 2023, 19:38:00","17 09 2023, 00:38:00","19 09 2023, 19:38:00",P. Chen,1
+iss-b-63-00189,Inbound,Product Queries,Other,ord-63-00132,"07 01 2023, 19:03:00","08 01 2023, 18:03:00","13 01 2023, 19:03:00",F. Chen,4
+iss-b-63-00190,Inbound,Payments related,Order status enquiry,ord-63-00424,"11 08 2023, 13:13:00","12 08 2023, 20:13:00","12 08 2023, 13:13:00",H. Owens,5
+iss-b-63-00191,Inbound,Payments related,Fraudulent User,ord-63-00023,"29 12 2023, 05:49:00","29 12 2023, 19:49:00","02 01 2024, 05:49:00",A. Adams,3
+iss-b-63-00192,Outcall,Order Related,Order status enquiry,ord-63-00915,"07 01 2023, 09:24:00","07 01 2023, 16:24:00","08 01 2023, 09:24:00",C. Campbell,5
+iss-b-63-00193,Inbound,Payments related,Return request,ord-63-00022,"25 03 2023, 20:10:00","27 03 2023, 10:10:00","27 03 2023, 20:10:00",C. Campbell,4
+iss-b-63-00194,Inbound,Feedback,Fraudulent User,,"19 10 2023, 01:49:00","20 10 2023, 23:49:00","20 10 2023, 01:49:00",N. Smith,5
+iss-b-63-00195,Outcall,Payments related,Reverse Pickup Enquiry,,"23 09 2023, 02:42:00","23 09 2023, 11:42:00","25 09 2023, 02:42:00",K. Wilson,4
+iss-b-63-00196,Inbound,Returns,Delayed,ord-63-00140,"02 08 2023, 15:50:00","03 08 2023, 18:50:00","05 08 2023, 15:50:00",C. Campbell,4
+iss-b-63-00197,Email,Product Queries,Delayed,ord-63-00555,"21 09 2023, 22:38:00","23 09 2023, 13:38:00","28 09 2023, 22:38:00",S. Patel,2
+iss-b-63-00198,Inbound,Returns,Order status enquiry,,"30 03 2023, 01:09:00","31 03 2023, 08:09:00","03 04 2023, 01:09:00",I. Roberts,4
+iss-b-63-00199,Inbound,Returns,Reverse Pickup Enquiry,,"19 03 2023, 19:10:00","21 03 2023, 08:10:00","21 03 2023, 19:10:00",C. Campbell,3
+iss-b-63-00200,Outcall,Payments related,Reverse Pickup Enquiry,ord-63-00729,"13 11 2023, 19:30:00","15 11 2023, 16:30:00","13 11 2023, 19:30:00",D. Jackson,2
+iss-b-63-00201,Outcall,Product Queries,Fraudulent User,ord-63-00243,"29 04 2023, 01:38:00","01 05 2023, 00:38:00","01 05 2023, 01:38:00",D. Jackson,4
+iss-b-63-00202,Email,Returns,Reverse Pickup Enquiry,ord-63-00498,"19 10 2023, 19:22:00","21 10 2023, 02:22:00","26 10 2023, 19:22:00",I. Roberts,4
+iss-b-63-00203,Email,Feedback,Order status enquiry,,"19 08 2023, 05:23:00","19 08 2023, 10:23:00","26 08 2023, 05:23:00",E. Wilson,5
+iss-b-63-00204,Inbound,Feedback,Order status enquiry,ord-63-00295,"20 09 2023, 16:24:00","22 09 2023, 07:24:00","27 09 2023, 16:24:00",S. Patel,3
+iss-b-63-00205,Outcall,Payments related,Reverse Pickup Enquiry,ord-63-00384,"23 12 2023, 20:33:00","25 12 2023, 16:33:00","29 12 2023, 20:33:00",A. Adams,3
+iss-b-63-00206,Inbound,Payments related,Delayed,ord-63-00370,"27 01 2023, 11:42:00","29 01 2023, 10:42:00","27 01 2023, 11:42:00",I. Roberts,1
+iss-b-63-00207,Inbound,Order Related,Reverse Pickup Enquiry,ord-63-00775,"10 04 2023, 15:01:00","12 04 2023, 04:01:00","14 04 2023, 15:01:00",J. Evans,2
+iss-b-63-00208,Outcall,Product Queries,Fraudulent User,ord-63-00023,"01 08 2023, 15:23:00","02 08 2023, 01:23:00","04 08 2023, 15:23:00",R. Owens,2
+iss-b-63-00209,Inbound,Returns,Order status enquiry,,"15 06 2023, 10:07:00","17 06 2023, 10:07:00","19 06 2023, 10:07:00",E. Lopez,4
+iss-b-63-00210,Outcall,Payments related,Order status enquiry,ord-63-00147,"14 02 2023, 08:00:00","15 02 2023, 05:00:00","14 02 2023, 08:00:00",D. Jackson,5
+iss-b-63-00211,Inbound,Returns,Return request,,"20 07 2023, 13:12:00","21 07 2023, 19:12:00","27 07 2023, 13:12:00",J. Evans,3
+iss-b-63-00212,Inbound,Product Queries,Fraudulent User,ord-63-00596,"04 06 2023, 22:07:00","06 06 2023, 01:07:00","04 06 2023, 22:07:00",P. Quinn,4
+iss-b-63-00213,Outcall,Payments related,Other,ord-63-00107,"13 02 2023, 22:12:00","14 02 2023, 23:12:00","14 02 2023, 22:12:00",H. Owens,4
+iss-b-63-00214,Outcall,Returns,Order status enquiry,ord-63-00832,"23 04 2023, 17:16:00","23 04 2023, 21:16:00","30 04 2023, 17:16:00",B. Barrett,3
+iss-b-63-00215,Email,Feedback,Other,ord-63-00148,"20 06 2023, 07:58:00","21 06 2023, 05:58:00","24 06 2023, 07:58:00",F. Chen,5
+iss-b-63-00216,Outcall,Feedback,Reverse Pickup Enquiry,ord-63-00952,"04 01 2023, 17:42:00","05 01 2023, 21:42:00","05 01 2023, 17:42:00",K. Nelson,5
+iss-b-63-00217,Email,Returns,Return request,ord-63-00137,"02 12 2023, 14:44:00","03 12 2023, 04:44:00","03 12 2023, 14:44:00",F. Chen,2
+iss-b-63-00218,Inbound,Returns,Product Specific Information,ord-63-00606,"07 09 2023, 10:15:00","09 09 2023, 06:15:00","11 09 2023, 10:15:00",K. Nelson,5
+iss-b-63-00219,Inbound,Payments related,Other,ord-63-00846,"14 06 2023, 10:30:00","15 06 2023, 15:30:00","19 06 2023, 10:30:00",B. Barrett,5
+iss-b-63-00220,Email,Product Queries,Order status enquiry,ord-63-00546,"16 09 2023, 22:38:00","18 09 2023, 05:38:00","21 09 2023, 22:38:00",A. Adams,2
+iss-b-63-00221,Inbound,Product Queries,Fraudulent User,,"23 02 2023, 16:58:00","25 02 2023, 10:58:00","26 02 2023, 16:58:00",N. Smith,5
+iss-b-63-00222,Outcall,Returns,Reverse Pickup Enquiry,ord-63-00728,"22 03 2023, 10:52:00","23 03 2023, 21:52:00","22 03 2023, 10:52:00",R. Kim,4
+iss-b-63-00223,Email,Payments related,Fraudulent User,ord-63-00708,"12 06 2023, 05:48:00","13 06 2023, 02:48:00","15 06 2023, 05:48:00",C. Campbell,3
+iss-b-63-00224,Inbound,Product Queries,Delayed,ord-63-00887,"16 10 2023, 15:13:00","17 10 2023, 04:13:00","23 10 2023, 15:13:00",K. Wilson,2
+iss-b-63-00225,Inbound,Product Queries,Delayed,ord-63-00557,"27 05 2023, 01:02:00","28 05 2023, 14:02:00","31 05 2023, 01:02:00",P. Quinn,1
+iss-b-63-00226,Outcall,Feedback,Fraudulent User,ord-63-00397,"14 08 2023, 23:12:00","16 08 2023, 21:12:00","16 08 2023, 23:12:00",A. Adams,4
+iss-b-63-00227,Email,Product Queries,Fraudulent User,ord-63-00453,"25 11 2023, 16:04:00","26 11 2023, 12:04:00","25 11 2023, 16:04:00",K. Nelson,5
+iss-b-63-00228,Outcall,Feedback,Delayed,ord-63-00682,"06 10 2023, 11:46:00","07 10 2023, 10:46:00","09 10 2023, 11:46:00",A. Adams,4
+iss-b-63-00229,Outcall,Product Queries,Delayed,ord-63-00518,"29 05 2023, 07:08:00","29 05 2023, 14:08:00","01 06 2023, 07:08:00",K. Nelson,5
+iss-b-63-00230,Email,Order Related,Fraudulent User,ord-63-00869,"16 11 2023, 21:34:00","18 11 2023, 14:34:00","23 11 2023, 21:34:00",A. Adams,3
+iss-b-63-00231,Email,Payments related,Order status enquiry,ord-63-00610,"08 04 2023, 22:16:00","10 04 2023, 20:16:00","08 04 2023, 22:16:00",A. Adams,1
+iss-b-63-00232,Email,Product Queries,Other,,"17 05 2023, 19:22:00","19 05 2023, 18:22:00","18 05 2023, 19:22:00",A. Adams,4
+iss-b-63-00233,Inbound,Product Queries,Order status enquiry,,"09 05 2023, 04:18:00","09 05 2023, 08:18:00","15 05 2023, 04:18:00",P. Chen,5
+iss-b-63-00234,Inbound,Returns,Order status enquiry,ord-63-00759,"28 09 2023, 02:54:00","28 09 2023, 15:54:00","04 10 2023, 02:54:00",K. Wilson,5
+iss-b-63-00235,Outcall,Payments related,Delayed,ord-63-00301,"17 06 2023, 13:51:00","18 06 2023, 21:51:00","19 06 2023, 13:51:00",P. Chen,1
+iss-b-63-00236,Email,Payments related,Fraudulent User,,"20 04 2023, 22:17:00","22 04 2023, 13:17:00","24 04 2023, 22:17:00",S. Patel,1
+iss-b-63-00237,Inbound,Product Queries,Fraudulent User,ord-63-00915,"23 10 2023, 01:03:00","24 10 2023, 02:03:00","30 10 2023, 01:03:00",K. Nelson,5
+iss-b-63-00238,Inbound,Product Queries,Order status enquiry,ord-63-00830,"09 05 2023, 03:06:00","10 05 2023, 22:06:00","16 05 2023, 03:06:00",H. Owens,2
+iss-b-63-00239,Outcall,Returns,Other,ord-63-00325,"23 01 2023, 05:56:00","24 01 2023, 21:56:00","27 01 2023, 05:56:00",F. Chen,3
+iss-b-63-00240,Inbound,Returns,Reverse Pickup Enquiry,ord-63-00686,"30 09 2023, 08:58:00","30 09 2023, 10:58:00","04 10 2023, 08:58:00",K. Wilson,1
+iss-b-63-00241,Email,Payments related,Other,ord-63-00367,"16 09 2023, 20:39:00","18 09 2023, 01:39:00","20 09 2023, 20:39:00",N. Smith,3
+iss-b-63-00242,Email,Returns,Delayed,ord-63-00299,"01 06 2023, 22:15:00","02 06 2023, 22:15:00","07 06 2023, 22:15:00",A. Adams,4
+iss-b-63-00243,Outcall,Payments related,Delayed,,"19 07 2023, 09:56:00","21 07 2023, 08:56:00","25 07 2023, 09:56:00",F. Evans,5
+iss-b-63-00244,Outcall,Product Queries,Product Specific Information,ord-63-00381,"06 12 2023, 04:58:00","07 12 2023, 10:58:00","12 12 2023, 04:58:00",K. Wilson,3
+iss-b-63-00245,Outcall,Payments related,Return request,ord-63-00029,"16 04 2023, 08:03:00","17 04 2023, 04:03:00","16 04 2023, 08:03:00",K. Wilson,2
+iss-b-63-00246,Email,Product Queries,Order status enquiry,ord-63-00925,"21 06 2023, 00:56:00","22 06 2023, 01:56:00","21 06 2023, 00:56:00",I. Roberts,2
+iss-b-63-00247,Email,Order Related,Other,ord-63-00643,"02 07 2023, 20:32:00","03 07 2023, 05:32:00","09 07 2023, 20:32:00",B. Barrett,5
+iss-b-63-00248,Outcall,Returns,Reverse Pickup Enquiry,ord-63-00578,"11 03 2023, 09:39:00","13 03 2023, 04:39:00","18 03 2023, 09:39:00",R. Owens,1
+iss-b-63-00249,Inbound,Order Related,Order status enquiry,ord-63-00614,"19 10 2023, 12:50:00","20 10 2023, 23:50:00","22 10 2023, 12:50:00",C. Campbell,1
+iss-b-63-00250,Outcall,Product Queries,Order status enquiry,ord-63-00077,"20 09 2023, 06:15:00","22 09 2023, 03:15:00","23 09 2023, 06:15:00",E. Wilson,4
+iss-b-63-00251,Email,Returns,Delayed,ord-63-00544,"27 04 2023, 13:22:00","28 04 2023, 03:22:00","03 05 2023, 13:22:00",S. Patel,1
+iss-b-63-00252,Outcall,Payments related,Return request,ord-63-00837,"27 07 2023, 17:36:00","29 07 2023, 11:36:00","28 07 2023, 17:36:00",S. Patel,3
+iss-b-63-00253,Email,Returns,Delayed,,"01 10 2023, 19:15:00","02 10 2023, 12:15:00","05 10 2023, 19:15:00",A. Adams,3
+iss-b-63-00254,Inbound,Returns,Other,ord-63-00217,"21 05 2023, 12:40:00","22 05 2023, 13:40:00","21 05 2023, 12:40:00",R. Owens,4
+iss-b-63-00255,Email,Payments related,Delayed,ord-63-00150,"18 09 2023, 04:52:00","19 09 2023, 12:52:00","18 09 2023, 04:52:00",R. Kim,5
+iss-b-63-00256,Email,Returns,Delayed,ord-63-00485,"05 08 2023, 09:48:00","06 08 2023, 20:48:00","12 08 2023, 09:48:00",A. Adams,1
+iss-b-63-00257,Email,Feedback,Delayed,ord-63-00741,"06 07 2023, 15:57:00","08 07 2023, 09:57:00","08 07 2023, 15:57:00",B. Barrett,5
+iss-b-63-00258,Outcall,Feedback,Fraudulent User,ord-63-00173,"07 07 2023, 20:53:00","08 07 2023, 03:53:00","08 07 2023, 20:53:00",I. Roberts,2
+iss-b-63-00259,Outcall,Product Queries,Other,ord-63-00088,"11 01 2023, 07:56:00","11 01 2023, 12:56:00","15 01 2023, 07:56:00",A. Adams,1
+iss-b-63-00260,Outcall,Returns,Reverse Pickup Enquiry,ord-63-00682,"25 05 2023, 14:11:00","26 05 2023, 17:11:00","25 05 2023, 14:11:00",F. Chen,1
+iss-b-63-00261,Email,Returns,Return request,ord-63-00342,"21 04 2023, 16:53:00","22 04 2023, 03:53:00","22 04 2023, 16:53:00",C. Campbell,2
+iss-b-63-00262,Outcall,Product Queries,Product Specific Information,ord-63-00803,"05 12 2023, 15:35:00","06 12 2023, 14:35:00","05 12 2023, 15:35:00",P. Quinn,3
+iss-b-63-00263,Inbound,Product Queries,Other,ord-63-00100,"03 04 2023, 01:48:00","04 04 2023, 08:48:00","03 04 2023, 01:48:00",C. Campbell,3
+iss-b-63-00264,Inbound,Returns,Product Specific Information,ord-63-00416,"22 03 2023, 10:58:00","23 03 2023, 00:58:00","28 03 2023, 10:58:00",F. Chen,4
+iss-b-63-00265,Inbound,Feedback,Fraudulent User,ord-63-00162,"25 05 2023, 12:16:00","25 05 2023, 21:16:00","27 05 2023, 12:16:00",S. Patel,5
+iss-b-63-00266,Inbound,Payments related,Fraudulent User,ord-63-00472,"03 07 2023, 15:46:00","05 07 2023, 14:46:00","09 07 2023, 15:46:00",J. Evans,3
+iss-b-63-00267,Inbound,Order Related,Delayed,ord-63-00794,"20 08 2023, 11:36:00","21 08 2023, 07:36:00","21 08 2023, 11:36:00",C. Campbell,4
+iss-b-63-00268,Outcall,Product Queries,Other,ord-63-00898,"13 09 2023, 23:09:00","15 09 2023, 16:09:00","19 09 2023, 23:09:00",N. Smith,3
+iss-b-63-00269,Outcall,Order Related,Delayed,ord-63-00238,"02 07 2023, 06:15:00","04 07 2023, 04:15:00","04 07 2023, 06:15:00",P. Quinn,4
+iss-b-63-00270,Inbound,Payments related,Return request,ord-63-00214,"22 10 2023, 10:37:00","22 10 2023, 21:37:00","27 10 2023, 10:37:00",A. Adams,2
+iss-b-63-00271,Outcall,Feedback,Delayed,,"02 04 2023, 04:15:00","02 04 2023, 23:15:00","06 04 2023, 04:15:00",F. Evans,2
+iss-b-63-00272,Inbound,Order Related,Delayed,ord-63-00574,"13 02 2023, 06:54:00","14 02 2023, 04:54:00","14 02 2023, 06:54:00",J. Evans,1
+iss-b-63-00273,Inbound,Returns,Delayed,ord-63-00275,"24 01 2023, 02:44:00","24 01 2023, 04:44:00","30 01 2023, 02:44:00",K. Nelson,3
+iss-b-63-00274,Inbound,Product Queries,Other,ord-63-00042,"05 08 2023, 08:42:00","05 08 2023, 21:42:00","10 08 2023, 08:42:00",E. Wilson,3
+iss-b-63-00275,Outcall,Feedback,Return request,ord-63-00857,"19 04 2023, 14:49:00","20 04 2023, 18:49:00","23 04 2023, 14:49:00",J. Evans,3
+iss-b-63-00276,Outcall,Order Related,Other,ord-63-00483,"24 04 2023, 13:18:00","25 04 2023, 10:18:00","24 04 2023, 13:18:00",F. Evans,5
+iss-b-63-00277,Outcall,Product Queries,Return request,ord-63-00796,"13 06 2023, 01:28:00","13 06 2023, 05:28:00","19 06 2023, 01:28:00",B. Barrett,3
+iss-b-63-00278,Outcall,Returns,Fraudulent User,ord-63-00343,"07 08 2023, 07:24:00","08 08 2023, 07:24:00","13 08 2023, 07:24:00",R. Owens,3
+iss-b-63-00279,Outcall,Returns,Delayed,,"11 04 2023, 03:23:00","12 04 2023, 05:23:00","14 04 2023, 03:23:00",P. Quinn,2
+iss-b-63-00280,Email,Order Related,Delayed,ord-63-00063,"28 03 2023, 00:39:00","29 03 2023, 15:39:00","01 04 2023, 00:39:00",N. Smith,2
+iss-b-63-00281,Outcall,Feedback,Order status enquiry,,"07 09 2023, 08:39:00","07 09 2023, 23:39:00","11 09 2023, 08:39:00",C. Campbell,1
+iss-b-63-00282,Inbound,Order Related,Delayed,ord-63-00013,"11 07 2023, 01:47:00","12 07 2023, 05:47:00","12 07 2023, 01:47:00",K. Wilson,4
+iss-b-63-00283,Email,Product Queries,Fraudulent User,ord-63-00830,"02 01 2023, 08:31:00","02 01 2023, 22:31:00","02 01 2023, 08:31:00",C. Campbell,3
+iss-b-63-00284,Email,Payments related,Fraudulent User,ord-63-00490,"29 12 2023, 20:40:00","29 12 2023, 21:40:00","04 01 2024, 20:40:00",F. Evans,4
+iss-b-63-00285,Email,Feedback,Other,ord-63-00264,"22 12 2023, 04:20:00","23 12 2023, 15:20:00","25 12 2023, 04:20:00",B. Barrett,3
+iss-b-63-00286,Outcall,Returns,Reverse Pickup Enquiry,,"15 01 2023, 01:17:00","16 01 2023, 10:17:00","21 01 2023, 01:17:00",F. Evans,5
+iss-b-63-00287,Outcall,Product Queries,Return request,ord-63-00601,"14 04 2023, 03:12:00","15 04 2023, 02:12:00","17 04 2023, 03:12:00",I. Roberts,4
+iss-b-63-00288,Outcall,Returns,Reverse Pickup Enquiry,ord-63-00369,"31 10 2023, 05:12:00","02 11 2023, 00:12:00","01 11 2023, 05:12:00",E. Wilson,5
+iss-b-63-00289,Inbound,Payments related,Product Specific Information,ord-63-00902,"23 12 2023, 01:06:00","24 12 2023, 18:06:00","28 12 2023, 01:06:00",C. Campbell,3
+iss-b-63-00290,Outcall,Product Queries,Fraudulent User,,"17 06 2023, 20:31:00","19 06 2023, 14:31:00","21 06 2023, 20:31:00",D. Jackson,2
+iss-b-63-00291,Outcall,Feedback,Return request,ord-63-00768,"13 02 2023, 15:30:00","15 02 2023, 05:30:00","19 02 2023, 15:30:00",P. Chen,5
+iss-b-63-00292,Inbound,Feedback,Product Specific Information,ord-63-00154,"07 02 2023, 01:04:00","08 02 2023, 20:04:00","07 02 2023, 01:04:00",P. Chen,1
+iss-b-63-00293,Inbound,Order Related,Order status enquiry,ord-63-00306,"27 12 2023, 04:07:00","28 12 2023, 20:07:00","27 12 2023, 04:07:00",B. Barrett,3
+iss-b-63-00294,Outcall,Feedback,Return request,ord-63-00901,"29 07 2023, 01:28:00","30 07 2023, 18:28:00","03 08 2023, 01:28:00",K. Wilson,1
+iss-b-63-00295,Inbound,Feedback,Reverse Pickup Enquiry,ord-63-00782,"10 04 2023, 00:16:00","10 04 2023, 15:16:00","11 04 2023, 00:16:00",C. Campbell,5
+iss-b-63-00296,Outcall,Payments related,Delayed,ord-63-00941,"13 03 2023, 22:53:00","14 03 2023, 15:53:00","16 03 2023, 22:53:00",N. Smith,5
+iss-b-63-00297,Outcall,Order Related,Other,ord-63-00055,"03 02 2023, 18:56:00","04 02 2023, 07:56:00","04 02 2023, 18:56:00",E. Wilson,4
+iss-b-63-00298,Inbound,Returns,Delayed,ord-63-00641,"25 09 2023, 12:52:00","27 09 2023, 06:52:00","30 09 2023, 12:52:00",B. Barrett,2
+iss-b-63-00299,Inbound,Returns,Order status enquiry,,"11 07 2023, 15:04:00","13 07 2023, 08:04:00","13 07 2023, 15:04:00",P. Chen,1
+iss-b-63-00300,Email,Feedback,Reverse Pickup Enquiry,ord-63-00897,"22 11 2023, 13:08:00","24 11 2023, 02:08:00","24 11 2023, 13:08:00",K. Wilson,4
+iss-b-63-00301,Outcall,Payments related,Delayed,,"19 04 2023, 15:44:00","20 04 2023, 06:44:00","26 04 2023, 15:44:00",E. Lopez,3
+iss-b-63-00302,Inbound,Product Queries,Fraudulent User,ord-63-00514,"06 01 2023, 14:26:00","06 01 2023, 20:26:00","08 01 2023, 14:26:00",R. Owens,2
+iss-b-63-00303,Inbound,Feedback,Fraudulent User,ord-63-00233,"07 11 2023, 00:31:00","07 11 2023, 16:31:00","11 11 2023, 00:31:00",P. Chen,2
+iss-b-63-00304,Email,Returns,Order status enquiry,ord-63-00342,"02 12 2023, 10:55:00","02 12 2023, 22:55:00","07 12 2023, 10:55:00",B. Barrett,2
+iss-b-63-00305,Email,Returns,Fraudulent User,,"24 12 2023, 15:27:00","24 12 2023, 23:27:00","27 12 2023, 15:27:00",F. Evans,5
+iss-b-63-00306,Email,Order Related,Order status enquiry,ord-63-00951,"17 08 2023, 16:26:00","19 08 2023, 06:26:00","24 08 2023, 16:26:00",A. Adams,4
+iss-b-63-00307,Email,Order Related,Return request,ord-63-00020,"02 01 2023, 18:48:00","03 01 2023, 05:48:00","07 01 2023, 18:48:00",B. Barrett,1
+iss-b-63-00308,Email,Product Queries,Other,ord-63-00259,"17 07 2023, 07:50:00","18 07 2023, 12:50:00","19 07 2023, 07:50:00",P. Quinn,2
+iss-b-63-00309,Outcall,Order Related,Product Specific Information,ord-63-00445,"23 06 2023, 16:47:00","25 06 2023, 07:47:00","25 06 2023, 16:47:00",C. Campbell,1
+iss-b-63-00310,Inbound,Product Queries,Reverse Pickup Enquiry,ord-63-00896,"29 03 2023, 19:48:00","30 03 2023, 05:48:00","05 04 2023, 19:48:00",B. Barrett,4
+iss-b-63-00311,Inbound,Returns,Return request,,"16 09 2023, 21:02:00","18 09 2023, 08:02:00","23 09 2023, 21:02:00",E. Wilson,5
+iss-b-63-00312,Email,Payments related,Delayed,ord-63-00751,"31 12 2023, 15:34:00","01 01 2024, 06:34:00","07 01 2024, 15:34:00",A. Adams,2
+iss-b-63-00313,Inbound,Product Queries,Other,ord-63-00909,"15 11 2023, 07:27:00","16 11 2023, 07:27:00","22 11 2023, 07:27:00",K. Nelson,2
+iss-b-63-00314,Outcall,Order Related,Delayed,ord-63-00642,"16 10 2023, 21:50:00","18 10 2023, 01:50:00","16 10 2023, 21:50:00",C. Campbell,4
+iss-b-63-00315,Inbound,Payments related,Order status enquiry,ord-63-00102,"19 03 2023, 08:30:00","19 03 2023, 16:30:00","22 03 2023, 08:30:00",A. Adams,3
+iss-b-63-00316,Outcall,Payments related,Delayed,ord-63-00407,"16 01 2023, 10:40:00","16 01 2023, 14:40:00","22 01 2023, 10:40:00",H. Owens,1
+iss-b-63-00317,Email,Payments related,Product Specific Information,ord-63-00334,"05 10 2023, 12:52:00","07 10 2023, 01:52:00","11 10 2023, 12:52:00",F. Chen,1
+iss-b-63-00318,Email,Returns,Product Specific Information,,"12 05 2023, 20:02:00","14 05 2023, 13:02:00","19 05 2023, 20:02:00",R. Owens,4
+iss-b-63-00319,Email,Returns,Return request,ord-63-00004,"05 01 2023, 12:40:00","06 01 2023, 11:40:00","08 01 2023, 12:40:00",I. Roberts,4
+iss-b-63-00320,Inbound,Payments related,Return request,,"24 05 2023, 16:28:00","25 05 2023, 04:28:00","31 05 2023, 16:28:00",D. Jackson,4
+iss-b-63-00321,Inbound,Payments related,Product Specific Information,ord-63-00895,"26 12 2023, 08:34:00","27 12 2023, 09:34:00","26 12 2023, 08:34:00",K. Nelson,4
+iss-b-63-00322,Outcall,Order Related,Delayed,ord-63-00839,"28 04 2023, 10:42:00","29 04 2023, 04:42:00","05 05 2023, 10:42:00",R. Owens,5
+iss-b-63-00323,Inbound,Order Related,Reverse Pickup Enquiry,ord-63-00471,"13 08 2023, 19:28:00","15 08 2023, 11:28:00","17 08 2023, 19:28:00",B. Barrett,3
+iss-b-63-00324,Email,Feedback,Product Specific Information,ord-63-00618,"11 05 2023, 07:50:00","11 05 2023, 14:50:00","18 05 2023, 07:50:00",A. Adams,2
+iss-b-63-00325,Email,Returns,Product Specific Information,ord-63-00017,"27 02 2023, 15:17:00","28 02 2023, 19:17:00","03 03 2023, 15:17:00",P. Chen,4
+iss-b-63-00326,Email,Order Related,Order status enquiry,ord-63-00769,"18 03 2023, 07:55:00","19 03 2023, 06:55:00","24 03 2023, 07:55:00",R. Owens,2
+iss-b-63-00327,Inbound,Payments related,Product Specific Information,ord-63-00205,"30 08 2023, 10:21:00","30 08 2023, 20:21:00","03 09 2023, 10:21:00",F. Evans,3
+iss-b-63-00328,Outcall,Returns,Fraudulent User,ord-63-00141,"15 02 2023, 08:59:00","15 02 2023, 22:59:00","20 02 2023, 08:59:00",A. Adams,5
+iss-b-63-00329,Inbound,Returns,Fraudulent User,ord-63-00907,"14 01 2023, 19:40:00","15 01 2023, 14:40:00","15 01 2023, 19:40:00",F. Evans,3
+iss-b-63-00330,Inbound,Payments related,Product Specific Information,ord-63-00690,"20 03 2023, 08:18:00","20 03 2023, 16:18:00","26 03 2023, 08:18:00",A. Adams,5
+iss-b-63-00331,Email,Product Queries,Reverse Pickup Enquiry,ord-63-00557,"15 03 2023, 23:52:00","17 03 2023, 15:52:00","21 03 2023, 23:52:00",E. Lopez,5
+iss-b-63-00332,Email,Product Queries,Return request,,"02 02 2023, 00:29:00","02 02 2023, 21:29:00","04 02 2023, 00:29:00",B. Barrett,1
+iss-b-63-00333,Outcall,Product Queries,Product Specific Information,ord-63-00892,"09 09 2023, 07:11:00","11 09 2023, 02:11:00","14 09 2023, 07:11:00",L. Kim,2
+iss-b-63-00334,Inbound,Order Related,Fraudulent User,ord-63-00109,"14 03 2023, 02:54:00","15 03 2023, 12:54:00","16 03 2023, 02:54:00",A. Adams,2
+iss-b-63-00335,Inbound,Returns,Reverse Pickup Enquiry,,"21 05 2023, 02:30:00","22 05 2023, 08:30:00","25 05 2023, 02:30:00",C. Campbell,3
+iss-b-63-00336,Email,Payments related,Reverse Pickup Enquiry,ord-63-00696,"03 01 2023, 16:23:00","04 01 2023, 07:23:00","07 01 2023, 16:23:00",A. Adams,4
+iss-b-63-00337,Inbound,Product Queries,Delayed,ord-63-00451,"18 08 2023, 11:14:00","19 08 2023, 12:14:00","23 08 2023, 11:14:00",A. Adams,2
+iss-b-63-00338,Outcall,Product Queries,Fraudulent User,ord-63-00891,"05 01 2023, 02:23:00","06 01 2023, 01:23:00","08 01 2023, 02:23:00",E. Lopez,1
+iss-b-63-00339,Outcall,Returns,Reverse Pickup Enquiry,,"12 02 2023, 19:26:00","13 02 2023, 11:26:00","15 02 2023, 19:26:00",F. Chen,5
+iss-b-63-00340,Outcall,Payments related,Fraudulent User,ord-63-00320,"14 04 2023, 00:55:00","15 04 2023, 23:55:00","17 04 2023, 00:55:00",C. Campbell,1
+iss-b-63-00341,Outcall,Returns,Other,,"19 08 2023, 20:06:00","21 08 2023, 15:06:00","22 08 2023, 20:06:00",N. Smith,1
+iss-b-63-00342,Outcall,Product Queries,Product Specific Information,ord-63-00656,"01 11 2023, 22:48:00","02 11 2023, 05:48:00","07 11 2023, 22:48:00",B. Barrett,2
+iss-b-63-00343,Inbound,Feedback,Product Specific Information,ord-63-00906,"09 01 2023, 03:12:00","11 01 2023, 02:12:00","09 01 2023, 03:12:00",F. Chen,5
+iss-b-63-00344,Inbound,Returns,Return request,ord-63-00779,"17 12 2023, 04:10:00","18 12 2023, 03:10:00","21 12 2023, 04:10:00",A. Adams,4
+iss-b-63-00345,Email,Returns,Product Specific Information,ord-63-00672,"26 11 2023, 11:50:00","27 11 2023, 08:50:00","27 11 2023, 11:50:00",K. Wilson,1
+iss-b-63-00346,Inbound,Order Related,Reverse Pickup Enquiry,,"05 05 2023, 21:49:00","07 05 2023, 03:49:00","06 05 2023, 21:49:00",P. Quinn,2
+iss-b-63-00347,Inbound,Order Related,Return request,ord-63-00404,"04 07 2023, 10:14:00","04 07 2023, 23:14:00","10 07 2023, 10:14:00",P. Chen,3
+iss-b-63-00348,Email,Order Related,Return request,ord-63-00895,"12 02 2023, 09:02:00","13 02 2023, 00:02:00","15 02 2023, 09:02:00",R. Owens,4
+iss-b-63-00349,Email,Payments related,Order status enquiry,ord-63-00339,"24 05 2023, 10:06:00","25 05 2023, 22:06:00","24 05 2023, 10:06:00",C. Campbell,1
+iss-b-63-00350,Inbound,Feedback,Product Specific Information,ord-63-00395,"14 07 2023, 04:01:00","14 07 2023, 14:01:00","16 07 2023, 04:01:00",N. Smith,3
+iss-b-63-00351,Inbound,Order Related,Product Specific Information,ord-63-00431,"05 07 2023, 05:44:00","05 07 2023, 22:44:00","09 07 2023, 05:44:00",F. Evans,3
+iss-b-63-00352,Outcall,Payments related,Fraudulent User,ord-63-00849,"20 06 2023, 08:23:00","21 06 2023, 16:23:00","25 06 2023, 08:23:00",F. Chen,1
+iss-b-63-00353,Email,Returns,Product Specific Information,ord-63-00584,"20 07 2023, 18:42:00","21 07 2023, 03:42:00","24 07 2023, 18:42:00",R. Kim,1
+iss-b-63-00354,Email,Product Queries,Order status enquiry,ord-63-00328,"09 07 2023, 11:01:00","10 07 2023, 23:01:00","12 07 2023, 11:01:00",H. Owens,3
+iss-b-63-00355,Inbound,Feedback,Other,ord-63-00585,"14 10 2023, 07:09:00","15 10 2023, 09:09:00","15 10 2023, 07:09:00",A. Adams,2
+iss-b-63-00356,Inbound,Product Queries,Order status enquiry,,"28 04 2023, 18:53:00","29 04 2023, 18:53:00","03 05 2023, 18:53:00",R. Kim,5
+iss-b-63-00357,Email,Order Related,Reverse Pickup Enquiry,ord-63-00053,"01 07 2023, 04:46:00","02 07 2023, 14:46:00","01 07 2023, 04:46:00",F. Chen,5
+iss-b-63-00358,Inbound,Product Queries,Product Specific Information,ord-63-00394,"06 08 2023, 16:51:00","08 08 2023, 16:51:00","11 08 2023, 16:51:00",L. Kim,4
+iss-b-63-00359,Email,Feedback,Other,ord-63-00562,"01 08 2023, 19:41:00","03 08 2023, 02:41:00","07 08 2023, 19:41:00",K. Nelson,5
+iss-b-63-00360,Email,Feedback,Fraudulent User,,"05 03 2023, 07:09:00","05 03 2023, 10:09:00","11 03 2023, 07:09:00",A. Adams,5
+iss-b-63-00361,Email,Order Related,Return request,ord-63-00946,"01 07 2023, 05:01:00","02 07 2023, 19:01:00","03 07 2023, 05:01:00",P. Quinn,1
+iss-b-63-00362,Outcall,Returns,Order status enquiry,ord-63-00591,"16 05 2023, 08:00:00","17 05 2023, 05:00:00","16 05 2023, 08:00:00",H. Owens,5
+iss-b-63-00363,Inbound,Product Queries,Delayed,,"08 02 2023, 18:52:00","09 02 2023, 21:52:00","08 02 2023, 18:52:00",D. Jackson,4
+iss-b-63-00364,Email,Feedback,Return request,ord-63-00143,"08 05 2023, 06:59:00","08 05 2023, 19:59:00","09 05 2023, 06:59:00",H. Owens,3
+iss-b-63-00365,Inbound,Returns,Delayed,ord-63-00759,"06 09 2023, 08:09:00","06 09 2023, 14:09:00","06 09 2023, 08:09:00",N. Smith,2
+iss-b-63-00366,Inbound,Product Queries,Delayed,,"23 10 2023, 10:30:00","24 10 2023, 21:30:00","30 10 2023, 10:30:00",A. Adams,4
+iss-b-63-00367,Email,Payments related,Return request,,"10 04 2023, 09:27:00","12 04 2023, 02:27:00","16 04 2023, 09:27:00",A. Adams,2
+iss-b-63-00368,Email,Product Queries,Return request,ord-63-00787,"15 09 2023, 23:14:00","17 09 2023, 07:14:00","17 09 2023, 23:14:00",B. Barrett,3
+iss-b-63-00369,Outcall,Product Queries,Other,ord-63-00612,"20 07 2023, 15:08:00","22 07 2023, 11:08:00","24 07 2023, 15:08:00",K. Nelson,4
+iss-b-63-00370,Inbound,Order Related,Delayed,ord-63-00418,"30 12 2023, 13:28:00","01 01 2024, 10:28:00","02 01 2024, 13:28:00",J. Evans,4
+iss-b-63-00371,Inbound,Payments related,Fraudulent User,ord-63-00116,"25 01 2023, 21:44:00","27 01 2023, 08:44:00","31 01 2023, 21:44:00",R. Owens,2
+iss-b-63-00372,Inbound,Product Queries,Return request,ord-63-00274,"25 05 2023, 11:50:00","25 05 2023, 13:50:00","31 05 2023, 11:50:00",A. Adams,1
+iss-b-63-00373,Outcall,Order Related,Other,ord-63-00614,"27 11 2023, 12:40:00","28 11 2023, 18:40:00","29 11 2023, 12:40:00",B. Barrett,4
+iss-b-63-00374,Outcall,Payments related,Fraudulent User,ord-63-00443,"15 07 2023, 11:17:00","16 07 2023, 18:17:00","18 07 2023, 11:17:00",J. Evans,5
+iss-b-63-00375,Outcall,Payments related,Product Specific Information,ord-63-00504,"02 01 2023, 13:51:00","04 01 2023, 10:51:00","05 01 2023, 13:51:00",K. Wilson,5
