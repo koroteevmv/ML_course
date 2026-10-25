@@ -59,7 +59,7 @@ axes[1].set_xlabel('x1'); axes[1].set_ylabel('x2'); axes[1].legend()
 plt.tight_layout(); plt.show()
 ```
 
-![Исходные данные](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-0.png?raw=true")
+![Исходные данные](https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-0.png?raw=true)
 
 #### Методические указания
 
@@ -230,7 +230,7 @@ ax.set_xlabel('x'); ax.set_ylabel('y'); ax.legend()
 plt.show()
 ```
 
-![Усреднение деревьев](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-1.png?raw=true")
+![Усреднение деревьев](https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-1.png?raw=true)
 
 ##### Random Forest: bagging + случайные признаки
 
@@ -387,7 +387,7 @@ plt.tight_layout(); plt.show()
 
 С ростом числа моделей граница становится всё более сложной и лучше описывает данные.
 
-![Адаптивный бустинг](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-2.png?raw=true")
+![Адаптивный бустинг](https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-2.png?raw=true)
 
 ##### Gradient Boosting: бустинг на градиентах
 
@@ -471,7 +471,7 @@ plt.show()
 
 Кривая Test MSE сначала падает (bias уменьшается), затем выходит на плато, а при очень большом числе итераций может начать расти (variance увеличивается, переобучение). Оптимальное число итераций подбирается по кросс-валидации.
 
-![Кривая обучения градиентного бустинга](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-3.png?raw=true")
+![Кривая обучения градиентного бустинга](https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-3.png?raw=true)
 
 ##### Stacking: мета-обучение
 

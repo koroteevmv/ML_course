@@ -120,7 +120,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Матрица ошибок](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-1.png?raw=true")
+![Матрица ошибок](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-1.png?raw=true)
 
 На такой матрице сразу видно, что каждый FN «стоит» в 10 раз дороже FP. Это и определяет, какой порог выбирать.
 
@@ -164,7 +164,7 @@ print(f'Порог {best_threshold:.2f}: стоимость = ${costs[best_idx]:
 
 Обычно оптимальный порог оказывается **ниже 0.5** — мы склонны «перестраховаться» и предложить удержание большему числу клиентов, потому что пропустить уходящего дороже.
 
-![Выбор порога](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-2.png?raw=true")
+![Выбор порога](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-2.png?raw=true)
 
 Сравним метрики при двух порогах:
 
@@ -233,7 +233,7 @@ gain_lift_chart(y_te.values, y_proba)
 
 **Как читать график.** Если модель идеальна, кривая Gain сразу идёт в правый верхний угол (все уходящие пойманы на первых нескольких процентах списка). Если модель бесполезна, кривая Gain лежит на диагонали. Чем «выпуклее» кривая, тем лучше модель.
 
-![Маркетинговые кривые](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-3.png?raw=true")
+![Маркетинговые кривые](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-3.png?raw=true)
 
 Lift в первых 10% списка обычно 3–5× — это означает, что при обзвоне 10% клиентов мы ловим в 3–5 раз больше уходящих, чем при случайном выборе тех же 10%.
 
@@ -281,7 +281,7 @@ plt.show()
 print(f'Brier score: {brier_score_loss(y_te, y_proba):.4f}')
 ```
 
-![Калибровочная кривая](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-4.png?raw=true")
+![Калибровочная кривая](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-4.png?raw=true)
 
 Brier score — среднеквадратичная ошибка между предсказанной вероятностью и реальным исходом. Меньше — лучше. 0 — идеальная калибровка, 0.25 — эквивалент случайного угадывания при равных классах.
 
@@ -354,7 +354,7 @@ print(perm_df)
 
 Обратите внимание: permutation importance можно посчитать на **исходных** столбцах, даже если модель обучена на трансформированных данных. Это большое преимущество — бизнесу не нужно разбираться в one-hot-кодировании.
 
-![Перестановочная важность](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-5.png?raw=true")
+![Перестановочная важность](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-5.png?raw=true)
 
 Сравните с встроенной важностью Random Forest:
 
@@ -377,7 +377,7 @@ plt.show()
 
 Как правило, порядок признаков согласован (в нашем примере самое важное — `contract`, затем `tenure_months` и `monthly_charges`), но permutation importance даёт более честную картину.
 
-![Встроенная важность](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-6.png?raw=true")
+![Встроенная важность](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-6.png?raw=true)
 
 ##### Partial Dependence Plots (PDP)
 
@@ -397,7 +397,7 @@ plt.tight_layout(); plt.show()
 
 **Как читать график.** По оси X — значение признака, по оси Y — средняя предсказанная вероятность оттока. Например, для `tenure_months` мы обычно видим монотонно убывающую кривую: чем дольше клиент с нами, тем ниже вероятность оттока. Это совпадает с бизнес-интуицией и хорошо воспринимается заказчиком.
 
-![PDP](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-7.png?raw=true")
+![PDP](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-7.png?raw=true)
 
 PDP бывает обманчив, когда признаки сильно коррелированы (например, `tenure_months` и `monthly_charges × tenure = total_revenue`). В таких случаях лучше использовать SHAP.
 
@@ -441,7 +441,7 @@ shap_values.feature_names = np.array(feature_names).tolist()
 shap.plots.bar(shap_values[0, :, 0])
 ```
 
-![Shap bar](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-8.png?raw=true")
+![Shap bar](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-8.png?raw=true)
 
 **Глобальная интерпретация: `summary_plot(beeswarm)`**
 
@@ -451,7 +451,7 @@ shap.plots.bar(shap_values[0, :, 0])
 shap.plots.beeswarm(shap_values[:, :, 0])
 ```
 
-![Shap beeswarm](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-9.png?raw=true")
+![Shap beeswarm](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-9.png?raw=true)
 
 **Как читать beeswarm:**
 
@@ -610,7 +610,7 @@ business_dashboard(y_te.values, y_proba, best_threshold, y_te.mean())
 
 Такой дашборд можно защищать перед бизнесом: слева сверху — цифры, которые интересуют менеджера; справа сверху — кривая, показывающая, как модель помогает кампании; слева снизу — что стоит каждая ошибка; справа снизу — какие признаки влияют на модель в целом.
 
-![Дашборд](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-10.png?raw=true")
+![Дашборд](https://github.com/koroteevmv/ML_course/blob/2025/ML7.3%20reporting/img/ml73-10.png?raw=true)
 
 #### Задания для самостоятельного выполнения
 
