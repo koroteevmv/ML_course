@@ -59,6 +59,8 @@ axes[1].set_xlabel('x1'); axes[1].set_ylabel('x2'); axes[1].legend()
 plt.tight_layout(); plt.show()
 ```
 
+![Исходные данные](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-0.png?raw=true")
+
 #### Методические указания
 
 ##### Зачем нужны ансамбли: bias-variance tradeoff

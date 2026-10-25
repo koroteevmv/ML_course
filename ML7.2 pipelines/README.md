@@ -24,138 +24,9 @@
 - **`timeseries_stream.csv`** — временной ряд с трендом, сезонностью и аномалиями. Для потоковой обработки в самостоятельных заданиях.
 - **`fetch_california_housing`** — реальный датасет из `sklearn` для сравнения и для заданий. Скачивается автоматически, интернет нужен только при первом запуске.
 
-Скрипт ниже создаёт первые два файла и сохраняет их локально. Третий загружается прямо в ноутбуке.
-
-```python
-# prepare_data.py
-import numpy as np
-import pandas as pd
-
-
-def generate_mixed_churn(n=2000, random_state=42, path='mixed_churn.csv'):
-    """Датасет интернет-магазина со смешанными типами признаков."""
-    rng = np.random.RandomState(random_state)
-
-    # --- Числовые признаки ---
-    age = rng.randint(18, 76, n).astype(float)
-    income = np.round(rng.lognormal(10.5, 0.5, n), 2)  # смещённое вправо
-    days_since_signup = rng.randint(1, 1000, n)
-    num_purchases = rng.poisson(3, n)
-
-    # --- Категориальные ---
-    country = rng.choice(['RU', 'US', 'DE', 'CN', 'BR'], n,
-                          p=[0.4, 0.2, 0.15, 0.15, 0.1])
-    device = rng.choice(['mobile', 'desktop', 'tablet'], n,
-                         p=[0.6, 0.3, 0.1])
-    subscription = rng.choice(['free', 'basic', 'premium'], n,
-                               p=[0.5, 0.3, 0.2])
-
-    # --- Даты ---
-    base = pd.Timestamp('2023-01-01')
-    last_login = base + pd.to_timedelta(rng.randint(0, 730, n), unit='D')
-    first_purchase = base + pd.to_timedelta(rng.randint(0, 365, n), unit='D')
-
-    # --- Текст ---
-    pos = ['good', 'great', 'excellent', 'love', 'perfect', 'amazing']
-    neg = ['bad', 'terrible', 'awful', 'hate', 'worst', 'disappointing']
-    neu = ['ok', 'fine', 'average', 'normal', 'decent']
-
-    def review():
-        k = rng.randint(3, 10)
-        out = []
-        for _ in range(k):
-            r = rng.random()
-            if r < 0.4:   out.append(rng.choice(pos))
-            elif r < 0.7: out.append(rng.choice(neg))
-            else:         out.append(rng.choice(neu))
-        return ' '.join(out)
-
-    review_col = [review() for _ in range(n)]
-
-    # --- Целевая переменная: отток ---
-    logit = (
-        -1.0
-        + 0.3 * (subscription == 'free').astype(int)
-        - 0.5 * (subscription == 'premium').astype(int)
-        - 0.3 * (days_since_signup / 365)
-        + 0.5 * (num_purchases < 2).astype(int)
-        - 0.2 * (income > 50000).astype(int)
-        + 0.2 * (device == 'mobile').astype(int)
-    )
-    p_churn = 1 / (1 + np.exp(-logit))
-    churn = rng.binomial(1, p_churn)
-
-    df = pd.DataFrame({
-        'age': age,
-        'income': income,
-        'days_since_signup': days_since_signup,
-        'num_purchases': num_purchases,
-        'country': country,
-        'device': device,
-        'subscription': subscription,
-        'last_login': last_login.strftime('%Y-%m-%d'),
-        'first_purchase': first_purchase.strftime('%Y-%m-%d'),
-        'review': review_col,
-        'churn': churn,
-    })
-
-    # --- Грязь: пропуски и выбросы ---
-    for col in ['age', 'income']:
-        idx = rng.choice(n, size=100, replace=False)
-        df.loc[idx, col] = np.nan
-    for col in ['country', 'device']:
-        idx = rng.choice(n, size=80, replace=False)
-        df.loc[idx, col] = np.nan
-    # выбросы в доходе
-    idx_out = rng.choice(n, size=20, replace=False)
-    df.loc[idx_out, 'income'] *= rng.uniform(10, 30, 20)
-
-    df.to_csv(path, index=False)
-    print(f'{path}: {df.shape}, доля оттока: {df.churn.mean():.3f}')
-    return df
-
-
-def generate_timeseries(n=5000, random_state=42, path='timeseries_stream.csv'):
-    """Временной ряд с трендом, сезонностью и аномалиями."""
-    rng = np.random.RandomState(random_state)
-    t = np.arange(n)
-    trend = 0.01 * t
-    season = 5 * np.sin(2 * np.pi * t / 50)
-    noise = rng.randn(n) * 0.5
-    y = trend + season + noise
-
-    # Аномалии
-    idx = rng.choice(n, 50, replace=False)
-    y[idx] += rng.choice([-1, 1], 50) * rng.uniform(5, 10, 50)
-
-    df = pd.DataFrame({'t': t, 'value': y})
-    df.to_csv(path, index=False)
-    print(f'{path}: {df.shape}')
-    return df
-
-
-if __name__ == '__main__':
-    generate_mixed_churn()
-    generate_timeseries()
-```
-
-Библиотеки:
-
-```bash
-pip install scikit-learn pandas numpy matplotlib seaborn
-```
-
 Загружаем данные:
 
 ```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-sns.set_style('whitegrid')
-plt.rcParams['figure.figsize'] = (10, 5)
-
 df = pd.read_csv('mixed_churn.csv')
 print(df.shape)
 print(df.dtypes)
@@ -177,11 +48,11 @@ plt.tight_layout(); plt.show()
 
 Доход имеет тяжёлый правый хвост: обычный `StandardScaler` будет «раздавлен» выбросами, нужен либо логарифм, либо робастный скейлер. Это одна из причин, по которым удобно собирать конвейер: преобразование дохода можно «упаковать» в общий пайплайн вместе со всем остальным.
 
+![Исходные данные](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20pipelines/img/ml72-1.png?raw=true")
+
 Разделяем на train/test один раз. **Все дальнейшие преобразования должны настраиваться только на train** — это ключевая идея, которую мы будем демонстрировать.
 
 ```python
-from sklearn.model_selection import train_test_split
-
 X = df.drop(columns='churn')
 y = df['churn']
 
@@ -507,39 +378,6 @@ print(f'ROC-AUC: {roc_auc_score(y_te, y_proba):.3f}')
 ```
 
 **Обратите внимание:** конвейер принимает на вход **исходный** `X`, в котором есть пропуски, выбросы, категории, даты и текст. Всё преобразование — внутри. На тесте `full_pipe.predict_proba(X_te)` даёт корректные предсказания без каких-либо ручных манипуляций.
-
-##### `FeatureUnion` — параллельное объединение
-
-Иногда нужно применить к **одному и тому же** столбцу несколько преобразователей и объединить их выходы. Например, к тексту — и TF-IDF, и статистики. `FeatureUnion` делает это параллельно, как `ColumnTransformer`, но для одной и той же входной матрицы.
-
-```python
-from sklearn.pipeline import FeatureUnion
-from sklearn.feature_extraction.text import TfidfVectorizer
-
-text_union = FeatureUnion([
-    ('tfidf', TfidfVectorizer(max_features=100, ngram_range=(1, 2))),
-    ('stats', TextStats('review')),
-])
-
-text_pipe = Pipeline([
-    ('union', text_union),
-])
-text_features = text_pipe.fit_transform(X_tr[['review']])
-print(f'Размерность текстовых признаков: {text_features.shape}')
-```
-
-`FeatureUnion` полезен, когда у вас несколько «взглядов» на одни данные. В `ColumnTransformer` его можно вложить как ветку:
-
-```python
-text_branch = Pipeline([
-    ('union', text_union),
-])
-
-preprocess = ColumnTransformer([
-    ('text', text_branch, ['review']),
-    # ... остальные ветки
-])
-```
 
 ##### Подбор гиперпараметров конвейера через `GridSearchCV`
 
