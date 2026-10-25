@@ -12,67 +12,11 @@
 - **Синтетическая классификация** — двумерная задача с нелинейной границей. Показывает, как ансамбли справляются с нелинейными зависимостями.
 - **Реальный датасет** — `fetch_california_housing` из `sklearn` для практических заданий.
 
-Скрипт ниже генерирует оба синтетических датасета и сохраняет их в CSV. Реальный датасет загружается через `sklearn` — интернет при первом запуске нужен, дальше `sklearn` его кэширует.
-
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-
-def generate_regression_data(n=200, noise=0.35, random_state=42,
-                              path='synthetic_regression.csv'):
-    """Одномерная регрессия с нелинейной зависимостью."""
-    rng = np.random.RandomState(random_state)
-    X = rng.uniform(-3, 3, n)
-    y_true = np.sin(X) + 0.5 * X
-    y = y_true + rng.randn(n) * noise
-    df = pd.DataFrame({'x': X, 'y': y, 'y_true': y_true})
-    df.to_csv(path, index=False)
-    print(f'Сохранено {path}: {df.shape}')
-    return df
-
-
-def generate_classification_data(n=500, noise=0.25, random_state=42,
-                                  path='synthetic_classification.csv'):
-    """Двумерная бинарная классификация в форме «двух лун»."""
-    from sklearn.datasets import make_moons
-    X, y = make_moons(n_samples=n, noise=noise, random_state=random_state)
-    df = pd.DataFrame({'x1': X[:, 0], 'x2': X[:, 1], 'y': y})
-    df.to_csv(path, index=False)
-    print(f'Сохранено {path}: {df.shape}')
-    return df
-
-
-if __name__ == '__main__':
-    df_reg = generate_regression_data()
-    df_clf = generate_classification_data()
-```
-
 Датасеты небольшие (200 и 500 точек). Этого достаточно, чтобы быстро обучать десятки моделей в циклах (для бэггинга нам, например, понадобится обучить 50 деревьев).
 
 Загружаем данные:
 
 ```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-from sklearn.base import clone
-from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
-from sklearn.linear_model import LinearRegression, LogisticRegression
-from sklearn.ensemble import (RandomForestRegressor, RandomForestClassifier,
-                              BaggingRegressor, AdaBoostClassifier,
-                              GradientBoostingRegressor, StackingRegressor,
-                              VotingRegressor)
-from sklearn.model_selection import train_test_split, cross_val_score, KFold
-from sklearn.metrics import mean_squared_error, accuracy_score, r2_score
-
-sns.set_style('whitegrid')
-plt.rcParams['figure.figsize'] = (10, 5)
-
 reg = pd.read_csv('synthetic_regression.csv')
 clf = pd.read_csv('synthetic_classification.csv')
 
@@ -284,6 +228,8 @@ ax.set_xlabel('x'); ax.set_ylabel('y'); ax.legend()
 plt.show()
 ```
 
+![Усреднение деревьев](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-1.png?raw=true")
+
 ##### Random Forest: bagging + случайные признаки
 
 **Random Forest** — это bagging деревьев решений с одним важным дополнением: **на каждом разбиении дерева рассматривается не всё множество признаков, а случайное подмножество** (обычно $\sqrt{p}$ для классификации и $p/3$ для регрессии, где $p$ — число признаков).
@@ -439,6 +385,8 @@ plt.tight_layout(); plt.show()
 
 С ростом числа моделей граница становится всё более сложной и лучше описывает данные.
 
+![Адаптивный бустинг](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-2.png?raw=true")
+
 ##### Gradient Boosting: бустинг на градиентах
 
 **Gradient Boosting** — обобщение AdaBoost. Ключевая идея: каждая новая модель обучается **на остатках** (residuals) предыдущего ансамбля, то есть предсказывает то, что ансамбль пока не смог объяснить.
@@ -520,6 +468,8 @@ plt.show()
 ```
 
 Кривая Test MSE сначала падает (bias уменьшается), затем выходит на плато, а при очень большом числе итераций может начать расти (variance увеличивается, переобучение). Оптимальное число итераций подбирается по кросс-валидации.
+
+![Кривая обучения градиентного бустинга](url "https://github.com/koroteevmv/ML_course/blob/2025/ML7.1%20ensembles/img/ml71-3.png?raw=true")
 
 ##### Stacking: мета-обучение
 
